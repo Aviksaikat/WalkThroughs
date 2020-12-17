@@ -68,5 +68,4 @@ sudo -u jen whoami
 sudo usermod -a -G test test
 ```
 
-# Task 11
-1. 
+
