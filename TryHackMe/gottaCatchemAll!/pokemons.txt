@@ -1,0 +1,10 @@
+Bulbasaur 
+Charmander 
+Squirtle	
+Snorlax
+Zapdos
+Mew
+Charizard
+Grimer
+Metapod
+Magikarp
