@@ -372,3 +372,168 @@ Be good for goodness sake!
 ```
 THM{EVERYONE_GETS_PRESENTS}
 ```
+
+# [Day 20] Blue Teaming PowershELlF to the rescue 
+1. Search for the first hidden elf file within the Documents folder. Read the 		contents of this file. What does Elf 1 want?
+```
+2 front teeth
+```
+2. Search on the desktop for a hidden folder that contains the file for Elf 2. 		Read the contents of this file. What is the name of that movie that Elf 2 		wants?
+```
+Scrooged
+```
+3. Search the Windows directory for a hidden folder that contains files for Elf 3. 		What is the name of the hidden folder? (This command will take a while)
+```
+3lfthr3e
+```
+4. How many words does the first file contain?
+```
+9999
+```
+5. What 2 words are at index 551 and 6991 in the first file?
+```
+Red Ryder
+```
+6. This is only half the answer. Search in the 2nd file for the phrase from the 	previous question to get the full answer. What does Elf 3 want? (use spaces 	when submitting the answer)
+```
+Red Ryder BB Gun
+```
+
+# [Day 21] Blue Teaming Time for some ELForensics 
+1. Read the contents of the text file within the Documents folder. What is the 		file hash for db.exe?
+```
+596690FFC54AB6101932856E6A78E3A1
+```
+2. What is the file hash of the mysterious executable within the Documents folder?
+```
+5F037501FB542AD2D9B06EB12AED09F0
+```
+3. Using Strings find the hidden flag within the executable?
+```
+THM{f6187e6cbeb1214139ef313e108cb6f9}
+```
+4. What is the flag that is displayed when you run the database connector file?
+```
+THM{3088731ddc7b9fdeccaed982b07c297c}
+```
+
+# [Day 22] Blue Teaming Elf McEager becomes CyberElf 
+1. What is the password to the KeePass database?
+```
+thegrinchwashere
+```
+2. What is the encoding method listed as the 'Matching ops'?
+```
+Base64
+```
+3. What is the decoded password value of the Elf Server?
+```
+sn0wM4n!
+```
+4. What is the decoded password value for ElfMail?
+```
+ic3Skating!
+```
+5. Decode the last encoded value. What is the flag?
+```
+THM{657012dcf3d1318dca0ed864f0e70535}
+```
+
+# [Day 23] Blue Teaming The Grinch strikes again! 
+1. Decrypt the fake 'bitcoin address' within the ransom note. What is the plain 	text value?
+```
+nomorebestfestivalcompany
+```
+2. At times ransomware changes the file extensions of the encrypted files. What is 
+	the file extension for each of the encrypted files?
+```
+.grinch
+```
+3. What is the name of the suspicious scheduled task?
+```
+opidsfsdf
+```
+4. Inspect the properties of the scheduled task. What is the location of the 		executable that is run at login?
+```
+C:\users\administrator\desktop\opidsfsdf.exe
+```
+5. There is another scheduled task that is related to VSS. What is the 				ShadowCopyVolume ID?
+```
+7a9eea15-0000-0000-0000-010000000000
+```
+6. Assign the hidden partition a letter. What is the name of the hidden folder?
+```
+Confidential
+```
+7. Right-click and inspect the properties for the hidden folder. Use the 'Previous 		Versions' tab to restore the encrypted file that is within this hidden folder 		to the previous version. What is the password within the file?
+```
+m33pa55w0rdIZseecure!
+```
+
+#  [Day 24] Special by DarkStar The Trial Before Christmas 
+1. Scan the machine. What ports are open?
+```
+80, 65000
+```
+2. What's the title of the hidden website? It's worthwhile looking recursively at 		all websites on the box for this step. 
+```
+Light Cycle
+```
+3. What is the name of the hidden php page?
+```
+uploads.php
+```
+4. What is the name of the hidden directory where file uploads are saved?
+```
+grid
+```
+5. Bypass the filters. Upload and execute a reverse shell. 
+```
+No ans Needed
+```
+6. What is the value of the web.txt flag?
+```
+THM{ENTER_THE_GRID}
+```
+7. Upgrade and stabilize your shell. 
+```
+No ans Needed
+```
+8. Review the configuration files for the webserver to find some useful loot in 	the form of credentials. What credentials do you find? username:password
+```
+tron:IFightForTheUsers
+```
+9. Access the database and discover the encrypted credentials. What is the name of 		the database you find these in?
+```
+tron
+```
+10. Crack the password. What is it?
+```
+@computer@
+```
+11. Use su to login to the newly discovered user by exploiting password reuse. 
+```
+No ans Needed
+```
+12. What is the value of the user.txt flag?
+```
+THM{IDENTITY_DISC_RECOGNISED}
+```
+13. Check the user's groups. Which group can be leveraged to escalate privileges? 
+```
+lxd
+```
+14. Abuse this group to escalate privileges to root.
+```
+No ans Needed
+```
+15. What is the value of the root.txt flag?
+```
+THM{FLYNN_LIVES}
+```
+
+# Thank you! 
+1. Please help us improve by answer this 5 minute survey! https://forms.gle/		iixyNWzyZupumsPN7 
+```
+thm{thank_you_2020}
+```
