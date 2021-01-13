@@ -1,0 +1,48 @@
+# Nmap 7.91 scan initiated Wed Jan 13 19:43:37 2021 as: nmap -sS -sV -v -A -T4 -oN scan 10.10.181.157
+Nmap scan report for 10.10.181.157
+Host is up (0.45s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 90:35:66:f4:c6:d2:95:12:1b:e8:cd:de:aa:4e:03:23 (RSA)
+|   256 53:9d:23:67:34:cf:0a:d5:5a:9a:11:74:bd:fd:de:71 (ECDSA)
+|_  256 a2:8f:db:ae:9e:3d:c9:e6:a9:ca:03:b1:d7:1b:66:83 (ED25519)
+80/tcp  open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Fowsniff Corp - Delivering Solutions
+110/tcp open  pop3    Dovecot pop3d
+|_pop3-capabilities: PIPELINING SASL(PLAIN) TOP USER RESP-CODES UIDL AUTH-RESP-CODE CAPA
+143/tcp open  imap    Dovecot imapd
+|_imap-capabilities: capabilities AUTH=PLAINA0001 more post-login SASL-IR LITERAL+ IMAP4rev1 have listed ENABLE IDLE OK LOGIN-REFERRALS Pre-login ID
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=1/13%OT=22%CT=1%CU=42519%PV=Y%DS=4%DC=T%G=Y%TM=5FFF005
+OS:2%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=10B%TI=Z%CI=I%TS=8)OPS(O1=M
+OS:505ST11NW6%O2=M505ST11NW6%O3=M505NNT11NW6%O4=M505ST11NW6%O5=M505ST11NW6%
+OS:O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%
+OS:DF=Y%T=40%W=6903%O=M505NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=N)
+
+Uptime guess: 199.638 days (since Sun Jun 28 04:25:54 2020)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   259.52 ms 10.4.0.1
+2   ... 3
+4   516.56 ms 10.10.181.157
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 13 19:44:42 2021 -- 1 IP address (1 host up) scanned in 65.66 seconds
