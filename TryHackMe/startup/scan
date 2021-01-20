@@ -1,0 +1,52 @@
+# Nmap 7.91 scan initiated Tue Jan 19 20:21:26 2021 as: nmap -sS -sV -v -A -T4 -oN scan 10.10.255.29
+Increasing send delay for 10.10.255.29 from 0 to 5 due to 329 out of 822 dropped probes since last increase.
+Warning: 10.10.255.29 giving up on port because retransmission cap hit (6).
+WARNING: RST from 10.10.255.29 port 21 -- is this port really open?
+WARNING: RST from 10.10.255.29 port 21 -- is this port really open?
+adjust_timeouts2: packet supposedly had rtt of -3697746 microseconds.  Ignoring time.
+Nmap scan report for 10.10.255.29
+Host is up (1.2s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxrwxrwx    2 65534    65534        4096 Nov 12 04:53 ftp [NSE: writeable]
+| -rw-r--r--    1 0        0          251631 Nov 12 04:02 important.jpg
+|_-rw-r--r--    1 0        0             208 Nov 12 04:53 notice.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.4.23.120
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b9:a6:0b:84:1d:22:01:a4:01:30:48:43:61:2b:ab:94 (RSA)
+|   256 ec:13:25:8c:18:20:36:e6:ce:91:0e:16:26:eb:a2:be (ECDSA)
+|_  256 a2:ff:2a:72:81:aa:a2:9f:55:a4:dc:92:23:e6:b4:3f (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Maintenance
+Aggressive OS guesses: Vonage V-Portal VoIP adapter (98%), Cisco Unified Communications Manager VoIP adapter (98%), Android 7.1.2 (Linux 3.10) (98%), DD-WRT v23 (Linux 2.4.36) (98%), Vyatta router (Linux 2.6.26) (98%), Linux 2.6.18 (98%), Linux 2.6.26 (PCLinuxOS) (98%), MikroTik RouterOS 5.25 (Linux 2.6.35) (98%), Netgear ReadyNAS Duo NAS device (RAIDiator 4.1.4) (98%), Sun OpenSolaris 2009.06 (98%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 4 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   633.85 ms 10.4.0.1
+2   ... 3
+4   894.43 ms 10.10.255.29
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan 19 20:24:55 2021 -- 1 IP address (1 host up) scanned in 209.59 seconds
