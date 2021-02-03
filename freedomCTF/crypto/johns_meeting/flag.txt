@@ -1,0 +1,2 @@
+pdf pass : loverena
+flag{crack_carck_not_hack}
