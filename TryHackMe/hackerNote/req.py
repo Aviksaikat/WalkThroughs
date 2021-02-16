@@ -41,6 +41,7 @@ for username in usernames:
 	time.sleep(0.01)
 
 print("Finished POST requests")
+
 # Longer times normally mean valid usernames as passwords were verified
 largestTime = max(timings.values())
 smallestTime = min(timings.values())

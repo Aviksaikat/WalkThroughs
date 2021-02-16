@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 
 """
 decode the binary online https://www.binaryhexconverter.com/binary-to-decimal-converter
@@ -10,5 +10,4 @@ l = [102,108,97,103,123,104,51,108,108,48,95,99,121,98,51,114,66,51,103,105,110,
 
 for i in l:
 	print(chr(i),end="")
-
-
+print()

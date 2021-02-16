@@ -1,0 +1,62 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.12
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://10.10.69.64/wordpress/ [10.10.69.64]
+[32m[+][0m Started: Wed Jan 27 20:33:28 2021
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Wed Jan 27 20:33:38 2021
+[32m[+][0m Requests Done: 11
+[32m[+][0m Cached Requests: 8
+[32m[+][0m Data Sent: 2.81 KB
+[32m[+][0m Data Received: 17.707 KB
+[32m[+][0m Memory used: 74.926 MB
+[32m[+][0m Elapsed time: 00:00:09
+
+Scan Aborted: Canceled by User
+Trace: /usr/lib/ruby/vendor_ruby/ffi/pointer.rb:52:in `read_string'
+/usr/lib/ruby/vendor_ruby/ethon/easy/callbacks.rb:57:in `block in header_write_callback'
+/usr/lib/ruby/vendor_ruby/ethon/easy/operations.rb:29:in `easy_perform'
+/usr/lib/ruby/vendor_ruby/ethon/easy/operations.rb:29:in `perform'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/operations.rb:16:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/cacheable.rb:18:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/block_connection.rb:31:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/stubbable.rb:25:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/before.rb:26:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/browser/actions.rb:20:in `get'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/target/server/generic.rb:42:in `directory_listing?'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.12/app/finders/interesting_findings/upload_directory_listing.rb:12:in `aggressive'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/base_finders.rb:31:in `run_finder'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finders.rb:18:in `block (2 levels) in run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finders.rb:17:in `each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finders.rb:17:in `block in run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finders.rb:16:in `each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finders.rb:16:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finder.rb:21:in `find'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/finders/independent_finder.rb:12:in `find'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/target.rb:28:in `interesting_findings'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/app/controllers/interesting_findings.rb:19:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/controllers.rb:50:in `each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/controllers.rb:50:in `block in run'
+/usr/lib/ruby/2.7.0/timeout.rb:78:in `timeout'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/controllers.rb:45:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/scan.rb:24:in `run'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.12/bin/wpscan:17:in `block in <top (required)>'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.12.2/lib/cms_scanner/scan.rb:15:in `initialize'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.12/bin/wpscan:6:in `new'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.12/bin/wpscan:6:in `<top (required)>'
+/usr/bin/wpscan:23:in `load'
+/usr/bin/wpscan:23:in `<main>'

@@ -10,6 +10,7 @@ def logIn(username,password):
 		"submit": "Login",
 		})
 	return req
+
 with open("payloads",'r') as f:
 	usernames = [line.strip() for line in f.read().split("\n") ]
 
