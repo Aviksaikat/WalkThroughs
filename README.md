@@ -1,4 +1,4 @@
 # WalkThroughs
-This Repository Contains Various CTF's &amp; Challenges Walk-Throughs
+This Repository Contains Various CTFs &amp;  Walk-Throughs
 
 
