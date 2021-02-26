@@ -73,16 +73,16 @@ bfc1e6b4a16579e85e06fee4c36ff8c02fb13795
 ```
 2. Perform a persistent XSS!
 ```
-
+149aa8ce13d7a4a8a931472308e269c94dc5f156
 ```
 3. Perform a reflected XSS!
 ```
-
+23cefee1527bde039295b2616eeb29e1edc660a0
 ```
 
 # Task 8 
 
 1. Access the /#/score-board/ page
 ```
-
+7efd3174f9dd5baa03a7882027f2824d2f72d86e
 ```
