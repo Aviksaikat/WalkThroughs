@@ -7,56 +7,57 @@
 [38;2;255;255;0m:[38;2;249;255;0m [38;2;242;255;0mh[38;2;236;255;0mt[38;2;230;255;0mt[38;2;223;255;0mp[38;2;217;255;0ms[38;2;210;255;0m:[38;2;204;255;0m/[38;2;198;255;0m/[38;2;191;255;0md[38;2;185;255;0mi[38;2;179;255;0ms[38;2;172;255;0mc[38;2;166;255;0mo[38;2;159;255;0mr[38;2;153;255;0md[38;2;147;255;0m.[38;2;140;255;0mg[38;2;134;255;0mg[38;2;128;255;0m/[38;2;121;255;0mG[38;2;115;255;0mF[38;2;108;255;0mr[38;2;102;255;0mQ[38;2;96;255;0ms[38;2;89;255;0mG[38;2;83;255;0my[38;2;77;255;0m [38;2;70;255;0m [38;2;64;255;0m [38;2;57;255;0m [38;2;51;255;0m [38;2;45;255;0m [38;2;38;255;0m [38;2;32;255;0m [38;2;26;255;0m [38;2;19;255;0m [38;2;13;255;0m [38;2;6;255;0m:[0m
 [38;2;255;255;0m:[38;2;249;255;0m [38;2;242;255;0mh[38;2;236;255;0mt[38;2;230;255;0mt[38;2;223;255;0mp[38;2;217;255;0ms[38;2;210;255;0m:[38;2;204;255;0m/[38;2;198;255;0m/[38;2;191;255;0mg[38;2;185;255;0mi[38;2;179;255;0mt[38;2;172;255;0mh[38;2;166;255;0mu[38;2;159;255;0mb[38;2;153;255;0m.[38;2;147;255;0mc[38;2;140;255;0mo[38;2;134;255;0mm[38;2;128;255;0m/[38;2;121;255;0mR[38;2;115;255;0mu[38;2;108;255;0ms[38;2;102;255;0mt[38;2;96;255;0mS[38;2;89;255;0mc[38;2;83;255;0ma[38;2;77;255;0mn[38;2;70;255;0m/[38;2;64;255;0mR[38;2;57;255;0mu[38;2;51;255;0ms[38;2;45;255;0mt[38;2;38;255;0mS[38;2;32;255;0mc[38;2;26;255;0ma[38;2;19;255;0mn[38;2;13;255;0m [38;2;6;255;0m:[0m
 [38;2;255;255;0m [38;2;249;255;0m-[38;2;242;255;0m-[38;2;236;255;0m-[38;2;230;255;0m-[38;2;223;255;0m-[38;2;217;255;0m-[38;2;210;255;0m-[38;2;204;255;0m-[38;2;198;255;0m-[38;2;191;255;0m-[38;2;185;255;0m-[38;2;179;255;0m-[38;2;172;255;0m-[38;2;166;255;0m-[38;2;159;255;0m-[38;2;153;255;0m-[38;2;147;255;0m-[38;2;140;255;0m-[38;2;134;255;0m-[38;2;128;255;0m-[38;2;121;255;0m-[38;2;115;255;0m-[38;2;108;255;0m-[38;2;102;255;0m-[38;2;96;255;0m-[38;2;89;255;0m-[38;2;83;255;0m-[38;2;77;255;0m-[38;2;70;255;0m-[38;2;64;255;0m-[38;2;57;255;0m-[38;2;51;255;0m-[38;2;45;255;0m-[38;2;38;255;0m-[38;2;32;255;0m-[38;2;26;255;0m-[38;2;19;255;0m-[38;2;13;255;0m-[0m[0m
-Nmap? More like slowmap.🐢
+Please contribute more quotes to our GitHub https://github.com/rustscan/rustscan
 
 [1;34m[~][0m The config file is expected to be at "/home/avik/.rustscan.toml"
 [1;34m[~][0m Automatically increasing ulimit value to 5000.
-Open 10.10.69.64:21
-Open 10.10.69.64:22
+Open 10.10.63.255:22
+Open 10.10.63.255:21
+Open 10.10.63.255:80
 [1;34m[~][0m Starting Script(s)
 [1;38;2;0;255;9m[>][0m Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
 
-[1;34m[~][0m Starting Nmap 7.91 ( https://nmap.org ) at 2021-01-27 20:28 IST
+[1;34m[~][0m Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-27 19:20 IST
 NSE: Loaded 153 scripts for scanning.
 NSE: Script Pre-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
-Initiating Ping Scan at 20:28
-Scanning 10.10.69.64 [2 ports]
-Completed Ping Scan at 20:28, 2.61s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 20:28
-Completed Parallel DNS resolution of 1 host. at 20:28, 0.19s elapsed
-DNS resolution of 1 IPs took 0.19s. Mode: Async [#: 3, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
-Initiating Connect Scan at 20:28
-Scanning 10.10.69.64 [2 ports]
-Discovered open port 22/tcp on 10.10.69.64
-Discovered open port 21/tcp on 10.10.69.64
-Completed Connect Scan at 20:28, 0.52s elapsed (2 total ports)
-Initiating Service scan at 20:28
-Scanning 2 services on 10.10.69.64
-Completed Service scan at 20:28, 0.98s elapsed (2 services on 1 host)
-NSE: Script scanning 10.10.69.64.
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
+Initiating Ping Scan at 19:20
+Scanning 10.10.63.255 [2 ports]
+Completed Ping Scan at 19:20, 0.50s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:20
+Completed Parallel DNS resolution of 1 host. at 19:20, 0.11s elapsed
+DNS resolution of 1 IPs took 0.11s. Mode: Async [#: 3, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 19:20
+Scanning 10.10.63.255 [3 ports]
+Discovered open port 22/tcp on 10.10.63.255
+Discovered open port 21/tcp on 10.10.63.255
+Discovered open port 80/tcp on 10.10.63.255
+Completed Connect Scan at 19:20, 0.55s elapsed (3 total ports)
+Initiating Service scan at 19:20
+Scanning 3 services on 10.10.63.255
+Completed Service scan at 19:20, 7.09s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.63.255.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 20:28
-NSE: [ftp-bounce 10.10.69.64:21] PORT response: 500 Illegal PORT command.
-NSE Timing: About 99.64% done; ETC: 20:28 (0:00:00 remaining)
-Completed NSE at 20:28, 32.29s elapsed
+Initiating NSE at 19:20
+NSE: [ftp-bounce 10.10.63.255:21] PORT response: 500 Illegal PORT command.
+Completed NSE at 19:20, 17.46s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 9.74s elapsed
+Initiating NSE at 19:20
+Completed NSE at 19:20, 3.99s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
-Nmap scan report for 10.10.69.64
-Host is up, received conn-refused (0.58s latency).
-Scanned at 2021-01-27 20:28:01 IST for 47s
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
+Nmap scan report for 10.10.63.255
+Host is up, received conn-refused (0.52s latency).
+Scanned at 2021-02-27 19:20:03 IST for 30s
 
 PORT   STATE SERVICE REASON  VERSION
 21/tcp open  ftp     syn-ack vsftpd 3.0.3
@@ -82,19 +83,24 @@ PORT   STATE SERVICE REASON  VERSION
 | ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF1Ww9ui4NQDHA5l+lumRpLsAXHYNk4lkghej9obWBlOwnV+tIDw4mgmuO1C3U/WXRgn0GrESAnMpi1DSxy8t1k=
 |   256 fb:fa:db:ea:4e:ed:20:2b:91:18:9d:58:a0:6a:50:ec (ED25519)
 |_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAOG6ExdDNH+xAyzd4w1G4E9sCfiiooQhmebQX6nIcH/
+80/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 NSE: Script Post-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 20:28
-Completed NSE at 20:28, 0.00s elapsed
+Initiating NSE at 19:20
+Completed NSE at 19:20, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 46.83 seconds
+Nmap done: 1 IP address (1 host up) scanned in 30.51 seconds
 
