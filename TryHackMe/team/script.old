@@ -1,0 +1,18 @@
+#!/bin/bash
+read -p "Enter Username: " ftpuser
+read -sp "Enter Username Password: " T3@m$h@r3
+echo
+ftp_server="localhost"
+ftp_username="$Username"
+ftp_password="$Password"
+mkdir /home/username/linux/source_folder
+source_folder="/home/username/source_folder/"
+cp -avr config* $source_folder
+dest_folder="/home/username/linux/dest_folder/"
+ftp -in $ftp_server <<END_SCRIPT
+quote USER $ftp_username
+quote PASS $decrypt
+cd $source_folder
+!cd $dest_folder
+mget -R *
+quit

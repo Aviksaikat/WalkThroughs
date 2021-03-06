@@ -1,0 +1,21 @@
+#!/bin/bash
+read -p "Enter Username: " REDACTED
+read -sp "Enter Username Password: " REDACTED
+echo
+ftp_server="localhost"
+ftp_username="$Username"
+ftp_password="$Password"
+mkdir /home/username/linux/source_folder
+source_folder="/home/username/source_folder/"
+cp -avr config* $source_folder
+dest_folder="/home/username/linux/dest_folder/"
+ftp -in $ftp_server <<END_SCRIPT
+quote USER $ftp_username
+quote PASS $decrypt
+cd $source_folder
+!cd $dest_folder
+mget -R *
+quit
+
+# Updated version of the script
+# Note to self had to change the extension of the old "script" in this folder, as it has creds in
