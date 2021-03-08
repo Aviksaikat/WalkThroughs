@@ -1,0 +1,32 @@
+# Nmap 7.91 scan initiated Mon Mar  8 19:49:43 2021 as: nmap -sS -sV -sC -v -A -T4 -oN nmap 10.10.241.157
+WARNING: RST from 10.10.241.157 port 21 -- is this port really open?
+adjust_timeouts2: packet supposedly had rtt of -2464324 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -584496 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -584496 microseconds.  Ignoring time.
+Nmap scan report for 10.10.241.157
+Host is up (0.72s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+8081/tcp open  http    nginx 1.14.0 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: CA4D0E532A1010F93901DFCB3A9FC682
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: magician
+Aggressive OS guesses: Linux 3.1 (94%), Linux 3.2 (94%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Android 4.1.1 (92%), Citrix XenServer 6.1 (Linux 2.6.32) (92%), Linux 2.6.31 - 2.6.32 (92%), Linux 3.2 - 4.9 (92%), Linux 3.8 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 84.424 days (since Mon Dec 14 09:41:03 2020)
+Network Distance: 4 hops
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   357.92 ms 10.4.0.1
+2   ... 3
+4   787.61 ms 10.10.241.157
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar  8 19:51:05 2021 -- 1 IP address (1 host up) scanned in 82.15 seconds
