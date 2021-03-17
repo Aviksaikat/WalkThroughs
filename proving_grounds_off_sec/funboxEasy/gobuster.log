@@ -1,0 +1,22 @@
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://192.168.164.111/gym/
+[+] Threads:        40
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Timeout:        10s
+===============================================================
+2021/03/12 19:48:13 Starting gobuster
+===============================================================
+/profile (Status: 301)
+/img (Status: 301)
+/admin (Status: 301)
+/upload (Status: 301)
+/include (Status: 301)
+/LICENSE (Status: 200)
+/att (Status: 301)
+/ex (Status: 301)
+/boot (Status: 301)

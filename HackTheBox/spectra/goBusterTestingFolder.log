@@ -1,0 +1,17 @@
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://spectra.htb/testing/
+[+] Threads:        40
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Extensions:     bak,php,txt,save
+[+] Timeout:        10s
+===============================================================
+2021/02/28 20:28:49 Starting gobuster
+===============================================================
+/wp-content (Status: 301)
+/license.txt (Status: 200)
+/wp-includes (Status: 301)

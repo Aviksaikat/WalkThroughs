@@ -1,0 +1,32 @@
+# Nmap 7.91 scan initiated Fri Mar  5 19:59:14 2021 as: nmap -sS -sV -sC -v -A -T4 -oN nmap 10.10.10.28
+Increasing send delay for 10.10.10.28 from 0 to 5 due to 89 out of 221 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -9632095 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -9632095 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -28740458 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -28740458 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.28
+Host is up (0.82s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 61:e4:3f:d4:1e:e2:b2:f1:0d:3c:ed:36:28:36:67:c7 (RSA)
+|   256 24:1d:a4:17:d4:e3:2a:9c:90:5c:30:58:8f:60:77:8d (ECDSA)
+|_  256 78:03:0e:b4:a1:af:e5:c2:f9:8d:29:05:3e:29:c9:f2 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Welcome
+Aggressive OS guesses: Linux 4.15 - 5.6 (95%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.3 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 5.0 - 5.4 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Mar  5 20:01:30 2021 -- 1 IP address (1 host up) scanned in 136.51 seconds
