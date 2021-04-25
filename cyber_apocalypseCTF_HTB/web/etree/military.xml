@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<military>
+    <district id="confidential">
+    
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+    </district>
+
+    <district id="confidential">
+    
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+            <selfDestructCode>CHTB{f4k3_fl4g</selfDestructCode>
+        </staff>
+        
+    </district>
+
+    <district id="confidential">
+    
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+            <selfDestructCode>_f0r_t3st1ng}</selfDestructCode>
+        </staff>
+        <staff>
+            <name>confidential</name>
+            <age>confidential</age>
+            <rank>confidential</rank>
+            <kills>confidential</kills>
+            
+        </staff>
+    </district>
+</military>

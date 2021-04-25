@@ -1,0 +1,51 @@
+html
+	head
+		title HEROS
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+		link(rel="icon" href="/images/favicon.webp")
+		link(href="/css/main.css" rel="stylesheet")
+
+	body(class="is-preload landing")
+	div(class="overlay")
+	div(class="scanline")
+
+	div(class="wrapper")
+		div(class="content clearfix")
+			header(class="site clearfix")
+			div(class="col one")
+				img(src="images/logo.gif" alt="HTB Industries" width="740" height="729" id="logo-v")
+			div(class="col two")
+				p HTB INDUSTRIES (TM)
+				p HEURISTICALLY ENCRYPTED REAL-TIME OPERATING SYSTEM (HEROS)
+				p ----------------------------------------
+				p HEROS v 1.0.0
+				p (C)2021 HTB INDUSTRIES
+				p - CYBER APOCALYPSE -
+		nav(class="site clear")
+			ul
+				li
+					a(href="/" title="") Return Home
+				li 
+					a(href="#" title="") Our Clients
+				li
+					a(href="#" title="") Contact Us	
+		p System Administrator Integrated Message System (SAIMS)
+		p System Administrator (SYSADM) - Elliot Alderson
+
+		p(class="clear")
+		br
+		div#login_system
+			p Welcome to the System Administrator Integrated Message System (SAIMS). Fill out the fields below and press the SUBMIT button. The system administrator (SYSADM) will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator"s Office.
+			br
+			form(id="login" method="POST")
+				label Username >>
+				input(type="text" name="username" id="username")
+				label Password >>
+				input(type="text" name="password" id="password")
+				br
+				br
+				br
+				input(type="submit" id="submit" value="Submit")
+			h2#response
+	script(src="/js/main.js")

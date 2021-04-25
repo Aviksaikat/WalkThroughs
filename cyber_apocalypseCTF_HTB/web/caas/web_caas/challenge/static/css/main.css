@@ -1,0 +1,75 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1, p {
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: white;
+}
+
+strong {
+  color: white;
+}
+
+body {
+  font-family: "VT323", monospace;
+  color: white;
+  background: black;
+  font-size: 1.25em;
+}
+
+textarea {
+  font-family: "VT323", monospace;
+  color: white;
+  background: transparent;
+  border-width: 0px;
+  font-size: 1em;
+  resize: none;
+  width: 800px;
+  height: 500px;
+  outline:none;
+}
+
+fieldset {
+  width: fit-content;
+}
+
+button {
+  background-color: #21902b;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "VT323", monospace;
+  font-size: 1em;
+}
+
+.main {
+  padding: 0.1em 0.1em 0.1em 1em;
+}
+
+.green {
+  color: #34fc47;
+}
+
+input {
+  background-color: black;
+  color: #34fc47;
+  width: 500px;
+  border-width: 0px;
+  font-size: 1rem;
+  outline:none;
+}
+
+.margin {
+  margin-top: 40px;
+}

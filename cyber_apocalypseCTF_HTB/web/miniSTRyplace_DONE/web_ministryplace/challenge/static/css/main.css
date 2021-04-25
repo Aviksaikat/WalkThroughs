@@ -1,0 +1,72 @@
+.body, .html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: white;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.language {
+float: right;
+margin-right: 40px;
+margin-top: 20px;
+z-index: 1;
+position: relative;
+}
+
+.parallax {
+  background-position: center center;
+  background-size: auto 500px;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 500px;
+}
+
+.parallax-stars {
+  background-image: url(/static/images/blue-and-purple-cosmic-sky-956999.jpg);
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-spacestation {
+  background-image: url(/static/images/spacestation_bottomright.png);
+  background-position: 85% 25% !important;
+  background-repeat: no-repeat;
+}
+
+.parallax-spaceshuttle {
+  background-image: url(/static/images/spaceshuttle_dark.png);
+  position: absolute;
+  background-position: 0% 75% !important;
+  background-repeat: no-repeat;
+}
+
+.parallax-earth {
+  background-image: url(/static/images/earth_small_top.png);
+  background-position: 65% !important;
+  background-repeat: no-repeat;
+}
+
+
+.parallax-moon {
+  background-image: url(/static/images/moon.png);
+  background-position: 85% !important;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+
+.parallax-ufo {
+  background-image: url(/static/images/ufo.png);
+  background-position: -5% !important;
+  background-repeat: no-repeat;
+}  
