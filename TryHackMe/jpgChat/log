@@ -1,2 +1,0 @@
-uid=1000(avik) gid=1000(avik) groups=1000(avik),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),109(netdev),120(bluetooth),128(lpadmin),137(kaboxer)
-ss
