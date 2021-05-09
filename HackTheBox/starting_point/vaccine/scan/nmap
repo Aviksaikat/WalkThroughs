@@ -1,0 +1,29 @@
+# Nmap 7.91 scan initiated Sun May  9 19:45:21 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.10.46
+Nmap scan report for 10.10.10.46
+Host is up (0.32s latency).
+Not shown: 993 closed ports
+PORT     STATE    SERVICE        VERSION
+21/tcp   open     ftp            vsftpd 3.0.3
+22/tcp   open     ssh            OpenSSH 8.0p1 Ubuntu 6build1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 c0:ee:58:07:75:34:b0:0b:91:65:b2:59:56:95:27:a4 (RSA)
+|   256 ac:6e:81:18:89:22:d7:a7:41:7d:81:4f:1b:b8:b2:51 (ECDSA)
+|_  256 42:5b:c3:21:df:ef:a2:0b:c9:5e:03:42:1d:69:d0:28 (ED25519)
+80/tcp   open     http           Apache httpd 2.4.41 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: MegaCorp Login
+714/tcp  filtered iris-xpcs
+843/tcp  filtered unknown
+1862/tcp filtered mysql-cm-agent
+8443/tcp filtered https-alt
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May  9 19:47:04 2021 -- 1 IP address (1 host up) scanned in 102.61 seconds
