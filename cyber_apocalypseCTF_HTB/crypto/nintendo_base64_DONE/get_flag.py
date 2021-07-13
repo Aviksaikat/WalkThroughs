@@ -12,7 +12,7 @@ with open ("output.txt", 'r') as f:
 decoded = base64.b64decode(l).decode('utf-8')
 
 #print(decoded)
-#print("[*]Decoding")
+print("[*]Decoding")
 
 #decode while not getting the flag
 while(decoded[:4] != "CHTB"):
