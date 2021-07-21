@@ -1,0 +1,70 @@
+server {
+    listen 8080; ## listen for ipv4; this line is default and implied
+    listen [::]:8080; ## listen for ipv6
+
+    root /var/www/html;
+    index index.php index.html index.htm;
+    port_in_redirect off;
+    server_name _;
+
+    # Make site accessible from http://localhost/
+    #server_name localhost;
+
+    # If block for setting the time for the logfile
+    if ($time_iso8601 ~ "^(\d{4})-(\d{2})-(\d{2})") {
+       set $year $1;
+       set $month $2;
+       set $day $3;
+    }
+    # Disable sendfile as per https://docs.vagrantup.com/v2/synced-folders/virtualbox.html
+    sendfile off;
+
+        set $http_x_forwarded_for_filt $http_x_forwarded_for;
+        if ($http_x_forwarded_for_filt ~ ([0-9]+\.[0-9]+\.[0-9]+\.)[0-9]+) {
+                set $http_x_forwarded_for_filt $1???;
+        }
+
+    # Add stdout logging
+
+    access_log /var/log/nginx/$hostname-access-$year-$month-$day.log openshift_log;
+    error_log /var/log/nginx/error.log info;
+
+    location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to index.html
+        try_files $uri $uri/ /index.php?q=$uri&$args;
+        server_tokens off;
+    }
+
+    #error_page 404 /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+    location ~ \.php$ {
+        try_files $uri $uri/ /index.php?q=$uri&$args;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php/php5.6-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param REMOTE_ADDR $http_x_forwarded_for;
+    }
+
+    location ~ /\. {
+            log_not_found off;
+            deny all;
+    }
+    location /web-img {
+        alias /images/;
+        autoindex on;
+    }
+    location ~* \.(ini|docx|pcapng|doc)$ {  
+         deny all;  
+    }  
+
+    include /var/www/nginx[.]conf;

@@ -1,0 +1,29 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://tenet.htb/wp-admin/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/06/23 20:40:22 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 274]
+/.htpasswd            (Status: 403) [Size: 274]
+/.htaccess            (Status: 403) [Size: 274]
+/admin.php            (Status: 302) [Size: 0] [--> http://tenet.htb/wp-login.php?redirect_to=http%3A%2F%2Ftenet.htb%2Fwp-admin%2Fadmin.php&reauth=1]
+/css                  (Status: 301) [Size: 313] [--> http://tenet.htb/wp-admin/css/]                                                                
+/images               (Status: 301) [Size: 316] [--> http://tenet.htb/wp-admin/images/]                                                             
+/includes             (Status: 301) [Size: 318] [--> http://tenet.htb/wp-admin/includes/]                                                           
+/index.php            (Status: 302) [Size: 0] [--> http://tenet.htb/wp-login.php?redirect_to=http%3A%2F%2Ftenet.htb%2Fwp-admin%2Findex.php&reauth=1]
+/js                   (Status: 301) [Size: 312] [--> http://tenet.htb/wp-admin/js/]                                                                 
+/maint                (Status: 301) [Size: 315] [--> http://tenet.htb/wp-admin/maint/]                                                              
+/network              (Status: 301) [Size: 317] [--> http://tenet.htb/wp-admin/network/]                                                            
+/user                 (Status: 301) [Size: 314] [--> http://tenet.htb/wp-admin/user/]                                                               
+===============================================================
+2021/06/23 20:41:08 Finished
+===============================================================
