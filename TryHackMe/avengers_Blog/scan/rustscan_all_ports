@@ -1,0 +1,25 @@
+# Nmap 7.91 scan initiated Tue Jul 27 11:22:45 2021 as: nmap -vvv -p 21,22,80 -sV -T4 -sC -A -oN scan/rustscan_all_ports -Pn 10.10.80.221
+Nmap scan report for 10.10.80.221
+Host is up, received user-set (0.53s latency).
+Scanned at 2021-07-27 11:22:46 IST for 28s
+
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 3.0.3
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 ba:94:9c:1f:64:79:31:b5:87:08:50:b1:fc:f3:97:1d (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCeB9knr6tSAWFrLc3eZms8iwEr9mY/Ps+/Xs5jY9XpWtlkRf9+G/hsMkcS9khh93+j9fPnUSt0i5zIU1IgZUiicAeyRfDIkMsShjUyWfln9jNXcbT1hM4Z7T48IKjVeNJyyKPW6wnuLMZDpU/QXgxV4JbTvJ7Jq7NKeOmTUas4o60tHUuWVaHNs0srcdD/1SI8dttM5B6knQxqEYgzLCLwz9F8CQ+7cJ/jykiL7p1ghoIZOOeXaDDr1+PURF0E88VcAIPH0679JhtItOv0NtKgbdcE6MHukvcWmTVwBc5LcCEElvfLjHKlbSLJTTAiodbzZDx0Ub8LDkeAtzsK/QcR
+|   256 95:00:e2:48:17:a1:ff:e8:20:d1:da:45:dd:f5:34:ec (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBwOLvnRAR+Os3erYQGTkEzB/x//19W+jz1Qoc1tGDFgdaqQ1a4FwABzTgwdULq5+hw0UIjMByY6zOCVWsBaVXU=
+|   256 cc:fb:79:24:57:dc:89:bd:8b:df:b7:41:0a:c8:2f:77 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOaQ1XnI+0siMIUVtBcw0CqzgutAOk3m4BUmPeX+jPQS
+80/tcp open  http    syn-ack Node.js Express framework
+|_http-favicon: Unknown favicon MD5: E084507EB6547A72F9CEC12E0A9B7A36
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Avengers! Assemble!
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 27 11:23:14 2021 -- 1 IP address (1 host up) scanned in 29.80 seconds
