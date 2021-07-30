@@ -2,7 +2,6 @@
 
 > Saikat Karmakar | Jul 25 : 2021
 
-
 ---
 
 ## Task 2
