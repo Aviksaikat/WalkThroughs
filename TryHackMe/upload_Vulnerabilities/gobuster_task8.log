@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://annex.uploadvulns.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/08/04 13:47:40 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 286]
+/.htpasswd            (Status: 403) [Size: 286]
+/assets               (Status: 301) [Size: 331] [--> http://annex.uploadvulns.thm/assets/]
+/favicon.ico          (Status: 200) [Size: 1742]                                          
+/privacy              (Status: 301) [Size: 332] [--> http://annex.uploadvulns.thm/privacy/]
+/server-status        (Status: 403) [Size: 286]                                            
+===============================================================
+2021/08/04 13:51:19 Finished
+===============================================================
