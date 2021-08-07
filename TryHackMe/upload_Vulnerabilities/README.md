@@ -59,7 +59,7 @@ THM{MGEyYzJiYmI3ODIyM2FlNTNkNjZjYjFl}
 
 1. What is the flag in /var/www/?
 ```
-
+THM{MWY5ZGU4NzE0ZDlhNjE1NGM4ZThjZDJh}
 ```
 
 ## Task 11
