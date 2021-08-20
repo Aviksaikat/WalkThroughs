@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>10.10.222.92 / 10.10.222.92 port 8080</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>10.10.222.92</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>10.10.222.92</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>8080</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>Apache-Coyote/1.1</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>Retrieved x-powered-by header: Servlet/3.0; JBossAS-6</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a><br>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">OSVDB Entries</td>
+    <td>
+      <a href="http://osvdb.org/0" title="More vulnerability information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a><br>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">OSVDB Entries</td>
+    <td>
+      <a href="http://osvdb.org/0" title="More vulnerability information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a><br>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">OSVDB Entries</td>
+    <td>
+      <a href="http://osvdb.org/0" title="More vulnerability information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a><br>
+      <a href="http://10.10.222.92:8080/">http://10.10.222.92:8080/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">OSVDB Entries</td>
+    <td>
+      <a href="http://osvdb.org/0" title="More vulnerability information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/favicon.ico</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/favicon.ico file identifies this app/server as: JBoss Server</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.10.222.92:8080/favicon.ico">http://10.10.222.92:8080/favicon.ico</a><br>
+      <a href="http://10.10.222.92:8080/favicon.ico">http://10.10.222.92:8080/favicon.ico</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">OSVDB Entries</td>
+    <td>
+      <a href="http://osvdb.org/39272" title="More vulnerability information on OSVDB.org">OSVDB-39272</a>
+    </td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1970-01-01 05:30:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2021-08-19 12:08:29</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>1629355109 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>472 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.1.6</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h 10.10.222.92 -Display 2 -p 8080 -o report-8080.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Thu Aug 19 11:59:38 2021</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Thu Jan  1 05:30:00 1970</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td> seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
