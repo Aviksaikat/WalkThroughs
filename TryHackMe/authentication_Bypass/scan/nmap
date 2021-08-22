@@ -1,0 +1,24 @@
+# Nmap 7.91 scan initiated Sun Aug 22 11:42:54 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.246.178
+Warning: 10.10.246.178 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.246.178
+Host is up (0.48s latency).
+Not shown: 997 closed ports
+PORT     STATE    SERVICE     VERSION
+22/tcp   open     ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 9c:8b:93:cb:2d:d4:47:bb:d9:ff:a0:a5:61:6e:4b:c0 (RSA)
+|   256 c6:e2:ee:e3:a9:85:31:7b:b0:fe:b6:ac:39:7e:e2:e6 (ECDSA)
+|_  256 19:29:6b:63:4a:aa:1e:df:c9:3c:f9:e3:11:99:af:b5 (ED25519)
+80/tcp   open     http        nginx 1.18.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: HEAD POST
+| http-robots.txt: 1 disallowed entry 
+|_/staff-portal
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Acme IT Support - Home
+2048/tcp filtered dls-monitor
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 22 11:46:20 2021 -- 1 IP address (1 host up) scanned in 206.77 seconds
