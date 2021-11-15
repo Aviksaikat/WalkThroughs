@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2021.8.2" exportTime="Fri Nov 12 20:35:03 IST 2021">
+  <item>
+    <time>Thu Jan 01 05:30:00 IST 1970</time>
+    <url><![CDATA[http://178.128.162.158:30050/?format=r]]></url>
+    <host ip="178.128.162.158">178.128.162.158</host>
+    <port>30050</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/?format=r]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[R0VUIC8/Zm9ybWF0PXIgSFRUUC8xLjENCkhvc3Q6IDE3OC4xMjguMTYyLjE1ODozMDA1MA0KVXBncmFkZS1JbnNlY3VyZS1SZXF1ZXN0czogMQ0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzkyLjAuNDUxNS4xNTkgU2FmYXJpLzUzNy4zNg0KQWNjZXB0OiB0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS9hdmlmLGltYWdlL3dlYnAsaW1hZ2UvYXBuZywqLyo7cT0wLjgsYXBwbGljYXRpb24vc2lnbmVkLWV4Y2hhbmdlO3Y9YjM7cT0wLjkNCkFjY2VwdC1FbmNvZGluZzogZ3ppcCwgZGVmbGF0ZQ0KQWNjZXB0LUxhbmd1YWdlOiBlbi1HQixlbi1VUztxPTAuOSxlbjtxPTAuOA0KQ29ubmVjdGlvbjogY2xvc2UNCg0K]]></request>
+    <status>200</status>
+    <responselength>1933</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IG5naW54DQpEYXRlOiBGcmksIDEyIE5vdiAyMDIxIDE1OjA0OjM2IEdNVA0KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgNCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LUxlbmd0aDogMTc4MQ0KDQo8aHRtbD4KPGhlYWQ+CiAgPG1ldGEgbmFtZT0nYXV0aG9yJyBjb250ZW50PSdtYWtlbGFyaXMsIG1ha2VsYXJpc2pyJz4KICA8bWV0YSBuYW1lPSd2aWV3cG9ydCcgY29udGVudD0nd2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEsIHNocmluay10by1maXQ9bm8nPgogIDx0aXRsZT5Mb3ZlVG9rPC90aXRsZT4KICA8bGluayByZWw9J3N0eWxlc2hlZXQnIGhyZWY9Jy8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzQuMC4wL2Nzcy9ib290c3RyYXAubWluLmNzcycgaW50ZWdyaXR5PSdzaGEzODQtR241Mzg0eHFRMWFvV1hBKzA1OFJYUHhQZzZmeTRJV3ZUTmgwRTI2M1htRmNKbFNBd2lHZ0ZBVy9kQWlTNkpYbScgY3Jvc3NvcmlnaW49J2Fub255bW91cyc+CiAgPGxpbmsgcmVsPSdzdHlsZXNoZWV0JyBocmVmPScvL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9mb250LWF3ZXNvbWUvNS4xNS4yL2Nzcy9hbGwubWluLmNzcycgaW50ZWdyaXR5PSdzaGE1MTItSEs1ZmdMQkwreHU2ZG0vSWkzejR4aGxTVXlaZ1RUOXR1Yy9oU3J0dzZ1ekpPdmdScjJhOWp5eHhUMWVseStCK3hGQW1KS1ZTVGJwTS9DdUw3cXhPOHc9PScgY3Jvc3NvcmlnaW49J2Fub255bW91cycgLz4KICA8bGluayByZWw9J3N0eWxlc2hlZXQnIGhyZWY9Jy9zdGF0aWMvY3NzL21haW4uY3NzJyAvPgogIDxsaW5rIHJlbD0ncHJlY29ubmVjdCcgaHJlZj0nLy9mb250cy5nc3RhdGljLmNvbSc+CiAgPGxpbmsgbGluaz0ncHJlbG9hZCcgaHJlZj0nLy9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1QcmVzcytTdGFydCsyUCZkaXNwbGF5PXN3YXAnIHJlbD0nc3R5bGVzaGVldCc+CiAgPGxpbmsgcmVsPSdpY29uJyBocmVmPScvYXNzZXRzL2Zhdmljb24ucG5nJyAvPgo8L2hlYWQ+Cjxib2R5Pgo8ZGl2IGlkPSdtYWluJyBjbGFzcz0nY29udGFpbmVyJz4KICA8aDEgaWQ9J3RpdGxlJz4KICAgIDxpIGNsYXNzPSdmYXMgZmEtaGVhcnQgcHVsc2UnPjwvaT4gPGI+TG92ZVRvazwvYj4gPGkgY2xhc3M9J2ZhcyBmYS1oZWFydCBwdWxzZSc+PC9pPgogIDwvaDE+CiAgPGJyPgogIDxkaXYgaWQ9J2ltZy1kaXYnPgogICAgPGltZyBpZD0naW1hZ2UnIHNyYz0nL2Fzc2V0cy9jeWJlcnB1bmsuZ2lmJyBhbHQ9J3N0YXJpbmcgaW4gdGhlIGFieXNzJz4KICAgIDxicj4KICA8L2Rpdj4KICA8aDI+WW91J2xsIGZpbmQgbG92ZTo8L2gyPiAKICA8YnI+CiAgPHNwYW4gaWQ9J3RpbWUnPiBUaHUsIDE4IE5vdiAyMDIxIDExOjM3OjQxICswMDAwPC9zcGFuPgogIDxkaXYgY2xhc3M9J2Zvcm0tZ3JvdXAnPgogICAgPGEgaHJlZj0nP2Zvcm1hdD1yJyBjbGFzcz0nYnRuLWxnIGJ0bi1kYW5nZXIgYnRuLWJsb2NrIHRleHQtY2VudGVyJz5OYWgsIHRoYXQgZG9lc24ndCB3b3JrIGZvciBtZS4gVHJ5IGFnYWluITwvYT4KICA8L2Rpdj4KPC9kaXY+CjwvYm9keT4KPHNjcmlwdCBzcmM9Jy8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL21vbWVudC5qcy8yLjI5LjEvbW9tZW50Lm1pbi5qcycgaW50ZWdyaXR5PSdzaGE1MTItcVRYUklNeVpJRmI4aVFjZmpYV0NPOCtNNVRiYzM4UWk1V3pkUE9ZWkhJbFpwekJIRzNMM2J5ODRCQkJPaVJHaUViN0tLdEFPQXM1cVlkVWlaaVFOTlE9PScgY3Jvc3NvcmlnaW49J2Fub255bW91cyc+PC9zY3JpcHQ+IAo8c2NyaXB0IHNyYz0nL3N0YXRpYy9qcy9tYWluLmpzJz48L3NjcmlwdD4KPHNjcmlwdCBzcmM9Jy9zdGF0aWMvanMva291bGlzLmpzJz48L3NjcmlwdD4gPCEtLSBKdXN0IGEgbWVtZSAtLT4KPC9odG1sPg==]]></response>
+    <comment></comment>
+  </item>
+</items>

@@ -1,0 +1,17 @@
+test:
+  # we skip test for tags
+  only:
+    - branches
+  script:
+    # This is a template for GitlabCI project for PHP project which:
+    # 1) uses composer to install dependencies
+    # 2) uses phpunit for unit tests
+    - git submodule update --init
+    - ls -la
+    # Print all environment variables
+    # printenv
+    # Fix for circular dependency issues, setup the current version for composer:
+    # https://getcomposer.org/doc/articles/troubleshooting.md#package-not-found-on-travis-ci-org
+    - COMPOSER_ROOT_VERSION="dev-$CI_BUILD_REF_NAME" composer --prefer-source install
+    - phpunit
+    - php7cc lib

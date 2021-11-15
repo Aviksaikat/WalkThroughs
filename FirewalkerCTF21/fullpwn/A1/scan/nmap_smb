@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Mon Nov 15 00:20:14 2021 as: nmap --script smb* -v -oN scan/nmap_smb 10.129.96.48

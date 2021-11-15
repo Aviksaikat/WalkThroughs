@@ -1,0 +1,20 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.129.96.49/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/11/15 17:27:52 Starting gobuster in directory enumeration mode
+===============================================================
+/assets               (Status: 301) [Size: 150] [--> http://10.129.96.49/assets/]
+/favicon.ico          (Status: 200) [Size: 1219]                                 
+/index.php            (Status: 200) [Size: 4501]                                 
+===============================================================
+2021/11/15 17:28:29 Finished
+===============================================================
