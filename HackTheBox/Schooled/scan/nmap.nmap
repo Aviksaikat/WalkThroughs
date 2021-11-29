@@ -1,0 +1,26 @@
+# Nmap 7.91 scan initiated Sat Sep 18 20:13:19 2021 as: nmap -sC -sV -A -T4 -v -oA scan/nmap 10.10.10.234
+Increasing send delay for 10.10.10.234 from 0 to 5 due to 41 out of 102 dropped probes since last increase.
+Warning: 10.10.10.234 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.234
+Host is up (0.35s latency).
+Not shown: 996 closed ports
+PORT     STATE    SERVICE        VERSION
+22/tcp   open     ssh            OpenSSH 7.9 (FreeBSD 20200214; protocol 2.0)
+| ssh-hostkey: 
+|   2048 1d:69:83:78:fc:91:f8:19:c8:75:a7:1e:76:45:05:dc (RSA)
+|   256 e9:b2:d2:23:9d:cf:0e:63:e0:6d:b9:b1:a6:86:93:38 (ECDSA)
+|_  256 7f:51:88:f7:3c:dd:77:5e:ba:25:4d:4c:09:25:ea:1f (ED25519)
+80/tcp   open     http           Apache httpd 2.4.46 ((FreeBSD) PHP/7.4.15)
+|_http-favicon: Unknown favicon MD5: 460AF0375ECB7C08C3AE0B6E0B82D717
+| http-methods: 
+|   Supported Methods: OPTIONS HEAD GET POST TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.46 (FreeBSD) PHP/7.4.15
+|_http-title: Schooled - A new kind of educational institute
+513/tcp  filtered login
+1107/tcp filtered isoipsigport-2
+Service Info: OS: FreeBSD; CPE: cpe:/o:freebsd:freebsd
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 18 20:14:41 2021 -- 1 IP address (1 host up) scanned in 82.45 seconds

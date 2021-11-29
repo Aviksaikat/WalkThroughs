@@ -1,0 +1,31 @@
+extends layout.pug
+  
+block content
+  section(id="main" class="wrapper style1 special fade-up")
+    img(src="/images/logo.png" height="280" width="280")
+    br
+    br
+    div(class="container")
+      header(class="major")
+        h2 Agents Currently Available
+        - if (name !== undefined)
+          h2 Your search for "#{name}" returned #{agents.length} results.
+        form(method="post" action="/")
+          div(class="row gtr-uniform gtr-50")
+            div(class="col-12 col-12-xsmall")
+              input(type="text" name="name" id="name" value="" placeholder="Search for Agent")
+              submit()
+        div(class="table-wrapper")
+          table
+            thead
+              tr
+                th(scope="col") Name
+                th(scope="col") Identifier
+                th(scope="col") Score
+            tbody
+              - if (agents !== undefined) 
+                - for (var i=0; i < agents.length; i++)
+                  tr
+                    td #{agents[i].name}
+                    td #{agents[i].identifier}
+                    td #{agents[i].score}

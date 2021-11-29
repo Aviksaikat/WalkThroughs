@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Thu Sep  9 19:05:47 2021 as: nmap -vvv -p 22,80,8080 -sV -T4 -sC -A -oA scan/rustscan_all_ports 10.10.11.113
+# Ports scanned: TCP(3;22,80,8080) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.11.113 ()	Status: Up
+Host: 10.10.11.113 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx/, 8080/open/tcp//http//nginx/
+# Nmap done at Thu Sep  9 19:06:05 2021 -- 1 IP address (1 host up) scanned in 17.59 seconds

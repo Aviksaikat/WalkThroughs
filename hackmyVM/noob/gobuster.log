@@ -1,0 +1,29 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.43.192:65530/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/10/03 13:19:36 Starting gobuster in directory enumeration mode
+===============================================================
+/index                (Status: 200) [Size: 19]
+/http%3A%2F%2Fwww     (Status: 301) [Size: 45] [--> /http:/www]
+/http%3A%2F%2Fyoutube (Status: 301) [Size: 49] [--> /http:/youtube]
+/http%3A%2F%2Fblogs   (Status: 301) [Size: 47] [--> /http:/blogs]  
+/http%3A%2F%2Fblog    (Status: 301) [Size: 46] [--> /http:/blog]   
+/**http%3A%2F%2Fwww   (Status: 301) [Size: 51] [--> /%2A%2Ahttp:/www]
+/http%3A%2F%2Fcommunity (Status: 301) [Size: 51] [--> /http:/community]
+/http%3A%2F%2Fradar   (Status: 301) [Size: 47] [--> /http:/radar]      
+/http%3A%2F%2Fjeremiahgrossman (Status: 301) [Size: 58] [--> /http:/jeremiahgrossman]
+/http%3A%2F%2Fweblog  (Status: 301) [Size: 48] [--> /http:/weblog]                   
+/http%3A%2F%2Fswik    (Status: 301) [Size: 46] [--> /http:/swik]                     
+/nt4share             (Status: 301) [Size: 45] [--> /nt4share/]                      
+===============================================================
+2021/10/03 13:19:57 Finished
+===============================================================

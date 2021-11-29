@@ -1,0 +1,4 @@
+[1;34m[#][0;0m Fuzzing URLs
+[1;34m[#][0;0m Reading from list: /home/avik/.local/lib/python3.9/site-packages/raccoon_src/wordlists/fuzzlist
+	[1;32m[200][0;0m http://178.62.18.46:30266/home.php
+	[1;34m[301][0;0m http://178.62.18.46:30266/assets redirects to http://178.62.18.46/assets/

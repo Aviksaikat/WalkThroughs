@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Oct  3 20:45:43 2021 as: nmap -sC -sV -v -A -T4 -oA scan/nmap juice-shop-avik.herokuapp.com -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -v -A -T4 -oA scan/nmap juice-shop-avik.herokuapp.com" start="1633274143" startstr="Sun Oct  3 20:45:43 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1633274144"/>
+<taskend task="NSE" time="1633274144"/>
+<taskbegin task="NSE" time="1633274144"/>
+<taskend task="NSE" time="1633274144"/>
+<taskbegin task="NSE" time="1633274144"/>
+<taskend task="NSE" time="1633274144"/>
+<taskbegin task="Ping Scan" time="1633274144"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="46.137.15.86" addrtype="ipv4"/>
+<hostnames>
+<hostname name="juice-shop-avik.herokuapp.com" type="user"/>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1633274144" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1633274144"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1633274146"/>
+<taskbegin task="Connect Scan" time="1633274146"/>
+<taskend task="Connect Scan" time="1633274154" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1633274154"/>
+<taskend task="Service scan" time="1633274154" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1633274154"/>
+<taskend task="NSE" time="1633274198"/>
+<taskbegin task="NSE" time="1633274198"/>
+<taskend task="NSE" time="1633274215"/>
+<taskbegin task="NSE" time="1633274215"/>
+<taskend task="NSE" time="1633274215"/>
+<host starttime="1633274144" endtime="1633274215"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="46.137.15.86" addrtype="ipv4"/>
+<hostnames>
+<hostname name="juice-shop-avik.herokuapp.com" type="user"/>
+<hostname name="ec2-46-137-15-86.eu-west-1.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="host-unreaches" count="806"/>
+<extrareasons reason="no-responses" count="192"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="http-server-header" output="&#xa;  Cowboy&#xa;  heroku-router"><elem>Cowboy</elem>
+<elem>heroku-router</elem>
+</script><script id="http-title" output="OWASP Juice Shop"><elem key="title">OWASP Juice Shop</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="http-title" output="OWASP Juice Shop"><elem key="title">OWASP Juice Shop</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.herokuapp.com&#xa;Subject Alternative Name: DNS:*.herokuapp.com&#xa;Issuer: commonName=Amazon/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-06-01T00:00:00&#xa;Not valid after:  2022-06-30T23:59:59&#xa;MD5:   f31f 35fe e618 2238 894f c970 1839 e8ba&#xa;SHA-1: b8b9 b13f 371f 2b1b 38e8 a772 8e29 1207 1e1f 98e8"><table key="subject">
+<elem key="commonName">*.herokuapp.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Amazon</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Amazon</elem>
+<elem key="organizationalUnitName">Server CA 1B</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0637E8CAEF39449702E56A746C520FDF4CD788D79C3CCAA6E783036AC16ED6B5CFB1EEF5D796E0B0D76F541DA34BEC2F253BC6F6B589586BC3BEDA2BAACAFEC7013D47A78C9C7232947E97D52835AAE338F9BF1C5B495F5F4CFB2117368C26E187EFD8F3EE1416DC78C86577F181D2C5434CBACA29320039CF7F476ED993DA438B0E7C395B8EE45071E2C1D9D2F3DD18170930DDB808564EFDED4EC9CFC5EFED850649EC4A68D7C4FBDB0D19C5EF5B09F2106B4C499A3B3A9C1E517265726520A83520008BD90EF2D30D478C45BB47567BA50C963547712DDDA2CF95B7BBE5E01C8CDA52B984B31208B93FD45538417DE304EBC7C8B779FCF90EBEF400E2F01</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:59:A4:66:06:52:A0:7B:95:92:3C:A3:94:07:27:96:74:5B:F9:3D:D0&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F6:B5:6D:FC:9A:0A:5D:49:C2:79:73:8C:E1:82:37:73:4C:CD:69:B9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.herokuapp.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://crl.sca1b.amazontrust.com/sca1b.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.sca1b.amazontrust.com&#xa;CA Issuers - URI:http://crt.sca1b.amazontrust.com/sca1b.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 46:A5:55:EB:75:FA:91:20:30:B5:A2:89:69:F4:F3:7D:&#xa;                11:2C:41:74:BE:FD:49:B8:85:AB:F2:FC:70:FE:6D:47&#xa;    Timestamp : Jun  1 17:25:23.473 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F3:EF:98:AC:A9:C8:D3:D5:29:AA:56:&#xa;                E7:A4:7A:6C:B3:79:F2:B7:B4:1A:C8:28:71:FE:7A:B3:&#xa;                DE:ED:3C:46:22:02:21:00:BF:79:8B:C6:52:C5:0D:7B:&#xa;                74:50:FB:EB:3A:79:55:8C:19:49:2F:9C:46:B0:B9:A0:&#xa;                FB:B8:5F:F7:88:6A:73:E1&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jun  1 17:25:23.346 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:17:35:BA:96:32:35:16:40:70:0A:B7:0C:&#xa;                6C:B5:87:8C:D0:06:F8:CC:0E:BF:3F:D0:5F:27:31:4A:&#xa;                ED:16:82:F3:02:20:3F:97:72:6E:EA:50:D1:43:E6:D7:&#xa;                EE:B5:23:E8:63:12:7B:FD:B8:CD:EA:1E:7B:31:03:63:&#xa;                36:EE:CF:1F:BA:87&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 51:A3:B0:F5:FD:01:79:9C:56:6D:B8:37:78:8F:0C:A4:&#xa;                7A:CC:1B:27:CB:F7:9E:88:42:9A:0D:FE:D4:8B:05:E5&#xa;    Timestamp : Jun  1 17:25:23.410 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F1:52:4A:4C:4A:14:88:CA:14:A0:91:&#xa;                84:92:71:AE:FE:5D:2E:43:8D:78:C5:17:05:07:92:FF:&#xa;                21:89:AB:63:DF:02:20:51:62:E4:1B:4F:76:83:69:43:&#xa;                7B:6A:31:64:5A:46:48:1F:81:2E:64:74:3C:77:37:58:&#xa;                F3:44:9C:A4:31:1A:A6</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-06-01T00:00:00</elem>
+<elem key="notAfter">2022-06-30T23:59:59</elem>
+</table>
+<elem key="md5">f31f35fee6182238894fc9701839e8ba</elem>
+<elem key="sha1">b8b9b13f371f2b1b38e8a7728e2912071e1f98e8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF1DCCBLygAwIBAgIQCtUeDaAvbXKA0JQmMJtlsDANBgkqhkiG9w0BAQsFADBG&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRUwEwYDVQQLEwxTZXJ2ZXIg&#xa;Q0EgMUIxDzANBgNVBAMTBkFtYXpvbjAeFw0yMTA2MDEwMDAwMDBaFw0yMjA2MzAy&#xa;MzU5NTlaMBoxGDAWBgNVBAMMDyouaGVyb2t1YXBwLmNvbTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAMBjfoyu85RJcC5Wp0bFIP30zXiNecPMqm54MDas&#xa;Fu1rXPse7115bgsNdvVB2jS+wvJTvG9rWJWGvDvtorqsr+xwE9R6eMnHIylH6X1S&#xa;g1quM4+b8cW0lfX0z7IRc2jCbhh+/Y8+4UFtx4yGV38YHSxUNMusopMgA5z39Hbt&#xa;mT2kOLDnw5W47kUHHiwdnS890YFwkw3bgIVk797U7Jz8Xv7YUGSexKaNfE+9sNGc&#xa;XvWwnyEGtMSZo7OpweUXJlcmUgqDUgAIvZDvLTDUeMRbtHVnulDJY1R3Et3aLPlb&#xa;e75eAcjNpSuYSzEgi5P9RVOEF94wTrx8i3efz5Dr70AOLwECAwEAAaOCAugwggLk&#xa;MB8GA1UdIwQYMBaAFFmkZgZSoHuVkjyjlAcnlnRb+T3QMB0GA1UdDgQWBBT2tW38&#xa;mgpdScJ5c4zhgjdzTM1puTAaBgNVHREEEzARgg8qLmhlcm9rdWFwcC5jb20wDgYD&#xa;VR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNV&#xa;HR8ENDAyMDCgLqAshipodHRwOi8vY3JsLnNjYTFiLmFtYXpvbnRydXN0LmNvbS9z&#xa;Y2ExYi5jcmwwEwYDVR0gBAwwCjAIBgZngQwBAgEwdQYIKwYBBQUHAQEEaTBnMC0G&#xa;CCsGAQUFBzABhiFodHRwOi8vb2NzcC5zY2ExYi5hbWF6b250cnVzdC5jb20wNgYI&#xa;KwYBBQUHMAKGKmh0dHA6Ly9jcnQuc2NhMWIuYW1hem9udHJ1c3QuY29tL3NjYTFi&#xa;LmNydDAMBgNVHRMBAf8EAjAAMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdwBG&#xa;pVXrdfqRIDC1oolp9PN9ESxBdL79SbiFq/L8cP5tRwAAAXnIm8mRAAAEAwBIMEYC&#xa;IQDz75isqcjT1SmqVuekemyzefK3tBrIKHH+erPe7TxGIgIhAL95i8ZSxQ17dFD7&#xa;6zp5VYwZSS+cRrC5oPu4X/eIanPhAHUAIkVFB1lVJFaWP6Ev8fdthuAjJmOtwEt/&#xa;XcaDXG7iDwIAAAF5yJvJEgAABAMARjBEAiAXNbqWMjUWQHAKtwxstYeM0Ab4zA6/&#xa;P9BfJzFK7RaC8wIgP5dybupQ0UPm1+61I+hjEnv9uM3qHnsxA2M27s8fuocAdgBR&#xa;o7D1/QF5nFZtuDd4jwykeswbJ8v3nohCmg3+1IsF5QAAAXnIm8lSAAAEAwBHMEUC&#xa;IQDxUkpMShSIyhSgkYSSca7+XS5DjXjFFwUHkv8hiatj3wIgUWLkG092g2lDe2ox&#xa;ZFpGSB+BLmR0PHc3WPNEnKQxGqYwDQYJKoZIhvcNAQELBQADggEBAH4B5ysZQQh9&#xa;1gEyX/HHsCtOmIEwL5tRlV6lPUuF9xs8WdPio+B60q5dw4ZeXVwmysDgyo1aAfCC&#xa;FHBLnl6INjg3W70G4VDwIXzEmyjjm51lj+DLIIPFlzAF8Rtp7uCMmSO48OW3G/9g&#xa;Tqj0V9phET7N3GnNrfUttfB7s9/UAhkbk5r9Vd/Nh5a8f6pEPWN6JbPQNqgqSCx6&#xa;Q2FXc7HylhDNQgoxklg8LqVR+3nG0Gpi5NCb2STuU9l9f8EricpwZxhBNcdtmx0+&#xa;SsmBHwVfJSMf2n774KiQPv0EGFSROExU6XAJjPLhSvzeFhNr0WJUYFfPr06kUhiT&#xa;PdbBFFybL2Q=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="55741" rttvar="16103" to="120153"/>
+</host>
+<taskbegin task="NSE" time="1633274215"/>
+<taskend task="NSE" time="1633274215"/>
+<taskbegin task="NSE" time="1633274215"/>
+<taskend task="NSE" time="1633274215"/>
+<taskbegin task="NSE" time="1633274215"/>
+<taskend task="NSE" time="1633274215"/>
+<runstats><finished time="1633274215" timestr="Sun Oct  3 20:46:55 2021" summary="Nmap done at Sun Oct  3 20:46:55 2021; 1 IP address (1 host up) scanned in 71.52 seconds" elapsed="71.52" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

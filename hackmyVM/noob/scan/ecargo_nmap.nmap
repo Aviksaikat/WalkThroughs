@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Sun Oct  3 12:58:17 2021 as: nmap -sC -sV -v -A -T4 -oA scan/ecargo_nmap 192.168.43.192
+Nmap scan report for noob (192.168.43.192)
+Host is up (0.00015s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 66:6a:8e:22:cd:dd:75:52:a6:0a:46:06:bc:df:53:0f (RSA)
+|   256 c2:48:46:33:d4:fa:c0:e7:df:de:54:71:58:89:36:e8 (ECDSA)
+|_  256 5e:50:90:71:08:5a:88:62:7e:81:07:c3:9a:c1:c1:c6 (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  3 12:58:18 2021 -- 1 IP address (1 host up) scanned in 0.59 seconds

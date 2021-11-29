@@ -1,0 +1,28 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-11-06 01:00 IST
+Nmap scan report for 178.62.18.46
+Host is up (0.23s latency).
+Not shown: 744 filtered tcp ports (no-response), 236 filtered tcp ports (host-unreach)
+PORT      STATE  SERVICE
+30951/tcp closed unknown
+32771/tcp closed sometimes-rpc5
+32776/tcp closed sometimes-rpc15
+32780/tcp closed sometimes-rpc23
+40193/tcp closed unknown
+44442/tcp closed coldfusion-auth
+48080/tcp closed unknown
+49156/tcp closed unknown
+49158/tcp closed unknown
+49161/tcp closed unknown
+49400/tcp closed compaqdiag
+50000/tcp closed ibm-db2
+50002/tcp closed iiimsf
+50003/tcp closed unknown
+50800/tcp closed unknown
+54045/tcp closed unknown
+55055/tcp closed unknown
+55555/tcp closed unknown
+60443/tcp closed unknown
+63331/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 87.12 seconds
+

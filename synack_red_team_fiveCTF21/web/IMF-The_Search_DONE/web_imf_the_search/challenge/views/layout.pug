@@ -1,0 +1,30 @@
+html
+  head
+    title IMF
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    link(href='/css/main.css', rel='stylesheet')
+    block css
+    link(href='/css/noscript.css', rel='stylesheet')
+    block noscript
+    script(src="/js/jquery.min.js")
+    script(src="/js/jquery.scrolly.min.js")
+    script(src="/js/jquery.dropotron.min.js")
+    script(src="/js/jquery.scrollex.min.js")
+    script(src="/js/browser.min.js")
+    script(src="/js/breakpoints.min.js")
+    script(src="/js/util.js")
+    script(src="/js/main.js")
+    block scripts
+
+  body(class="is-preload landing")
+    div(id="page-wrapper")
+      header(id="header")
+        h1(id="logo") IMF
+        nav(id="nav")
+          ul
+            li
+              a(href="/") Home
+    block content
+
+    block pre-footer

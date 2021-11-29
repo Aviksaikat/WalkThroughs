@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Sat Sep 18 20:15:17 2021 as: nmap -vvv -p 22,80,33060 -sV -T4 -sC -A -oA scan/rustscan_all_ports 10.10.10.234
+# Ports scanned: TCP(3;22,80,33060) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.234 ()	Status: Up
+Host: 10.10.10.234 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.9 (FreeBSD 20200214; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.46 ((FreeBSD) PHP|7.4.15)/, 33060/open/tcp//mysqlx?///
+# Nmap done at Sat Sep 18 20:16:30 2021 -- 1 IP address (1 host up) scanned in 73.11 seconds

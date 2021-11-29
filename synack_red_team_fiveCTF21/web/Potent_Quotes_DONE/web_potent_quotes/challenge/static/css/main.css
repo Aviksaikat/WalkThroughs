@@ -1,0 +1,21 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #870000 !important;
+    color: #ccc !important;
+}
+
+.nes-container.with-title>.title {
+    background-color: transparent !important;
+}
+
+article {
+    color: #ccc;
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}

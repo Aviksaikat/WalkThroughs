@@ -1,0 +1,67 @@
+# Nmap 7.91 scan initiated Fri Jul 23 20:14:10 2021 as: nmap -vvv -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,47001,49666,49664,49667,49671,49665,49676,49677,49706,49925 -sV -T4 -sC -A -oN scan/rustscan_all_ports 10.10.10.161
+Nmap scan report for 10.10.10.161
+Host is up, received conn-refused (0.38s latency).
+Scanned at 2021-07-23 20:14:11 IST for 91s
+
+PORT      STATE SERVICE      REASON  VERSION
+53/tcp    open  domain       syn-ack Simple DNS Plus
+88/tcp    open  kerberos-sec syn-ack Microsoft Windows Kerberos (server time: 2021-07-23 14:52:04Z)
+135/tcp   open  msrpc        syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack Microsoft Windows netbios-ssn
+389/tcp   open  ldap         syn-ack Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds syn-ack Windows Server 2016 Standard 14393 microsoft-ds (workgroup: HTB)
+464/tcp   open  kpasswd5?    syn-ack
+593/tcp   open  ncacn_http   syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped   syn-ack
+3268/tcp  open  ldap         syn-ack Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped   syn-ack
+5985/tcp  open  http         syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf       syn-ack .NET Message Framing
+47001/tcp open  http         syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49665/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49666/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49667/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49671/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49676/tcp open  ncacn_http   syn-ack Microsoft Windows RPC over HTTP 1.0
+49677/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49706/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49925/tcp open  msrpc        syn-ack Microsoft Windows RPC
+Service Info: Host: FOREST; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h27m46s, deviation: 4h02m32s, median: 7m44s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 35384/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 32753/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 59040/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 44587/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: FOREST
+|   NetBIOS computer name: FOREST\x00
+|   Domain name: htb.local
+|   Forest name: htb.local
+|   FQDN: FOREST.htb.local
+|_  System time: 2021-07-23T07:53:04-07:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2021-07-23T14:53:00
+|_  start_date: 2021-07-23T11:07:04
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul 23 20:15:42 2021 -- 1 IP address (1 host up) scanned in 92.09 seconds

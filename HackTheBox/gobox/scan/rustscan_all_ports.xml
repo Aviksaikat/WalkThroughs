@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Sep  9 19:05:47 2021 as: nmap -vvv -p 22,80,8080 -sV -T4 -sC -A -oA scan/rustscan_all_ports 10.10.11.113 -->
+<nmaprun scanner="nmap" args="nmap -vvv -p 22,80,8080 -sV -T4 -sC -A -oA scan/rustscan_all_ports 10.10.11.113" start="1631194547" startstr="Thu Sep  9 19:05:47 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,8080"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1631194548"/>
+<taskend task="NSE" time="1631194548"/>
+<taskbegin task="NSE" time="1631194548"/>
+<taskend task="NSE" time="1631194548"/>
+<taskbegin task="NSE" time="1631194548"/>
+<taskend task="NSE" time="1631194548"/>
+<taskbegin task="Ping Scan" time="1631194548"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.113" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1631194548" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1631194548"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1631194548"/>
+<taskbegin task="Connect Scan" time="1631194548"/>
+<taskend task="Connect Scan" time="1631194548" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1631194548"/>
+<taskend task="Service scan" time="1631194555" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1631194555"/>
+<taskend task="NSE" time="1631194563"/>
+<taskbegin task="NSE" time="1631194563"/>
+<taskend task="NSE" time="1631194565"/>
+<taskbegin task="NSE" time="1631194565"/>
+<taskend task="NSE" time="1631194565"/>
+<host starttime="1631194548" endtime="1631194565"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.113" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 d8:f5:ef:d2:d3:f9:8d:ad:c6:cf:24:85:94:26:ef:7a (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCgSpafkjRVogAlgtxt6cFN7sU4sRTiGYC01QloBpbOwerqFUoYNyhCdNP/9rvdhwFpXomoMhDxioWQZb1RTSbR5aCwkzwDRnLz5PKN/7faaoEVjFM1vSnjGwWxzPZJw4Xy8wEbvMDlNZQbWu44UMWhLH+Vp63egRsut0SkTpUy3Ovp/yb3uAeT/4sUPG+LvDgzXD2QY+O1SV0Y3pE+pRmL3UfRKr2ltMfpcc7y7423+3oRSONHfy1upVUcUZkRIKrl9Qb4CDpxbVi/hYfAFQcOYH+IawAounkeiTMMEtOYbzDysEzVrFcCiGPWOX5+7tu4H7jYnZiel39ka/TFODVA+m2ZJiz2NoKLKTVhouVAGkH7adYtotM62JEtow8MW0HCZ9+cX6ki5cFK9WQhN++KZej2fEZDkxV7913KaIa4HCbiDq1Sfr5j7tFAWnNDo097UHXgN5A0mL1zNqwfTBCHQTEga/ztpDE0pmTKS4rkBne9EDn6GpVhSuabX9S/BLk=&#xa;  256 46:3d:6b:cb:a8:19:eb:6a:d0:68:86:94:86:73:e1:72 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ9LolyD5tnJ06EqjRR6bFX/7oOoTeFPw2TKsP1KCHJcsPSVfZIafOYEsWkaq67dsCvOdIZ8VQiNAKfnGiaBLOo=&#xa;  256 70:32:d7:e3:77:c1:4a:cf:47:2a:de:e5:08:7a:f8:7a (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJOP8cvEQVqCwuWYT06t/DEGxy6sNajp7CzuvfJzrCRZ"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCgSpafkjRVogAlgtxt6cFN7sU4sRTiGYC01QloBpbOwerqFUoYNyhCdNP/9rvdhwFpXomoMhDxioWQZb1RTSbR5aCwkzwDRnLz5PKN/7faaoEVjFM1vSnjGwWxzPZJw4Xy8wEbvMDlNZQbWu44UMWhLH+Vp63egRsut0SkTpUy3Ovp/yb3uAeT/4sUPG+LvDgzXD2QY+O1SV0Y3pE+pRmL3UfRKr2ltMfpcc7y7423+3oRSONHfy1upVUcUZkRIKrl9Qb4CDpxbVi/hYfAFQcOYH+IawAounkeiTMMEtOYbzDysEzVrFcCiGPWOX5+7tu4H7jYnZiel39ka/TFODVA+m2ZJiz2NoKLKTVhouVAGkH7adYtotM62JEtow8MW0HCZ9+cX6ki5cFK9WQhN++KZej2fEZDkxV7913KaIa4HCbiDq1Sfr5j7tFAWnNDo097UHXgN5A0mL1zNqwfTBCHQTEga/ztpDE0pmTKS4rkBne9EDn6GpVhSuabX9S/BLk=</elem>
+<elem key="fingerprint">d8f5efd2d3f98dadc6cf24859426ef7a</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ9LolyD5tnJ06EqjRR6bFX/7oOoTeFPw2TKsP1KCHJcsPSVfZIafOYEsWkaq67dsCvOdIZ8VQiNAKfnGiaBLOo=</elem>
+<elem key="fingerprint">463d6bcba819eb6ad06886948673e172</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJOP8cvEQVqCwuWYT06t/DEGxy6sNajp7CzuvfJzrCRZ</elem>
+<elem key="fingerprint">7032d7e377c14acf472adee5087af87a</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Hacking eSports | {{.Title}}"><elem key="title">Hacking eSports | {{.Title}}</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 271532D72FD5025CF19147524DE66481"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-title" output="Hacking eSports | Home page"><elem key="title">Hacking eSports | Home page</elem>
+</script></port>
+</ports>
+<times srtt="258807" rttvar="133823" to="794099"/>
+</host>
+<taskbegin task="NSE" time="1631194565"/>
+<taskend task="NSE" time="1631194565"/>
+<taskbegin task="NSE" time="1631194565"/>
+<taskend task="NSE" time="1631194565"/>
+<taskbegin task="NSE" time="1631194565"/>
+<taskend task="NSE" time="1631194565"/>
+<runstats><finished time="1631194565" timestr="Thu Sep  9 19:06:05 2021" summary="Nmap done at Thu Sep  9 19:06:05 2021; 1 IP address (1 host up) scanned in 17.59 seconds" elapsed="17.59" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

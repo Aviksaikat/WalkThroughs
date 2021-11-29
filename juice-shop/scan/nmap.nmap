@@ -1,0 +1,29 @@
+# Nmap 7.91 scan initiated Sun Oct  3 20:45:43 2021 as: nmap -sC -sV -v -A -T4 -oA scan/nmap juice-shop-avik.herokuapp.com
+Nmap scan report for juice-shop-avik.herokuapp.com (46.137.15.86)
+Host is up (0.056s latency).
+Other addresses for juice-shop-avik.herokuapp.com (not scanned): 54.220.192.176 54.73.53.134 fd00:0:13:13::2e89:f56 fd00:0:13:13::3649:3586 fd00:0:13:13::36dc:c0b0
+rDNS record for 46.137.15.86: ec2-46-137-15-86.eu-west-1.compute.amazonaws.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+| http-server-header: 
+|   Cowboy
+|_  heroku-router
+|_http-title: OWASP Juice Shop
+443/tcp open  tcpwrapped
+|_http-title: OWASP Juice Shop
+| ssl-cert: Subject: commonName=*.herokuapp.com
+| Subject Alternative Name: DNS:*.herokuapp.com
+| Issuer: commonName=Amazon/organizationName=Amazon/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-06-01T00:00:00
+| Not valid after:  2022-06-30T23:59:59
+| MD5:   f31f 35fe e618 2238 894f c970 1839 e8ba
+|_SHA-1: b8b9 b13f 371f 2b1b 38e8 a772 8e29 1207 1e1f 98e8
+|_ssl-date: TLS randomness does not represent time
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  3 20:46:55 2021 -- 1 IP address (1 host up) scanned in 71.52 seconds

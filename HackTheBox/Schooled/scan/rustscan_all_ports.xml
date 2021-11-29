@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Sep 18 20:15:17 2021 as: nmap -vvv -p 22,80,33060 -sV -T4 -sC -A -oA scan/rustscan_all_ports 10.10.10.234 -->
+<nmaprun scanner="nmap" args="nmap -vvv -p 22,80,33060 -sV -T4 -sC -A -oA scan/rustscan_all_ports 10.10.10.234" start="1631976317" startstr="Sat Sep 18 20:15:17 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,33060"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1631976317"/>
+<taskend task="NSE" time="1631976317"/>
+<taskbegin task="NSE" time="1631976317"/>
+<taskend task="NSE" time="1631976317"/>
+<taskbegin task="NSE" time="1631976317"/>
+<taskend task="NSE" time="1631976317"/>
+<taskbegin task="Ping Scan" time="1631976317"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1631976318" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1631976318"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1631976318"/>
+<taskbegin task="Connect Scan" time="1631976318"/>
+<taskend task="Connect Scan" time="1631976321" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1631976321"/>
+<taskend task="Service scan" time="1631976374" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1631976374"/>
+<taskend task="NSE" time="1631976388"/>
+<taskbegin task="NSE" time="1631976388"/>
+<taskend task="NSE" time="1631976390"/>
+<taskbegin task="NSE" time="1631976390"/>
+<taskend task="NSE" time="1631976390"/>
+<host starttime="1631976317" endtime="1631976390"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9" extrainfo="FreeBSD 20200214; protocol 2.0" ostype="FreeBSD" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9</cpe><cpe>cpe:/o:freebsd:freebsd</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 1d:69:83:78:fc:91:f8:19:c8:75:a7:1e:76:45:05:dc (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGY8PnQ2GFk9RrUQ82xGivlyXZ8k99JFZAFlNqJIftRHSGWL3HsfaO08lnGCrqVxj3235k0L74SJAqWfJs1ykTRipcZpsI5QvwYPyqpisMgH/SdCH1wehZpgaXRwdn52ob9+GxZ6qjqIon0cH0XR1hkNIGdbTt4RRMy+IfynzVuomW2mUi0tnnXU69pcyYNMShND4PqxVDKZHwUyeDIiYVBvnL5P9qEh0Q/t0HKWFHQ8otwWEpL3jnn774RFP9ETtZsJ/xosuhty02yIZuP6vqtbWfVqcqM8v1R3jm/xjXfXxiflGO09KO2aePAbEhNEofb7V/f33dRQDv5mr9ceZ1&#xa;  256 e9:b2:d2:23:9d:cf:0e:63:e0:6d:b9:b1:a6:86:93:38 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHc4TgrG+CyKqaIsk10XmAhUKULXK6Bq3bHHeJiWuBmdGS1k3Fp60OoVFdDKQj9aihkaUmbJ8fkG6dp07bm8IcM=&#xa;  256 7f:51:88:f7:3c:dd:77:5e:ba:25:4d:4c:09:25:ea:1f (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPWIP8gV7SGQNoODfYq9qg1k3j6ZZg+1L9zIU9FrHPaf"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDGY8PnQ2GFk9RrUQ82xGivlyXZ8k99JFZAFlNqJIftRHSGWL3HsfaO08lnGCrqVxj3235k0L74SJAqWfJs1ykTRipcZpsI5QvwYPyqpisMgH/SdCH1wehZpgaXRwdn52ob9+GxZ6qjqIon0cH0XR1hkNIGdbTt4RRMy+IfynzVuomW2mUi0tnnXU69pcyYNMShND4PqxVDKZHwUyeDIiYVBvnL5P9qEh0Q/t0HKWFHQ8otwWEpL3jnn774RFP9ETtZsJ/xosuhty02yIZuP6vqtbWfVqcqM8v1R3jm/xjXfXxiflGO09KO2aePAbEhNEofb7V/f33dRQDv5mr9ceZ1</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">1d698378fc91f819c875a71e764505dc</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHc4TgrG+CyKqaIsk10XmAhUKULXK6Bq3bHHeJiWuBmdGS1k3Fp60OoVFdDKQj9aihkaUmbJ8fkG6dp07bm8IcM=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">e9b2d2239dcf0e63e06db9b1a6869338</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPWIP8gV7SGQNoODfYq9qg1k3j6ZZg+1L9zIU9FrHPaf</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">7f5188f73cdd775eba254d4c0925ea1f</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="(FreeBSD) PHP/7.4.15" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 460AF0375ECB7C08C3AE0B6E0B82D717"/><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.46 (FreeBSD) PHP/7.4.15"><elem>Apache/2.4.46 (FreeBSD) PHP/7.4.15</elem>
+</script><script id="http-title" output="Schooled - A new kind of educational institute"><elem key="title">Schooled - A new kind of educational institute</elem>
+</script></port>
+<port protocol="tcp" portid="33060"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysqlx" servicefp="SF-Port33060-TCP:V=7.91%I=7%D=9/18%Time=6145FB87%P=x86_64-pc-linux-gnu%r(NULL,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(GenericLines,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(GetRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(HTTPOptions,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(RTSPRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(RPCCheck,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(DNSVersionBindReqTCP,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(DNSStatusRequestTCP,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(Help,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(SSLSessionReq,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(TerminalServerCookie,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(TLSSessionReq,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(Kerberos,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(SMBProgNeg,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(X11Probe,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(FourOhFourRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(LPDString,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(LDAPSearchReq,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(LDAPBindReq,46,&quot;\x05\0\0\0\x0b\x08\x05\x1a\x009\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\*Parse\x20error\x20unserializing\x20protobuf\x20message\&quot;\x05HY000&quot;)%r(SIPOptions,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(LANDesk-RC,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(TerminalServer,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(NCP,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(NotesRPC,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;)%r(JavaRMI,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(WMSRequest,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(oracle-tns,32,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0%\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x16Invalid\x20message-frame\.\&quot;\x05HY000&quot;)%r(ms-sql-s,9,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0&quot;)%r(afp,2B,&quot;\x05\0\0\0\x0b\x08\x05\x1a\0\x1e\0\0\0\x01\x08\x01\x10\x88&apos;\x1a\x0fInvalid\x20message\&quot;\x05HY000&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, LDAPSearchReq, NotesRPC, SSLSessionReq, TLSSessionReq, X11Probe, afp: &#xa;    Invalid message&quot;&#xa;    HY000&#xa;  LDAPBindReq: &#xa;    *Parse error unserializing protobuf message&quot;&#xa;    HY000&#xa;  oracle-tns: &#xa;    Invalid message-frame.&quot;&#xa;    HY000"><elem key="DNSStatusRequestTCP, LDAPSearchReq, NotesRPC, SSLSessionReq, TLSSessionReq, X11Probe, afp">&#xa;    Invalid message&quot;&#xa;    HY000</elem>
+<elem key="LDAPBindReq">&#xa;    *Parse error unserializing protobuf message&quot;&#xa;    HY000</elem>
+<elem key="oracle-tns">&#xa;    Invalid message-frame.&quot;&#xa;    HY000</elem>
+</script></port>
+</ports>
+<times srtt="387539" rttvar="180224" to="1108435"/>
+</host>
+<taskbegin task="NSE" time="1631976390"/>
+<taskend task="NSE" time="1631976390"/>
+<taskbegin task="NSE" time="1631976390"/>
+<taskend task="NSE" time="1631976390"/>
+<taskbegin task="NSE" time="1631976390"/>
+<taskend task="NSE" time="1631976390"/>
+<runstats><finished time="1631976390" timestr="Sat Sep 18 20:16:30 2021" summary="Nmap done at Sat Sep 18 20:16:30 2021; 1 IP address (1 host up) scanned in 73.11 seconds" elapsed="73.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

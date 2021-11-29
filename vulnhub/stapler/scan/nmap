@@ -1,0 +1,81 @@
+# Nmap 7.80 scan initiated Tue Sep  7 12:51:13 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 192.168.43.14
+Nmap scan report for red (192.168.43.14)
+Host is up (0.0010s latency).
+Not shown: 992 filtered ports
+PORT     STATE  SERVICE     VERSION
+20/tcp   closed ftp-data
+21/tcp   open   ftp         vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 550 Permission denied.
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.43.31
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp   open   ssh         OpenSSH 7.2p2 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 81:21:ce:a1:1a:05:b1:69:4f:4d:ed:80:28:e8:99:05 (RSA)
+|   256 5b:a5:bb:67:91:1a:51:c2:d3:21:da:c0:ca:f0:db:9e (ECDSA)
+|_  256 6d:01:b7:73:ac:b0:93:6f:fa:b9:89:e6:ae:3c:ab:d3 (ED25519)
+53/tcp   open   domain      dnsmasq 2.75
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.75
+80/tcp   open   http        PHP cli server 5.5 or later
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: 404 Not Found
+139/tcp  open   netbios-ssn Samba smbd 4.3.9-Ubuntu (workgroup: WORKGROUP)
+666/tcp  open   tcpwrapped
+3306/tcp open   mysql       MySQL 5.7.12-0ubuntu1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.12-0ubuntu1
+|   Thread ID: 9
+|   Capabilities flags: 63487
+|   Some Capabilities: ODBCClient, FoundRows, SupportsTransactions, LongColumnFlag, Support41Auth, DontAllowDatabaseTableColumn, SupportsLoadDataLocal, Speaks41ProtocolOld, InteractiveClient, IgnoreSpaceBeforeParenthesis, IgnoreSigpipes, SupportsCompression, Speaks41ProtocolNew, LongPassword, ConnectWithDatabase, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: 8t12({;c\x1At\x01\x11C,%/HiUp
+|_  Auth Plugin Name: mysql_native_password
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 5h07m10s, deviation: 34m38s, median: 5h27m09s
+| nbstat: NetBIOS name: RED, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   RED<00>              Flags: <unique><active>
+|   RED<03>              Flags: <unique><active>
+|   RED<20>              Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.9-Ubuntu)
+|   Computer name: red
+|   NetBIOS computer name: RED\x00
+|   Domain name: \x00
+|   FQDN: red
+|_  System time: 2021-09-07T13:48:41+01:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-09-07T12:48:42
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep  7 12:52:00 2021 -- 1 IP address (1 host up) scanned in 47.19 seconds

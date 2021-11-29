@@ -1,0 +1,41 @@
+# Nmap 7.91 scan initiated Mon Jul 26 19:20:25 2021 as: nmap -vvv -p 80,135,445,49669 -sV -T4 -sC -A -oN scan/rustscan_all_ports 10.10.10.149
+Nmap scan report for 10.10.10.149
+Host is up, received syn-ack (0.33s latency).
+Scanned at 2021-07-26 19:20:25 IST for 104s
+
+PORT      STATE SERVICE       REASON  VERSION
+80/tcp    open  http          syn-ack Microsoft IIS httpd 10.0
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+| http-title: Support Login Page
+|_Requested resource was login.php
+135/tcp   open  msrpc         syn-ack Microsoft Windows RPC
+445/tcp   open  microsoft-ds? syn-ack
+49669/tcp open  msrpc         syn-ack Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 56s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 34798/tcp): CLEAN (Timeout)
+|   Check 2 (port 48515/tcp): CLEAN (Timeout)
+|   Check 3 (port 25486/udp): CLEAN (Timeout)
+|   Check 4 (port 46439/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-26T13:52:26
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 26 19:22:09 2021 -- 1 IP address (1 host up) scanned in 103.47 seconds

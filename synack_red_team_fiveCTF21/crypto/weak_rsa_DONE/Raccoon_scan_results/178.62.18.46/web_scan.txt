@@ -1,0 +1,6 @@
+[1;34m[#][0;0m Trying to collect 178.62.18.46 web application data
+[1;32m[v][0;0m Web server detected: [1;32mnginx[0;0m
+[1;32m[v][0;0m X-Frame-Options header not detected - target might be vulnerable to clickjacking
+[93m[!][0;0m 2 fuzzable URLs discovered
+	http://178.62.18.46:30266/?page=home.php
+	http://178.62.18.46:30266/?page=agents.php

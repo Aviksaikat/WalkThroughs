@@ -1,0 +1,147 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.18
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: https://192.168.43.14:12380/blogblog/ [192.168.43.14]
+[32m[+][0m Started: Tue Sep  7 13:49:01 2021
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.18 (Ubuntu)
+ |  - Dave: Soemthing doesn't look right here
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: https://192.168.43.14:12380/blogblog/xmlrpc.php
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+ | Confirmed By:
+ |  - Link Tag (Passive Detection), 30% confidence
+ |  - Direct Access (Aggressive Detection), 100% confidence
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: https://192.168.43.14:12380/blogblog/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Registration is enabled: https://192.168.43.14:12380/blogblog/wp-login.php?action=register
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: https://192.168.43.14:12380/blogblog/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: https://192.168.43.14:12380/blogblog/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.2.1 identified (Insecure, released on 2015-04-27).
+ | Found By: Rss Generator (Passive Detection)
+ |  - https://192.168.43.14:12380/blogblog/?feed=rss2, <generator>http://wordpress.org/?v=4.2.1</generator>
+ |  - https://192.168.43.14:12380/blogblog/?feed=comments-rss2, <generator>http://wordpress.org/?v=4.2.1</generator>
+
+[32m[+][0m WordPress theme in use: bhost
+ | Location: https://192.168.43.14:12380/blogblog/wp-content/themes/bhost/
+ | Last Updated: 2021-08-25T00:00:00.000Z
+ | Readme: https://192.168.43.14:12380/blogblog/wp-content/themes/bhost/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 1.4.7
+ | Style URL: https://192.168.43.14:12380/blogblog/wp-content/themes/bhost/style.css?ver=4.2.1
+ | Style Name: BHost
+ | Description: Bhost is a nice , clean , beautifull, Responsive and modern design free WordPress Theme. This theme ...
+ | Author: Masum Billah
+ | Author URI: http://getmasum.net/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.2.9 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/themes/bhost/style.css?ver=4.2.1, Match: 'Version: 1.2.9'
+
+[32m[+][0m Enumerating All Plugins (via Aggressive Methods)
+
+ Checking Known Locations -: |=======================================================================================================|
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m advanced-video-embed-embed-videos-or-playlists
+ | Location: https://192.168.43.14:12380/blogblog/wp-content/plugins/advanced-video-embed-embed-videos-or-playlists/
+ | Latest Version: 1.0 (up to date)
+ | Last Updated: 2015-10-14T13:52:00.000Z
+ | Readme: https://192.168.43.14:12380/blogblog/wp-content/plugins/advanced-video-embed-embed-videos-or-playlists/readme.txt
+ | [31m[!][0m Directory listing is enabled
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/plugins/advanced-video-embed-embed-videos-or-playlists/, status: 200
+ |
+ | Version: 1.0 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/plugins/advanced-video-embed-embed-videos-or-playlists/readme.txt
+
+[32m[+][0m akismet
+ | Location: https://192.168.43.14:12380/blogblog/wp-content/plugins/akismet/
+ | Latest Version: 4.1.12
+ | Last Updated: 2021-09-03T16:53:00.000Z
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/plugins/akismet/, status: 403
+ |
+ | The version could not be determined.
+
+[32m[+][0m shortcode-ui
+ | Location: https://192.168.43.14:12380/blogblog/wp-content/plugins/shortcode-ui/
+ | Last Updated: 2019-01-16T22:56:00.000Z
+ | Readme: https://192.168.43.14:12380/blogblog/wp-content/plugins/shortcode-ui/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 0.7.4
+ | [31m[!][0m Directory listing is enabled
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/plugins/shortcode-ui/, status: 200
+ |
+ | Version: 0.6.2 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/plugins/shortcode-ui/readme.txt
+
+[32m[+][0m two-factor
+ | Location: https://192.168.43.14:12380/blogblog/wp-content/plugins/two-factor/
+ | Latest Version: 0.7.0
+ | Last Updated: 2021-05-07T07:53:00.000Z
+ | Readme: https://192.168.43.14:12380/blogblog/wp-content/plugins/two-factor/readme.txt
+ | [31m[!][0m Directory listing is enabled
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - https://192.168.43.14:12380/blogblog/wp-content/plugins/two-factor/, status: 200
+ |
+ | The version could not be determined.
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Tue Sep  7 13:51:26 2021
+[32m[+][0m Requests Done: 94948
+[32m[+][0m Cached Requests: 45
+[32m[+][0m Data Sent: 28.008 MB
+[32m[+][0m Data Received: 12.722 MB
+[32m[+][0m Memory used: 465.469 MB
+[32m[+][0m Elapsed time: 00:02:25

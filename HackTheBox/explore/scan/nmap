@@ -1,0 +1,19 @@
+# Nmap 7.92 scan initiated Sat Oct 30 20:11:22 2021 as: nmap -sC -sV -v -A -T4 -oN scan/nmap 10.10.10.247
+Nmap scan report for 10.10.10.247
+Host is up (0.40s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE VERSION
+2222/tcp open     ssh     (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-SSH Server - Banana Studio
+| ssh-hostkey: 
+|_  2048 71:90:e3:a7:c9:5d:83:66:34:88:3d:eb:b4:c7:88:fb (RSA)
+5555/tcp filtered freeciv
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.92%I=7%D=10/30%Time=617D59B5%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,24,"SSH-2\.0-SSH\x20Server\x20-\x20Banana\x20Studio\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 30 20:12:07 2021 -- 1 IP address (1 host up) scanned in 44.54 seconds
