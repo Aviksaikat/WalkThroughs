@@ -1,0 +1,20 @@
+# Nmap 7.91 scan initiated Sun Aug 22 20:39:54 2021 as: nmap --script ssl-heartbleed -p 443 -v -oN scan/ssl-heartbleed-vuln 34.248.245.41
+Nmap scan report for ec2-34-248-245-41.eu-west-1.compute.amazonaws.com (34.248.245.41)
+Host is up (0.29s latency).
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-heartbleed: 
+|   VULNERABLE:
+|   The Heartbleed Bug is a serious vulnerability in the popular OpenSSL cryptographic software library. It allows for stealing information intended to be protected by SSL/TLS encryption.
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL versions 1.0.1 and 1.0.2-beta releases (including 1.0.1f and 1.0.2-beta1) of OpenSSL are affected by the Heartbleed bug. The bug allows for reading memory of systems protected by the vulnerable OpenSSL versions and could allow for disclosure of otherwise encrypted confidential information as well as the encryption keys themselves.
+|           
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160
+|       http://cvedetails.com/cve/2014-0160/
+|_      http://www.openssl.org/news/secadv_20140407.txt 
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Aug 22 20:39:56 2021 -- 1 IP address (1 host up) scanned in 1.94 seconds

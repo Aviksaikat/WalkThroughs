@@ -1,0 +1,48 @@
+# Nmap 7.91 scan initiated Thu Mar 11 19:51:41 2021 as: nmap -sS -sV -sC -v -A -T4 -oN nmap 10.10.90.10
+Nmap scan report for 10.10.90.10
+Host is up (0.48s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f3:c8:9f:0b:6a:c5:fe:95:54:0b:e9:e3:ba:93:db:7c (RSA)
+|   256 dd:1a:09:f5:99:63:a3:43:0d:2d:90:d8:e3:e1:1f:b9 (ECDSA)
+|_  256 48:d1:30:1b:38:6c:c6:53:ea:30:81:80:5d:0c:f1:05 (ED25519)
+53/tcp   open  tcpwrapped
+8009/tcp open  ajp13      Apache Jserv (Protocol v1.3)
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+8080/tcp open  http       Apache Tomcat 9.0.30
+|_http-favicon: Apache Tomcat
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache Tomcat/9.0.30
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=3/11%OT=22%CT=1%CU=34681%PV=Y%DS=4%DC=T%G=Y%TM=604A27B
+OS:C%P=x86_64-pc-linux-gnu)SEQ(SP=10A%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=8)SEQ
+OS:(SP=10A%GCD=1%ISR=10B%TI=Z%CI=I%TS=8)SEQ(SP=10A%GCD=1%ISR=10B%TI=Z%TS=8)
+OS:OPS(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505
+OS:ST11NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)
+OS:ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%
+OS:F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T
+OS:5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=
+OS:Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF
+OS:=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40
+OS:%CD=S)
+
+Uptime guess: 0.001 days (since Thu Mar 11 19:51:28 2021)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=266 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 256/tcp)
+HOP RTT       ADDRESS
+1   249.41 ms 10.4.0.1
+2   ... 3
+4   506.22 ms 10.10.90.10
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar 11 19:52:52 2021 -- 1 IP address (1 host up) scanned in 72.07 seconds

@@ -1,0 +1,24 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.80.232/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/07/27 18:50:56 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 291]
+/.htaccess            (Status: 403) [Size: 296]
+/.htpasswd            (Status: 403) [Size: 296]
+/guidelines           (Status: 301) [Size: 317] [--> http://10.10.80.232/guidelines/]
+/index.html           (Status: 200) [Size: 168]                                      
+/protected            (Status: 401) [Size: 459]                                      
+/server-status        (Status: 403) [Size: 300]                                      
+===============================================================
+2021/07/27 18:51:52 Finished
+===============================================================

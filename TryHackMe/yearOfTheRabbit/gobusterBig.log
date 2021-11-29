@@ -1,0 +1,25 @@
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://10.10.218.52/
+[+] Threads:        40
+[+] Wordlist:       /usr/share/wordlists/dirb/big.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Extensions:     zip,bak,php,txt
+[+] Timeout:        10s
+===============================================================
+2021/01/04 22:48:15 Starting gobuster
+===============================================================
+/.htaccess (Status: 403)
+/.htaccess.php (Status: 403)
+/.htaccess.txt (Status: 403)
+/.htaccess.zip (Status: 403)
+/.htaccess.bak (Status: 403)
+/.htpasswd (Status: 403)
+/.htpasswd.php (Status: 403)
+/.htpasswd.txt (Status: 403)
+/.htpasswd.zip (Status: 403)
+/.htpasswd.bak (Status: 403)
+/assets (Status: 301)

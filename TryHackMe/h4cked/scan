@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Sun May  2 21:04:05 2021 as: nmap -sC -sV -A -T4 -v -oN scan 10.10.85.40
+Nmap scan report for 10.10.85.40
+Host is up (0.66s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.0.8 or later
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May  2 21:06:18 2021 -- 1 IP address (1 host up) scanned in 133.68 seconds

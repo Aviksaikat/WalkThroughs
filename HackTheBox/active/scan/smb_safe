@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Tue Jul 20 19:40:02 2021 as: nmap -sV --script safe -p 445 -oN scan/smb_safe -v 10.10.10.100
+Pre-scan script results:
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: WebOS/1.5 UPnP/1.0
+|       Location: http://192.168.43.127:1944/
+|         Webserver: WebOS/1.5 UPnP/1.0
+|         Name: [LG] webOS TV LJ554T
+|         Manufacturer: LG Electronics
+|         Model Descr: 
+|         Model Name: LG Smart TV
+|_        Model Version: WEBOS
+|_hostmap-robtex: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter

@@ -1,0 +1,13 @@
+# Nmap 7.91 scan initiated Tue Jul 13 12:15:22 2021 as: nmap -v -sS -oN scan -p1337,68,61,78 10.6.0.1
+Nmap scan report for 10.6.0.1
+Host is up (0.51s latency).
+
+PORT     STATE  SERVICE
+61/tcp   closed ni-mail
+68/tcp   closed dhcpc
+78/tcp   closed vettcp
+1337/tcp closed waste
+MAC Address: 00:24:81:54:FB:C0 (Hewlett Packard)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jul 13 12:15:23 2021 -- 1 IP address (1 host up) scanned in 1.53 seconds

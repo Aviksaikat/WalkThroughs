@@ -1,0 +1,49 @@
+# Nmap 7.92 scan initiated Sun Nov 14 20:59:20 2021 as: nmap -vvv -p 53,80,88,135,139,389,445,464,593,636,49664,49667,49670,49666,49669,49671,49696 -A -sC -oN scan/rustscan_all_ports 10.129.96.48
+Nmap scan report for 10.129.96.48
+Host is up, received syn-ack (0.42s latency).
+Scanned at 2021-11-14 20:59:21 IST for 105s
+
+PORT      STATE SERVICE       REASON  VERSION
+53/tcp    open  domain        syn-ack Simple DNS Plus
+80/tcp    open  http          syn-ack Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Neptune Starter Site
+|_http-generator: C1 CMS Foundation - Free Open Source from Orckestra and https://github.com/Orckestra/C1-CMS-Foundation
+88/tcp    open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2021-11-14 16:29:36Z)
+135/tcp   open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: MEGACORP.LOCAL0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack
+464/tcp   open  kpasswd5?     syn-ack
+593/tcp   open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack
+49664/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49666/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49669/tcp open  unknown       syn-ack
+49670/tcp open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+49671/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49696/tcp open  msrpc         syn-ack Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 40468/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 41479/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 33206/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 9221/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: 1h00m05s
+| smb2-time: 
+|   date: 2021-11-14T16:30:46
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 14 21:01:06 2021 -- 1 IP address (1 host up) scanned in 106.25 seconds

@@ -1,0 +1,42 @@
+# Nmap 7.91 scan initiated Fri Dec 25 18:58:46 2020 as: nmap -sS -sV -v -A -T4 -oN scan 10.10.72.183
+Nmap scan report for 10.10.72.183
+Host is up (0.80s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.14.0 (Ubuntu)
+| http-git: 
+|   10.10.72.183:80/.git/
+|     Git repository found!
+|_    Repository description: Unnamed repository; edit this file 'description' to name the...
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Super Awesome Site!
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=12/25%OT=80%CT=1%CU=31241%PV=Y%DS=4%DC=T%G=Y%TM=5FE5E9
+OS:54%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10B%TI=Z%CI=Z%TS=A)SEQ(SP=
+OS:105%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M505ST11NW6%O2=M505ST11NW6%
+OS:O3=M505NNT11NW6%O4=M505ST11NW6%O5=M505ST11NW6%O6=M505ST11)WIN(W1=F4B3%W2
+OS:=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M505NNS
+OS:NW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%
+OS:DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%
+OS:O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%
+OS:W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%
+OS:RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 15.033 days (since Thu Dec 10 18:11:56 2020)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   692.68 ms 10.4.0.1
+2   ... 3
+4   949.19 ms 10.10.72.183
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 25 18:59:56 2020 -- 1 IP address (1 host up) scanned in 70.43 seconds

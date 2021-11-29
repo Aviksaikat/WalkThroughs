@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Tue Dec 29 19:16:35 2020 as: nmap -v -p- -sV -oN nmapAllPorts 10.10.10.209
+Increasing send delay for 10.10.10.209 from 0 to 5 due to 107 out of 355 dropped probes since last increase.
+Increasing send delay for 10.10.10.209 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.10.209
+Host is up (0.35s latency).
+Not shown: 65532 filtered ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.41 ((Ubuntu))
+8089/tcp open  ssl/http Splunkd httpd
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 29 19:46:45 2020 -- 1 IP address (1 host up) scanned in 1810.48 seconds

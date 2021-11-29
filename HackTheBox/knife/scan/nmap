@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Tue Aug 31 20:59:29 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.10.242
+Nmap scan report for 10.10.10.242
+Host is up (0.38s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title:  Emergent Medical Idea
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 31 21:00:22 2021 -- 1 IP address (1 host up) scanned in 53.55 seconds

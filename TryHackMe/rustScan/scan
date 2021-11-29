@@ -1,0 +1,43 @@
+# Nmap 7.91 scan initiated Tue Jan 12 20:52:46 2021 as: nmap -sS -sV -v -A -T4 -oN scan 10.10.113.173
+Increasing send delay for 10.10.113.173 from 0 to 5 due to 334 out of 834 dropped probes since last increase.
+Warning: 10.10.113.173 giving up on port because retransmission cap hit (6).
+WARNING: RST from 10.10.113.173 port 22 -- is this port really open?
+Nmap scan report for 10.10.113.173
+Host is up (1.8s latency).
+Not shown: 992 closed ports
+PORT      STATE    SERVICE       VERSION
+22/tcp    open     ssh           OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 37:96:85:98:d1:00:9c:14:63:d9:b0:34:75:b1:f9:57 (RSA)
+|   256 53:75:fa:c0:65:da:dd:b1:e8:dd:40:b8:f6:82:39:24 (ECDSA)
+|_  256 1c:4a:da:1f:36:54:6d:a6:c6:17:00:27:2e:67:75:9c (ED25519)
+80/tcp    open     http
+|_http-favicon: Unknown favicon MD5: 0D4315E5A0B066CEFD5B216C8362564B
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Overpass
+2288/tcp  filtered netml
+5009/tcp  filtered airport-admin
+5431/tcp  filtered park-agent
+8200/tcp  filtered trivnet1
+10082/tcp filtered amandaidx
+49157/tcp filtered unknown
+Device type: VoIP adapter|general purpose
+Running (JUST GUESSING): Cisco embedded (88%), Linux 2.6.X (88%)
+OS CPE: cpe:/h:cisco:unified_call_manager cpe:/o:linux:linux_kernel:2.6.26
+Aggressive OS guesses: Cisco Unified Communications Manager VoIP adapter (88%), Linux 2.6.26 (PCLinuxOS) (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 36.488 days (since Mon Dec  7 09:14:07 2020)
+Network Distance: 4 hops
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT       ADDRESS
+1   101.93 ms 10.4.0.1
+2   ... 3
+4   357.71 ms 10.10.113.173
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan 12 20:56:29 2021 -- 1 IP address (1 host up) scanned in 223.23 seconds

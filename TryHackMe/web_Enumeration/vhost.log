@@ -1,0 +1,15 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://webenum.thm/
+[+] Method:       GET
+[+] Threads:      70
+[+] Wordlist:     /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+[+] User Agent:   gobuster/3.1.0
+[+] Timeout:      10s
+===============================================================
+2021/08/18 20:14:28 Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: learning.webenum.thm (Status: 200) [Size: 13245]
+Found: products.webenum.thm (Status: 200) [Size: 4941] 

@@ -1,0 +1,6 @@
+index:
+   path: /
+   controller: App\Controller\DefaultController::index
+debug:
+   path: /debug
+   controller: App\Controller\DefaultController::showSource

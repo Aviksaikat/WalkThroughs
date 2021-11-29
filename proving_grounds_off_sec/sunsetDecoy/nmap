@@ -1,0 +1,43 @@
+# Nmap 7.91 scan initiated Wed Mar 17 18:39:55 2021 as: nmap -sS -sV -sC -v -A -T4 -oN nmap 192.168.224.85
+Nmap scan report for 192.168.224.85
+Host is up (0.39s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 a9:b5:3e:3b:e3:74:e4:ff:b6:d5:9f:f1:81:e7:a4:4f (RSA)
+|   256 ce:f3:b3:e7:0e:90:e2:64:ac:8d:87:0f:15:88:aa:5f (ECDSA)
+|_  256 66:a9:80:91:f3:d8:4b:0a:69:b0:00:22:9f:3c:4c:5a (ED25519)
+80/tcp open  http    Apache httpd 2.4.38
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| 3.0K  2020-07-07 16:36  save.zip
+|_
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Index of /
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=3/17%OT=22%CT=1%CU=43641%PV=Y%DS=1%DC=T%G=Y%TM=6051FFD
+OS:A%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=107%TI=Z%II=I%TS=A)OPS(O1=M
+OS:506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%
+OS:O6=M506ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%
+OS:DF=Y%T=40%W=FAF0%O=M506NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+OS:T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%
+OS:RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 24.611 days (since Sun Feb 21 04:00:45 2021)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: 127.0.0.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT       ADDRESS
+1   931.84 ms 192.168.224.85
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 17 18:40:50 2021 -- 1 IP address (1 host up) scanned in 55.36 seconds

@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Thu Jun 10 19:26:03 2021 as: nmap -sC -sV -A -T4 -v -Pn -oN scan/nmap 10.10.180.120
+Increasing send delay for 10.10.180.120 from 0 to 5 due to 37 out of 92 dropped probes since last increase.
+Nmap scan report for 10.10.180.120
+Host is up (0.51s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun 10 19:27:09 2021 -- 1 IP address (1 host up) scanned in 66.24 seconds

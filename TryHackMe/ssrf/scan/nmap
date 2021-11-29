@@ -1,0 +1,24 @@
+# Nmap 7.91 scan initiated Mon Aug  2 12:54:45 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.112.120
+Nmap scan report for 10.10.112.120
+Host is up (0.49s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE   VERSION
+22/tcp   open  ssh       OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 68:72:c3:c0:53:b8:31:77:d7:d0:ad:dc:be:7d:cc:d2 (RSA)
+|   256 7d:5b:c3:14:c7:86:df:90:f7:31:43:f8:b9:09:04:e4 (ECDSA)
+|_  256 40:d6:4a:57:98:40:5b:84:d8:06:8f:7d:49:fe:e7:3b (ED25519)
+5000/tcp open  http      Werkzeug httpd 0.14.1 (Python 3.6.9)
+| http-methods: 
+|_  Supported Methods: GET OPTIONS HEAD
+|_http-server-header: Werkzeug/0.14.1 Python/3.6.9
+|_http-title: Live demonstrations
+8000/tcp open  http-alt?
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-title: Live demonstrations
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  2 12:59:52 2021 -- 1 IP address (1 host up) scanned in 307.46 seconds

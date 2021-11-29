@@ -1,0 +1,22 @@
+e4956e459024:e2df7a554b2e:joesheer:nanotechnology
+e4956e459024:96a3481e2f4d:joesheer:nanotechnology
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Name........: WPA-EAPOL-PBKDF2
+Hash.Target......: b3c2c8cf52251c18ba033244b262c7487d54c4ed.hccapx
+Time.Started.....: Sat Jul 31 20:20:49 2021 (1 min, 45 secs)
+Time.Estimated...: Sat Jul 31 20:22:34 2021 (0 secs)
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    31224 H/s (6.00ms) @ Accel:8 Loops:32 Thr:1024 Vec:1
+Recovered........: 2/2 (100.00%) Digests
+Progress.........: 5205339/14344385 (36.29%)
+Rejected.........: 1961307/5205339 (37.68%)
+Restore.Point....: 5172977/14344385 (36.06%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:1-3
+Candidates.#1....: nay080cane770 -> nannershd
+Hardware.Mon.#1..: Temp: 77c Util: 99% Core:1019MHz Mem:1001MHz Bus:4
+
+Started: Sat Jul 31 20:20:17 2021
+Stopped: Sat Jul 31 20:22:35 2021

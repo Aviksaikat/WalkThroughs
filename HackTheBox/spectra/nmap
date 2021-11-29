@@ -1,0 +1,34 @@
+# Nmap 7.91 scan initiated Sun Feb 28 19:29:28 2021 as: nmap -sS -sV -sC -v -A -T4 -oN nmap 10.129.81.228
+Nmap scan report for 10.129.81.228
+Host is up (0.79s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.1 (protocol 2.0)
+| ssh-hostkey: 
+|_  4096 52:47:de:5c:37:4f:29:0e:8e:1d:88:6e:f9:23:4d:5a (RSA)
+80/tcp   open  http    nginx 1.17.4
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.17.4
+|_http-title: Site doesn't have a title (text/html).
+3306/tcp open  mysql   MySQL (unauthorized)
+|_ssl-cert: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: ERROR: Script execution failed (use -d to debug)
+|_sslv2: ERROR: Script execution failed (use -d to debug)
+|_tls-alpn: ERROR: Script execution failed (use -d to debug)
+|_tls-nextprotoneg: ERROR: Script execution failed (use -d to debug)
+Aggressive OS guesses: Linux 4.15 - 5.6 (95%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.3 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 5.0 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 22.941 days (since Fri Feb  5 20:57:18 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT       ADDRESS
+1   542.68 ms 10.10.16.1
+2   952.23 ms 10.129.81.228
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 28 19:32:22 2021 -- 1 IP address (1 host up) scanned in 174.26 seconds

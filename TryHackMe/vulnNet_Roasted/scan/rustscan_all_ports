@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Thu Jun 10 19:08:54 2021 as: nmap -vvv -p 49673 -sV -sC -A -oN scan/rustscan_all_ports 10.10.91.27
+Nmap scan report for 10.10.91.27 [host down, received no-response]
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Jun 10 19:08:57 2021 -- 1 IP address (0 hosts up) scanned in 3.42 seconds

@@ -1,0 +1,37 @@
+# Nmap 7.92 scan initiated Sun Nov 14 20:52:44 2021 as: nmap -sC -sV -v -T4 -A -oN scan/nmap 10.129.96.48
+Increasing send delay for 10.129.96.48 from 0 to 5 due to 19 out of 47 dropped probes since last increase.
+Nmap scan report for 10.129.96.48
+Host is up (0.41s latency).
+Not shown: 988 closed tcp ports (conn-refused)
+PORT     STATE SERVICE           VERSION
+53/tcp   open  domain?
+80/tcp   open  http              Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-generator: C1 CMS Foundation - Free Open Source from Orckestra and https://github.com/Orckestra/C1-CMS-Foundation
+|_http-title: Neptune Starter Site
+88/tcp   open  kerberos-sec      Microsoft Windows Kerberos (server time: 2021-11-14 16:24:19Z)
+135/tcp  open  msrpc             Microsoft Windows RPC
+139/tcp  open  netbios-ssn       Microsoft Windows netbios-ssn
+389/tcp  open  ldap              Microsoft Windows Active Directory LDAP (Domain: MEGACORP.LOCAL0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ldapssl?
+3268/tcp open  ldap              Microsoft Windows Active Directory LDAP (Domain: MEGACORP.LOCAL0., Site: Default-First-Site-Name)
+3269/tcp open  globalcatLDAPssl?
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 1h00m05s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2021-11-14T16:25:11
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 14 20:55:52 2021 -- 1 IP address (1 host up) scanned in 187.19 seconds

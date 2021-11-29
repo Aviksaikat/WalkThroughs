@@ -1,0 +1,47 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.11.104/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,txt,bak
+[+] Timeout:                 10s
+===============================================================
+2021/09/29 11:07:19 Starting gobuster in directory enumeration mode
+===============================================================
+/.htpasswd            (Status: 403) [Size: 277]
+/.htpasswd.php        (Status: 403) [Size: 277]
+/.htpasswd.txt        (Status: 403) [Size: 277]
+/.htpasswd.bak        (Status: 403) [Size: 277]
+/.hta.txt             (Status: 403) [Size: 277]
+/.hta.bak             (Status: 403) [Size: 277]
+/.hta                 (Status: 403) [Size: 277]
+/.htaccess.txt        (Status: 403) [Size: 277]
+/.hta.php             (Status: 403) [Size: 277]
+/.htaccess.bak        (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htaccess.php        (Status: 403) [Size: 277]
+/accounts.php         (Status: 302) [Size: 3994] [--> login.php]
+/config.php           (Status: 200) [Size: 0]                   
+/css                  (Status: 301) [Size: 310] [--> http://10.10.11.104/css/]
+/download.php         (Status: 302) [Size: 0] [--> login.php]                 
+/favicon.ico          (Status: 200) [Size: 15406]                             
+/files.php            (Status: 302) [Size: 4914] [--> login.php]              
+/footer.php           (Status: 200) [Size: 217]                               
+/header.php           (Status: 200) [Size: 980]                               
+/index.php            (Status: 302) [Size: 2801] [--> login.php]              
+/index.php            (Status: 302) [Size: 2801] [--> login.php]              
+/js                   (Status: 301) [Size: 309] [--> http://10.10.11.104/js/] 
+/login.php            (Status: 200) [Size: 2224]                              
+/logout.php           (Status: 302) [Size: 0] [--> login.php]                 
+/logs.php             (Status: 302) [Size: 0] [--> login.php]                 
+/nav.php              (Status: 200) [Size: 1248]                              
+/server-status        (Status: 403) [Size: 277]                               
+/status.php           (Status: 302) [Size: 2966] [--> login.php]              
+===============================================================
+2021/09/29 11:10:05 Finished
+===============================================================

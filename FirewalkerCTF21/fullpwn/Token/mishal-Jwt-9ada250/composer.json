@@ -1,0 +1,28 @@
+{
+  "name": "mishal/jwt",
+  "type": "library",
+  "description": "JWT - JSON Web Tokens",
+  "keywords": [
+    "jwt",
+    "json",
+    "wek token"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {},
+  "autoload": {
+    "files": [
+      "lib/functions.php"
+    ],
+    "psr-4": {
+      "Jwt\\": "lib/Jwt"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+# Nmap 7.91 scan initiated Thu May  6 20:23:56 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.4.167
+Warning: 10.10.4.167 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.4.167
+Host is up (0.55s latency).
+Not shown: 979 closed ports
+PORT      STATE    SERVICE       VERSION
+22/tcp    open     ssh           OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 24:31:19:2a:b1:97:1a:04:4e:2c:36:ac:84:0a:75:87 (RSA)
+|   256 21:3d:46:18:93:aa:f9:e7:c9:b5:4c:0f:16:0b:71:e1 (ECDSA)
+|_  256 c1:fb:7d:73:2b:57:4a:8b:dc:d7:6f:49:bb:3b:d0:20 (ED25519)
+80/tcp    open     http          Apache httpd 2.4.38 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: dogcat
+222/tcp   filtered rsh-spx
+687/tcp   filtered asipregistry
+1070/tcp  filtered gmrupdateserv
+1091/tcp  filtered ff-sm
+1098/tcp  filtered rmiactivation
+1117/tcp  filtered ardus-mtrns
+1165/tcp  filtered qsm-gui
+1687/tcp  filtered nsjtp-ctrl
+1914/tcp  filtered elm-momentum
+3476/tcp  filtered nppmp
+3809/tcp  filtered apocd
+4006/tcp  filtered pxc-spvr
+5060/tcp  filtered sip
+9101/tcp  filtered jetdirect
+9207/tcp  filtered wap-vcal-s
+9929/tcp  filtered nping-echo
+24444/tcp filtered unknown
+32781/tcp filtered unknown
+50636/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  6 20:26:53 2021 -- 1 IP address (1 host up) scanned in 176.36 seconds

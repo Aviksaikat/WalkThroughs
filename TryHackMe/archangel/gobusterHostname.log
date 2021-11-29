@@ -1,0 +1,16 @@
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://mafialive.thm/
+[+] Threads:        40
+[+] Wordlist:       /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Extensions:     php,txt,bak
+[+] Timeout:        10s
+===============================================================
+2021/02/04 19:59:19 Starting gobuster
+===============================================================
+/test.php (Status: 200)
+/robots.txt (Status: 200)

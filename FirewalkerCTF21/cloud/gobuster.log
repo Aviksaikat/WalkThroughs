@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.129.228.80/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/11/14 11:42:23 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/.svn/entries         (Status: 200) [Size: 3]  
+/.htpasswd            (Status: 403) [Size: 278]
+/.svn                 (Status: 301) [Size: 313] [--> http://10.129.228.80/.svn/]
+/server-status        (Status: 403) [Size: 278]                                 
+===============================================================
+2021/11/14 11:43:00 Finished
+===============================================================

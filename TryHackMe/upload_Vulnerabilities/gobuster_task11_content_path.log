@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://jewel.uploadvulns.thm/content
+[+] Method:                  GET
+[+] Threads:                 100
+[+] Wordlist:                ./UploadVulnsWordlist.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              jpg,jpeg
+[+] Timeout:                 10s
+===============================================================
+2021/08/08 11:52:13 Starting gobuster in directory enumeration mode
+===============================================================
+/ABH.jpg              (Status: 200) [Size: 705442]
+/LKQ.jpg              (Status: 200) [Size: 444808]
+/SAD.jpg              (Status: 200) [Size: 247159]
+/UAD.jpg              (Status: 200) [Size: 342033]
+/YIU.jpg              (Status: 200) [Size: 222387]
+===============================================================
+2021/08/08 12:00:08 Finished
+===============================================================

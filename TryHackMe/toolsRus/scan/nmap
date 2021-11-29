@@ -1,0 +1,28 @@
+# Nmap 7.91 scan initiated Tue Jul 27 19:36:56 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.10.80.232
+Increasing send delay for 10.10.80.232 from 0 to 5 due to 44 out of 109 dropped probes since last increase.
+Nmap scan report for 10.10.80.232
+Host is up (0.58s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 ee:4e:a9:84:73:e3:00:f1:77:b7:d3:cd:f8:8f:aa:fa (RSA)
+|   256 4e:67:82:12:4e:09:c4:ed:91:a3:34:4a:ed:c9:43:94 (ECDSA)
+|_  256 ff:c5:bd:08:16:1d:1f:2e:64:84:84:5d:d7:84:a5:ce (ED25519)
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+1234/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Apache Tomcat/7.0.88
+8009/tcp open  ajp13   Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 27 19:39:40 2021 -- 1 IP address (1 host up) scanned in 163.98 seconds

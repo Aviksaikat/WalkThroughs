@@ -1,0 +1,46 @@
+# Nmap 7.91 scan initiated Mon Jan  4 21:42:49 2021 as: nmap -sS -sV -v -A -T4 -oN scan 10.10.218.52
+Nmap scan report for 10.10.218.52
+Host is up (0.50s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.2
+22/tcp open  ssh     OpenSSH 6.7p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 a0:8b:6b:78:09:39:03:32:ea:52:4c:20:3e:82:ad:60 (DSA)
+|   2048 df:25:d0:47:1f:37:d9:18:81:87:38:76:30:92:65:1f (RSA)
+|   256 be:9f:4f:01:4a:44:c8:ad:f5:03:cb:00:ac:8f:49:44 (ECDSA)
+|_  256 db:b1:c1:b9:cd:8c:9d:60:4f:f1:98:e2:99:fe:08:03 (ED25519)
+80/tcp open  http    Apache httpd 2.4.10 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-title: Apache2 Debian Default Page: It works
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=1/4%OT=21%CT=1%CU=36030%PV=Y%DS=4%DC=T%G=Y%TM=5FF33ECB
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=F9%GCD=1%ISR=111%TI=Z%CI=RD%TS=8)SEQ(SP=F9
+OS:%GCD=1%ISR=111%TI=Z%II=I%TS=8)SEQ(SP=F9%GCD=1%ISR=111%TI=Z%CI=RD%II=I%TS
+OS:=8)SEQ(SP=F9%GCD=1%ISR=111%TI=Z%TS=8)OPS(O1=M505ST11NW6%O2=M505ST11NW6%O
+OS:3=M505NNT11NW6%O4=M505ST11NW6%O5=M505ST11NW6%O6=M505ST11)WIN(W1=68DF%W2=
+OS:68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSN
+OS:W6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 186.879 days (since Thu Jul  2 00:38:05 2020)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=249 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 256/tcp)
+HOP RTT       ADDRESS
+1   310.96 ms 10.4.0.1
+2   ... 3
+4   618.60 ms 10.10.218.52
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan  4 21:44:03 2021 -- 1 IP address (1 host up) scanned in 74.29 seconds

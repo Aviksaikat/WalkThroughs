@@ -1,0 +1,35 @@
+# Nmap 7.91 scan initiated Wed Jan 20 19:11:45 2021 as: nmap -sS -sV -v -A -T4 -oN scan 10.10.248.119
+adjust_timeouts2: packet supposedly had rtt of -20754829 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -20754829 microseconds.  Ignoring time.
+Nmap scan report for 10.10.248.119
+Host is up (0.46s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 10:a6:95:34:62:b0:56:2a:38:15:77:58:f4:f3:6c:ac (RSA)
+|   256 6f:18:27:a4:e7:21:9d:4e:6d:55:b3:ac:c5:2d:d5:d3 (ECDSA)
+|_  256 2d:c3:1b:58:4d:c3:5d:8e:6a:f6:37:9d:ca:ad:20:7c (ED25519)
+80/tcp   open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Home - hackerNote
+8080/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Home - hackerNote
+Aggressive OS guesses: Linux 2.6.32 (98%), Adtran 424RG FTTH gateway (98%), AVM FRITZ!Box (FritzOS 6.03) (98%), Check Point SBox-200 firewall (98%), CyanogenMod 11 (Android 4.4.4) (98%), Dell Networking Operating System 6.2 (Linux 3.6) (98%), FreeBSD 11.0-STABLE (98%), FreeBSD 11.1-STABLE (98%), Geovision EBD4700 CCTV camera (Linux 3.4) (98%), Android 2.2 (Linux 2.6) (98%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 4 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 23/tcp)
+HOP RTT       ADDRESS
+1   316.77 ms 10.4.0.1
+2   ... 3
+4   512.13 ms 10.10.248.119
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 20 19:13:32 2021 -- 1 IP address (1 host up) scanned in 107.28 seconds

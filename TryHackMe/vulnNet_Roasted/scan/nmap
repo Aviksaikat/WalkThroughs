@@ -1,0 +1,27 @@
+# Nmap 7.91 scan initiated Thu Jun 10 19:03:56 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap -Pn 10.10.91.27
+Nmap scan report for 10.10.91.27
+Host is up (0.59s latency).
+Not shown: 989 filtered ports
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2021-06-10 13:34:33Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: vulnnet-rst.local0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: vulnnet-rst.local0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+Service Info: Host: WIN-2BO8M1OE1M1; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun 10 19:06:35 2021 -- 1 IP address (1 host up) scanned in 158.13 seconds

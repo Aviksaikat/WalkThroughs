@@ -1,0 +1,11 @@
+$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm
+
+
+Loaded 1 password hash (bcrypt [Blowfish 32/64 X3])
+Cost 1 (iteration count) is 1024 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+secret           (?)
+1g 0:00:00:00 DONE (2021-01-02 20:06) 1.250g/s 90.00p/s 90.00c/s 90.00C/s 123456..666666
+Use the --show option to display all of the cracked passwords reliably
+Session completed

@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://tenet.htb/
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/06/23 20:22:03 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 274]
+/.htpasswd            (Status: 403) [Size: 274]
+/.htaccess            (Status: 403) [Size: 274]
+/index.php            (Status: 301) [Size: 0] [--> http://tenet.htb/]
+/server-status        (Status: 403) [Size: 274]                      
+/wp-admin             (Status: 301) [Size: 309] [--> http://tenet.htb/wp-admin/]
+/wp-content           (Status: 301) [Size: 311] [--> http://tenet.htb/wp-content/]
+/wp-includes          (Status: 301) [Size: 312] [--> http://tenet.htb/wp-includes/]
+/xmlrpc.php           (Status: 405) [Size: 42]                                     
+===============================================================
+2021/06/23 20:22:46 Finished
+===============================================================

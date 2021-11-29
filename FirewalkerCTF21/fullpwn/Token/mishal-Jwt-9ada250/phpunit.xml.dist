@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        processIsolation="false"
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        colors="true"
+        syntaxCheck="false"
+        verbose="true"
+        printerClass="PHPUnit_TextUI_ResultPrinter"
+        bootstrap="test/unit/bootstrap.php">
+    <testsuites>
+        <testsuite name="XYZ component Test Suite">
+            <directory>./test/unit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

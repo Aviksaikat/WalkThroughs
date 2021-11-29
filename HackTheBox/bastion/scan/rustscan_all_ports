@@ -1,0 +1,52 @@
+# Nmap 7.91 scan initiated Sun Jul  4 20:50:36 2021 as: nmap -vvv -p 135,139,445,5985,47001,49664,49666,49668,49670,49669 -sV -T4 -sC -A -oN scan/rustscan_all_ports 10.10.10.134
+Nmap scan report for 10.10.10.134
+Host is up, received conn-refused (0.40s latency).
+Scanned at 2021-07-04 20:50:36 IST for 101s
+
+PORT      STATE SERVICE      REASON  VERSION
+135/tcp   open  msrpc        syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds syn-ack Windows Server 2016 Standard 14393 microsoft-ds
+5985/tcp  open  http         syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+47001/tcp open  http         syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49666/tcp open  unknown      syn-ack
+49668/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49669/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49670/tcp open  msrpc        syn-ack Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -39m04s, deviation: 1h09m12s, median: 52s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 52887/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 26941/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 18059/udp): CLEAN (Timeout)
+|   Check 4 (port 18741/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Bastion
+|   NetBIOS computer name: BASTION\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-04T17:22:48+02:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-04T15:22:47
+|_  start_date: 2021-07-02T04:38:27
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul  4 20:52:17 2021 -- 1 IP address (1 host up) scanned in 100.68 seconds

@@ -1,0 +1,7 @@
+Dale
+	I have started coding a new website in PHP for the team to use, this is currently under development. It can be
+found at ".dev" within our domain.
+
+Also as per the team policy please make a copy of your "id_rsa" and place this in the relevent config file.
+
+Gyles 

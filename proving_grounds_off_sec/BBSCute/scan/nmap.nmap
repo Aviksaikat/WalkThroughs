@@ -1,0 +1,58 @@
+# Nmap 7.91 scan initiated Fri Sep 24 19:46:19 2021 as: nmap -sV -sC -T4 -v -A -oA scan/nmap 192.168.235.128
+Increasing send delay for 192.168.235.128 from 0 to 5 due to 11 out of 25 dropped probes since last increase.
+Nmap scan report for 192.168.235.128
+Host is up (0.32s latency).
+Not shown: 987 closed ports
+PORT      STATE    SERVICE     VERSION
+22/tcp    open     ssh         OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 04:d0:6e:c4:ba:4a:31:5a:6f:b3:ee:b8:1b:ed:5a:b7 (RSA)
+|   256 24:b3:df:01:0b:ca:c2:ab:2e:e9:49:b0:58:08:6a:fa (ECDSA)
+|_  256 6a:c4:35:6a:7a:1e:7e:51:85:5b:81:5c:7c:74:49:84 (ED25519)
+80/tcp    open     http        Apache httpd 2.4.38 ((Debian))
+|_http-favicon: Unknown favicon MD5: 759585A56089DB516D1FBBBE5A8EEA57
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Apache2 Debian Default Page: It works
+88/tcp    open     http        nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+|_http-title: 404 Not Found
+110/tcp   open     pop3        Courier pop3d
+|_pop3-capabilities: UIDL IMPLEMENTATION(Courier Mail Server) TOP UTF8(USER) STLS PIPELINING USER LOGIN-DELAY(10)
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-09-17T16:28:06
+| Not valid after:  2021-09-17T16:28:06
+| MD5:   5ee2 40c8 66d1 b327 71e6 085a f50b 7e28
+|_SHA-1: 28a3 acc0 86a7 cd64 8f09 78fa 1792 7032 0ecc b154
+|_ssl-date: TLS randomness does not represent time
+500/tcp   filtered isakmp
+722/tcp   filtered unknown
+995/tcp   open     ssl/pop3    Courier pop3d
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-09-17T16:28:06
+| Not valid after:  2021-09-17T16:28:06
+| MD5:   5ee2 40c8 66d1 b327 71e6 085a f50b 7e28
+|_SHA-1: 28a3 acc0 86a7 cd64 8f09 78fa 1792 7032 0ecc b154
+|_ssl-date: TLS randomness does not represent time
+1007/tcp  filtered unknown
+1126/tcp  filtered hpvmmdata
+2121/tcp  filtered ccproxy-ftp
+4111/tcp  filtered xgrid
+10626/tcp filtered unknown
+19842/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 24 19:47:36 2021 -- 1 IP address (1 host up) scanned in 76.80 seconds

@@ -1,0 +1,1 @@
+flag{this_is_why_i_use_premulplied_alpha}
