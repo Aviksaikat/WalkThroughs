@@ -1,1 +1,0 @@
-flag{keyboard_shortcuts_or_taskbar}

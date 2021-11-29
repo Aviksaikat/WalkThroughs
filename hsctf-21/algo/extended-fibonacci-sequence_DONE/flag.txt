@@ -1,1 +1,0 @@
-flag{nacco_ordinary_fib}

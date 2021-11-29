@@ -1,1 +1,0 @@
-flag{png_fil3s_have_pattern}

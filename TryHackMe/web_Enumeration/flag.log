@@ -1,18 +1,0 @@
-===============================================================
-Gobuster v3.1.0
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://products.webenum.thm/
-[+] Method:                  GET
-[+] Threads:                 70
-[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.1.0
-[+] Extensions:              txt,php
-[+] Timeout:                 10s
-===============================================================
-2021/08/18 20:18:59 Starting gobuster in directory enumeration mode
-===============================================================
-/css                  (Status: 301) [Size: 326] [--> http://products.webenum.thm/css/]
-/js                   (Status: 301) [Size: 325] [--> http://products.webenum.thm/js/] 
-/flag.txt             (Status: 200) [Size: 21]                                        

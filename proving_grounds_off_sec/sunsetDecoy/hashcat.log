@@ -1,142 +1,0 @@
-hashcat (v6.1.1) starting...
-
-[33m* Device #1: WARNING! Kernel exec timeout is not disabled.[0m
-[33m             This may cause "CL_OUT_OF_RESOURCES" or related errors.[0m
-[33m             To disable the timeout, see: https://hashcat.net/q/timeoutpatch[0m
-[33m* Device #2: WARNING! Kernel exec timeout is not disabled.[0m
-[33m             This may cause "CL_OUT_OF_RESOURCES" or related errors.[0m
-[33m             To disable the timeout, see: https://hashcat.net/q/timeoutpatch[0m
-CUDA API (CUDA 11.2)
-====================
-* Device #1: GeForce 930MX, 1979/2004 MB, 3MCU
-
-OpenCL API (OpenCL 1.2 CUDA 11.2.136) - Platform #1 [NVIDIA Corporation]
-========================================================================
-* Device #2: GeForce 930MX, skipped
-
-OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #2 [The pocl project]
-=============================================================================================================================
-* Device #3: pthread-Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, skipped
-
-Minimum password length supported by kernel: 0
-Maximum password length supported by kernel: 15
-
-Counting lines in ./etc/shadow...[2KCounted lines in ./etc/shadow...[2KParsing Hashes: 1/31 (3.23%)...[2K[33mHashfile './etc/shadow' on line 2 (daemon:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 3 (bin:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 4 (sys:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 5 (sync:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 6 (games:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 7 (man:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 8 (lp:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 9 (mail:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 10 (news:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 11 (uucp:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 12 (proxy:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 13 (www-data:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 14 (backup:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 15 (list:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 16 (irc:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 17 (gnats:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 18 (nobody:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 19 (_apt:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 20 (systemd-timesync:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 21 (systemd-network:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 22 (systemd-resolve:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 23 (messagebus:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 24 (avahi-autoipd:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 25 (sshd:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 26 (avahi:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 27 (saned:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 28 (colord:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 29 (hplip:*:18440:0:99999:7:::): Token length exception[0m
-[33mHashfile './etc/shadow' on line 30 (systemd-coredump:!!:18440::::::): Token length exception[0m
-Parsing Hashes: 2/31 (6.45%)...[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 2 digests; 2 unique digests, 2 unique salts
-Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
-Rules: 1
-
-Applicable optimizers applied:
-* Optimized-Kernel
-* Zero-Byte
-* Uses-64-Bit
-
-Watchdog: Temperature abort trigger set to 90c
-
-INFO: Removed 1 hash found in potfile.
-
-Initializing device kernels and memory...[2KInitializing backend runtime for device #1...[2KInitialized backend runtime for device #1...[2KHost memory required for this attack: 116 MB
-
-Initialized device kernels and memory...[2KDictionary cache hit:
-* Filename..: /usr/share/wordlists/rockyou.txt
-* Passwords.: 14344385
-* Bytes.....: 139921507
-* Keyspace..: 14344385
-
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit => 
-
-Session..........: hashcat
-Status...........: Running
-Hash.Name........: sha512crypt $6$, SHA512 (Unix)
-Hash.Target......: ./etc/shadow
-Time.Started.....: Wed Mar 17 20:47:26 2021 (4 secs)
-Time.Estimated...: Wed Mar 17 21:14:57 2021 (27 mins, 27 secs)
-Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
-Guess.Queue......: 1/1 (100.00%)
-Speed.#1.........:     8690 H/s (8.83ms) @ Accel:8 Loops:16 Thr:1024 Vec:1
-Recovered........: 1/2 (50.00%) Digests, 1/2 (50.00%) Salts
-Progress.........: 49196/28688770 (0.17%)
-Rejected.........: 44/49196 (0.09%)
-Restore.Point....: 24588/14344385 (0.17%)
-Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:1200-1216
-Candidates.#1....: 1fucker -> thesims1
-Hardware.Mon.#1..: Temp: 54c Util:100% Core:1019MHz Mem:1001MHz Bus:4
-
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit => 
-
-Session..........: hashcat
-Status...........: Running
-Hash.Name........: sha512crypt $6$, SHA512 (Unix)
-Hash.Target......: ./etc/shadow
-Time.Started.....: Wed Mar 17 20:47:26 2021 (5 secs)
-Time.Estimated...: Wed Mar 17 21:14:58 2021 (27 mins, 27 secs)
-Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
-Guess.Queue......: 1/1 (100.00%)
-Speed.#1.........:     8690 H/s (8.81ms) @ Accel:8 Loops:16 Thr:1024 Vec:1
-Recovered........: 1/2 (50.00%) Digests, 1/2 (50.00%) Salts
-Progress.........: 49196/28688770 (0.17%)
-Rejected.........: 44/49196 (0.09%)
-Restore.Point....: 24588/14344385 (0.17%)
-Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:3392-3408
-Candidates.#1....: 1fucker -> thesims1
-Hardware.Mon.#1..: Temp: 55c Util:100% Core:1019MHz Mem:1001MHz Bus:4
-
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit => 
-
-Session..........: hashcat
-Status...........: Running
-Hash.Name........: sha512crypt $6$, SHA512 (Unix)
-Hash.Target......: ./etc/shadow
-Time.Started.....: Wed Mar 17 20:47:26 2021 (6 secs)
-Time.Estimated...: Wed Mar 17 21:14:48 2021 (27 mins, 16 secs)
-Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
-Guess.Queue......: 1/1 (100.00%)
-Speed.#1.........:     8737 H/s (8.78ms) @ Accel:8 Loops:16 Thr:1024 Vec:1
-Recovered........: 1/2 (50.00%) Digests, 1/2 (50.00%) Salts
-Progress.........: 98380/28688770 (0.34%)
-Rejected.........: 76/98380 (0.08%)
-Restore.Point....: 49174/14344385 (0.34%)
-Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:112-128
-Candidates.#1....: theoc -> chichis
-Hardware.Mon.#1..: Temp: 56c Util: 97% Core:1019MHz Mem:1001MHz Bus:4
-
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mCracking performance lower than expected?[0m
-[33m[0m
-[33m* Append -w 3 to the commandline.[0m
-[33m  This can cause your screen to lag.[0m
-[33m[0m
-[33m* Update your backend API runtime / driver the right way:[0m
-[33m  https://hashcat.net/faq/wrongdriver[0m
-[33m[0m
-[33m* Create more work items to make use of your parallelization power:[0m
-[33m  https://hashcat.net/faq/morework[0m
-[33m[0m
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit => 

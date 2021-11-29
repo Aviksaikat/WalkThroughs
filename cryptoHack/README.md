@@ -1,3 +1,0 @@
-# CRYPTOHACK 
-
-# A Cryptographic Game

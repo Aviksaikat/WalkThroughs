@@ -1,1 +1,0 @@
-flag{power_of_script}

