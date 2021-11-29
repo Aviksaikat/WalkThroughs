@@ -1,2 +1,0 @@
-#smallest b/w 2 ints 
-4

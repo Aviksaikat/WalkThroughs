@@ -1,30 +1,0 @@
-===============================================================
-Gobuster v3.1.0
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://192.168.235.128/
-[+] Method:                  GET
-[+] Threads:                 50
-[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.1.0
-[+] Timeout:                 10s
-===============================================================
-2021/09/24 19:58:20 Starting gobuster in directory enumeration mode
-===============================================================
-/.htaccess            (Status: 403) [Size: 280]
-/.htpasswd            (Status: 403) [Size: 280]
-/.hta                 (Status: 403) [Size: 280]
-/core                 (Status: 301) [Size: 317] [--> http://192.168.235.128/core/]
-/docs                 (Status: 301) [Size: 317] [--> http://192.168.235.128/docs/]
-/favicon.ico          (Status: 200) [Size: 1150]                                  
-/index.html           (Status: 200) [Size: 10701]                                 
-/index.php            (Status: 200) [Size: 6174]                                  
-/libs                 (Status: 301) [Size: 317] [--> http://192.168.235.128/libs/]
-/manual               (Status: 301) [Size: 319] [--> http://192.168.235.128/manual/]
-/server-status        (Status: 403) [Size: 280]                                     
-/skins                (Status: 301) [Size: 318] [--> http://192.168.235.128/skins/] 
-/uploads              (Status: 301) [Size: 320] [--> http://192.168.235.128/uploads/]
-===============================================================
-2021/09/24 19:59:10 Finished
-===============================================================

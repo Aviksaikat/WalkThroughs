@@ -1,1 +1,0 @@
-flag{JWT_n0t_s3cure_3k4a3na}

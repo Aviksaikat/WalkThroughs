@@ -1,26 +1,0 @@
-===============================================================
-Gobuster v3.1.0
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://helpdesk.delivery.htb/
-[+] Method:                  GET
-[+] Threads:                 50
-[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.1.0
-[+] Timeout:                 10s
-===============================================================
-2021/11/13 00:31:25 Starting gobuster in directory enumeration mode
-===============================================================
-/images               (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/images/]
-/pages                (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/pages/] 
-/apps                 (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/apps/]  
-/assets               (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/assets/]
-/css                  (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/css/]   
-/includes             (Status: 403) [Size: 169]                                           
-/js                   (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/js/]    
-/kb                   (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/kb/]    
-/api                  (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/api/]   
-/include              (Status: 403) [Size: 169]                                           
-/scp                  (Status: 301) [Size: 185] [--> http://helpdesk.delivery.htb/scp/]   
-/included             (Status: 403) [Size: 169]                                           

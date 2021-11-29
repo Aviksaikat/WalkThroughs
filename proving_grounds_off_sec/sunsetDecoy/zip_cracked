@@ -1,9 +1,0 @@
-john --wordlist=/usr/share/wordlists/rockyou.txt hash       
-Using default input encoding: UTF-8
-Loaded 1 password hash (PKZIP [32/64])
-Will run 8 OpenMP threads
-Press 'q' or Ctrl-C to abort, almost any other key for status
-manuel           (save.zip)
-1g 0:00:00:00 DONE (2021-03-17 18:48) 2.173g/s 35617p/s 35617c/s 35617C/s 123456..cocoliso
-Use the "--show" option to display all of the cracked passwords reliably
-Session completed

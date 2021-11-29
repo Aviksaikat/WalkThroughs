@@ -1,2 +1,0 @@
-name = tomcat
-pass = $3cureP4s5w0rd123!

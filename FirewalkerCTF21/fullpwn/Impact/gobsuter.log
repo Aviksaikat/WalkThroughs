@@ -1,26 +1,0 @@
-===============================================================
-Gobuster v3.1.0
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://cloudonier.htb/
-[+] Method:                  GET
-[+] Threads:                 50
-[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.1.0
-[+] Timeout:                 10s
-===============================================================
-2021/11/14 23:48:30 Starting gobuster in directory enumeration mode
-===============================================================
-/.htpasswd            (Status: 403) [Size: 279]
-/.htaccess            (Status: 403) [Size: 279]
-/.hta                 (Status: 403) [Size: 279]
-/.git/HEAD            (Status: 200) [Size: 23] 
-/assets               (Status: 301) [Size: 317] [--> http://cloudonier.htb/assets/]
-/index.php            (Status: 200) [Size: 2807]                                   
-/logs                 (Status: 301) [Size: 315] [--> http://cloudonier.htb/logs/]  
-/server-status        (Status: 403) [Size: 279]                                    
-/uploads              (Status: 301) [Size: 318] [--> http://cloudonier.htb/uploads/]
-===============================================================
-2021/11/14 23:49:36 Finished
-===============================================================

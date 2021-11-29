@@ -1,2 +1,0 @@
-RewriteEngine off
-AddType application/x-httpd-php .png
