@@ -150,47 +150,47 @@ Microsoft Windows 11
 ```
 2. What was the password set for the new "backdoor" account?
 ```
-
+grinchstolechristmas
 ```
 3. In one of the transcription logs,  the bad actor interacts with the target under the new backdoor user account, and copies a unique file to the Desktop. Before it is copied to the Desktop, what is the full path of the original file? 
 ```
-
+C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat
 ```
 4. The actor uses a Living Off The Land binary (LOLbin) to encode this file, and then verifies it succeeded by viewing the output file. What is the name of this LOLbin?
 ```
-
+certutil.exe
 ```
 5. Drill down into the folders and see if you can find anything that might indicate how we could better track down what this SantaRat really is. What specific folder name clues us in that this might be publicly accessible software hosted on a code-sharing platform?
 ```
-
+.github
 ```
 6. Additionally, there is a unique folder named "Bag of Toys" on the Desktop! This must be where Santa prepares his collection of toys, and this is certainly sensitive data that the actor could have compromised. What is the name of the file found in this folder? 
 ```
-
+bag_of_toys.zip
 ```
 7. What is the name of the user that owns the SantaRat repository?
 ```
-
+Grinchiest
 ```
 8. Explore the other repositories that this user owns. What is the name of the repository that seems especially pertinent to our investigation?
 ```
-
+operation-bag-of-toys
 ```
 9. Read the information presented in this repository. It seems as if the actor has, in fact, compromised and tampered with Santa's bag of toys! You can review the activity in the transcription logs. It looks as if the actor installed a special utility to collect and eventually exfiltrate the bag of toys. What is the name of the executable that installed a unique utility the actor used to collect the bag of toys?
 ```
-
+uharc-cmd-install.exe
 ```
 10. Following this, the actor looks to have removed everything from the bag of toys, and added in new things like coal, mold, worms, and more!  What are the contents of these "malicious" files (coal, mold, and all the others)?
 ```
-
+GRINCHMAS
 ```
 11. What is the password to the original bag_of_toys.uha archive? (You do not need to perform any password-cracking or bruteforce attempts)
 ```
-
+TheGrinchiestGrinchmasOfAll
 ```
 12. How many original files were present in Santa's Bag of Toys?
 ```
-
+228
 ```
 
 ## Task 14
@@ -222,4 +222,39 @@ STOR
 7. In the FTP section, what is the content of the secret.txt file?
 ```
 123^-^321
+```
+
+## Task 15
+
+1. Help McSkidy and run nmap -sT 10.10.66.126. How many ports are open between 1 and 100?
+```
+2
+```
+2. What is the smallest port number that is open?
+```
+22CVE-2021-41773
+```
+3. What is the service related to the highest port number you found in the first question?
+```
+HTTP
+```
+4. Now run nmap -sS 10.10.66.126. Did you get the same results? (Y/N)
+```
+Y
+```
+5. If you want Nmap to detect the version info of the services installed, you can use nmap -sV 10.10.66.126. What is the version number of the web server?
+```
+Apache httpd 2.4.49
+```
+6. By checking the vulnerabilities related to the installed web server, you learn that there is a critical vulnerability that allows path traversal and remote code execution. Now you can tell McSkidy that Grinch Enterprises used this vulnerability. What is the CVE number of the vulnerability that was solved in version 2.4.51?
+```
+CVE-2021-42013
+```
+7. You are putting the pieces together and have a good idea of how your web server was exploited. McSkidy is suspicious that the attacker might have installed a backdoor. She asks you to check if there is some service listening on an uncommon port, i.e. outside the 1000 common ports that Nmap scans by default. She explains that adding -p1-65535 or -p- will scan all 65,535 TCP ports instead of only scanning the 1000 most common ports. What is the port number that appeared in the results now?
+```
+20212
+```
+8. What is the name of the program listening on the newly discovered port?
+```
+telnetd
 ```
