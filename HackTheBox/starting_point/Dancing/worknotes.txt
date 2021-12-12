@@ -1,0 +1,3 @@
+- start apache server on the linux machine
+- secure the ftp server
+- setup winrm on dancing 
