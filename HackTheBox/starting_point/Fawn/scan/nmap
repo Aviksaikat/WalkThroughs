@@ -1,0 +1,27 @@
+# Nmap 7.92 scan initiated Sun Dec 12 18:53:58 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.129.208.142
+Nmap scan report for 10.129.208.142
+Host is up (0.22s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT    STATE    SERVICE VERSION
+21/tcp  open     ftp     vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.10.15.123
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0              32 Jun 04  2021 flag.txt
+444/tcp filtered snpp
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 12 18:54:30 2021 -- 1 IP address (1 host up) scanned in 32.04 seconds
