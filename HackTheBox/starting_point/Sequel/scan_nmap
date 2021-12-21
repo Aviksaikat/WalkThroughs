@@ -1,0 +1,24 @@
+# Nmap 7.92 scan initiated Mon Dec 20 19:44:00 2021 as: nmap -sC -sV -A -T4 -v -oN scan_nmap -Pn 10.129.78.52
+Nmap scan report for 10.129.78.52
+Host is up (0.27s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql?
+|_ssl-cert: ERROR: Script execution failed (use -d to debug)
+|_tls-nextprotoneg: ERROR: Script execution failed (use -d to debug)
+|_tls-alpn: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: ERROR: Script execution failed (use -d to debug)
+|_sslv2: ERROR: Script execution failed (use -d to debug)
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.3.27-MariaDB-0+deb10u1
+|   Thread ID: 67
+|   Capabilities flags: 63486
+|   Some Capabilities: Speaks41ProtocolOld, ConnectWithDatabase, Support41Auth, FoundRows, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, SupportsTransactions, LongColumnFlag, InteractiveClient, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, ODBCClient, SupportsCompression, IgnoreSigpipes, SupportsAuthPlugins, SupportsMultipleStatments, SupportsMultipleResults
+|   Status: Autocommit
+|   Salt: tx{$<@kzE'5pXH?Cr8\I
+|_  Auth Plugin Name: mysql_native_password
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 20 19:47:58 2021 -- 1 IP address (1 host up) scanned in 238.52 seconds
