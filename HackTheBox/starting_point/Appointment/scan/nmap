@@ -1,0 +1,17 @@
+# Nmap 7.92 scan initiated Mon Dec 20 19:24:39 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap -Pn 10.129.77.239
+Increasing send delay for 10.129.77.239 from 0 to 5 due to 46 out of 114 dropped probes since last increase.
+Increasing send delay for 10.129.77.239 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.129.77.239
+Host is up (0.22s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-favicon: Unknown favicon MD5: 7D4140C76BF7648531683BFA4F7F8C22
+|_http-title: Login
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.38 (Debian)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 20 19:25:23 2021 -- 1 IP address (1 host up) scanned in 44.34 seconds
