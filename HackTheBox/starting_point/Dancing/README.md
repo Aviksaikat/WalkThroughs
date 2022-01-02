@@ -38,5 +38,5 @@ get
 ```
 9. Submit root flag
 ```
-
+HTB{5f61c10dffbc77a704d76016a22f1664}
 ```
