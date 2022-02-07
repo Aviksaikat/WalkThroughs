@@ -1,0 +1,41 @@
+# Nmap 7.92 scan initiated Sun Dec 12 20:02:34 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.129.205.144
+Nmap scan report for 10.129.205.144
+Host is up (0.31s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: EXPLOSION
+|   NetBIOS_Domain_Name: EXPLOSION
+|   NetBIOS_Computer_Name: EXPLOSION
+|   DNS_Domain_Name: Explosion
+|   DNS_Computer_Name: Explosion
+|   Product_Version: 10.0.17763
+|_  System_Time: 2021-12-12T14:44:09+00:00
+| ssl-cert: Subject: commonName=Explosion
+| Issuer: commonName=Explosion
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-09-20T16:22:34
+| Not valid after:  2022-03-22T16:22:34
+| MD5:   3d0d 95be 9ffd 7e5d dc0b b710 607a c1bf
+|_SHA-1: 4e49 35a6 106c 0136 56f6 9bd7 2673 f6bd 8d9d 0cb9
+|_ssl-date: 2021-12-12T14:44:18+00:00; +10m34s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-12-12T14:44:10
+|_  start_date: N/A
+|_clock-skew: mean: 10m33s, deviation: 0s, median: 10m33s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 12 20:03:44 2021 -- 1 IP address (1 host up) scanned in 70.05 seconds
