@@ -1,0 +1,36 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.11.143/
+[+] Method:                  GET
+[+] Threads:                 60
+[+] Wordlist:                /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/05/11 19:14:13 Starting gobuster in directory enumeration mode
+===============================================================
+/.htm                 (Status: 403) [Size: 199]
+/.html                (Status: 403) [Size: 199]
+/manual               (Status: 301) [Size: 235] [--> http://10.10.11.143/manual/]
+/.htaccess            (Status: 403) [Size: 199]                                  
+/.                    (Status: 403) [Size: 199691]                               
+/.htc                 (Status: 403) [Size: 199]                                  
+/.html_var_de         (Status: 403) [Size: 199]                                  
+/.htpasswd            (Status: 403) [Size: 199]                                  
+/.html.               (Status: 403) [Size: 199]                                  
+/.html.html           (Status: 403) [Size: 199]                                  
+/.htpasswds           (Status: 403) [Size: 199]                                  
+/.htm.                (Status: 403) [Size: 199]                                  
+/.htmll               (Status: 403) [Size: 199]                                  
+/.html.old            (Status: 403) [Size: 199]                                  
+/.html.bak            (Status: 403) [Size: 199]                                  
+/.ht                  (Status: 403) [Size: 199]                                  
+/.htm.htm             (Status: 403) [Size: 199]                                  
+/.hta                 (Status: 403) [Size: 199]                                  
+/.html1               (Status: 403) [Size: 199]                                  
+/.htgroup             (Status: 403) [Size: 199]                                  
+/.html.lck            (Status: 403) [Size: 199]                                  
+/.html.printable      (Status: 403) [Size: 199]                                  
