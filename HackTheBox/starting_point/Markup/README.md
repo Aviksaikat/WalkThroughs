@@ -1,4 +1,4 @@
-# TryHackMe Starting Point Markup 
+# HackTheBox Starting Point Markup 
 
 > Saikat Karmakar | Dec 31 : 2021
 

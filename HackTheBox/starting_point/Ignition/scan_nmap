@@ -1,0 +1,18 @@
+# Nmap 7.92 scan initiated Tue Dec 21 20:25:40 2021 as: nmap -sC -sV -A -T4 -v -oN scan_nmap -Pn 10.129.227.226
+Warning: 10.129.227.226 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.129.227.226
+Host is up (0.22s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE     VERSION
+80/tcp   open     http        nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: Did not follow redirect to http://ignition.htb/
+1117/tcp filtered ardus-mtrns
+1503/tcp filtered imtc-mcs
+3260/tcp filtered iscsi
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 21 20:26:35 2021 -- 1 IP address (1 host up) scanned in 54.43 seconds

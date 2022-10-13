@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Sun Dec 12 20:36:33 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap 10.129.126.38
+Nmap scan report for 10.129.126.38
+Host is up (0.24s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Welcome to nginx!
+|_http-server-header: nginx/1.14.2
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 12 20:37:13 2021 -- 1 IP address (1 host up) scanned in 39.85 seconds

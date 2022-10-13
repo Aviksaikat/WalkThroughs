@@ -1,4 +1,4 @@
-# TryHackMe Starting Point Redeemer 
+# HackTheBox Starting Point Redeemer 
 
 > Saikat Karmakar | July 28 : 2022
 

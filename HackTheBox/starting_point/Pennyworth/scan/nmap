@@ -1,0 +1,15 @@
+# Nmap 7.92 scan initiated Mon Dec 27 20:39:25 2021 as: nmap -sC -sV -A -T4 -v -oN scan/nmap -Pn 10.129.28.229
+Nmap scan report for 10.129.28.229
+Host is up (0.21s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Jetty 9.4.39.v20210325
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+|_http-favicon: Unknown favicon MD5: 23E8C7BD78E8CD826C5A6073B15068B1
+|_http-server-header: Jetty(9.4.39.v20210325)
+| http-robots.txt: 1 disallowed entry 
+|_/
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 27 20:40:01 2021 -- 1 IP address (1 host up) scanned in 35.62 seconds

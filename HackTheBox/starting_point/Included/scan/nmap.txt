@@ -1,0 +1,25 @@
+# Nmap 7.92 scan initiated Thu Dec 30 18:57:08 2021 as: nmap -sC -sU -sV -A -T4 -v -oN scan/nmap.txt 10.129.11.137
+Increasing send delay for 10.129.11.137 from 0 to 50 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 10.129.11.137 from 50 to 100 due to 11 out of 11 dropped probes since last increase.
+Warning: 10.129.11.137 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.129.11.137 from 400 to 800 due to 11 out of 12 dropped probes since last increase.
+Nmap scan report for 10.129.11.137
+Host is up (0.28s latency).
+Not shown: 995 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+68/udp    open|filtered dhcpc
+69/udp    open|filtered tftp
+18835/udp open|filtered unknown
+38615/udp open|filtered unknown
+45247/udp open|filtered unknown
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 41896/udp)
+HOP RTT       ADDRESS
+1   398.14 ms 10.10.14.1
+2   398.23 ms 10.129.11.137
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 30 19:17:09 2021 -- 1 IP address (1 host up) scanned in 1201.52 seconds
