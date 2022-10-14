@@ -1,0 +1,30 @@
+# Nmap 7.92 scan initiated Mon Dec 27 21:22:44 2021 as: nmap -sC -sV -A -T4 -v -Pn -oN nmap.log 3.141.159.106
+Increasing send delay for 3.141.159.106 from 0 to 5 due to 37 out of 92 dropped probes since last increase.
+Nmap scan report for ec2-3-141-159-106.us-east-2.compute.amazonaws.com (3.141.159.106)
+Host is up (0.33s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE      VERSION
+22/tcp   open     ssh          OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 3b:9d:37:94:76:00:f7:5e:19:6e:00:d8:27:6a:7f:3b (RSA)
+|   256 ee:89:40:f6:6b:a3:99:02:a1:f0:3f:14:38:55:e9:1b (ECDSA)
+|_  256 2a:33:21:9d:28:ed:2f:c4:5d:1b:21:32:7a:c9:10:34 (ED25519)
+25/tcp   filtered smtp
+80/tcp   open     http         Apache httpd 2.4.51 ((Debian))
+|_http-title: Welcome
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.51 (Debian)
+135/tcp  filtered msrpc
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+5000/tcp open     http         Apache httpd 2.4.51 ((Debian))
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.51 (Debian)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 27 21:23:31 2021 -- 1 IP address (1 host up) scanned in 47.18 seconds

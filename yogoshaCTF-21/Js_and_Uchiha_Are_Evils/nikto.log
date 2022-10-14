@@ -1,0 +1,19 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          3.141.109.49
++ Target Hostname:    3.141.109.49
++ Target Port:        80
++ Start Time:         2021-12-30 19:40:39 (GMT5.5)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ Retrieved x-powered-by header: Express
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Allowed HTTP Methods: GET, HEAD 
++ OSVDB-3092: /login/: This might be interesting...
++ Scan terminated:  7 error(s) and 6 item(s) reported on remote host
++ End Time:           2021-12-30 20:09:01 (GMT5.5) (1702 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

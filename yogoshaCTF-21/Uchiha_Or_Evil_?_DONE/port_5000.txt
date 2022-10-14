@@ -1,0 +1,23 @@
+# Dirsearch started Mon Dec 27 21:17:49 2021 as: dirsearch.py -u http://3.141.159.106:5000/ -e .php,.bak,.txt -H User-agent: Uchiha -o /home/avik/port_5000.txt
+
+403   280B   http://3.141.159.106:5000/.ht_wsr.txt
+403   280B   http://3.141.159.106:5000/.htaccess.save
+403   280B   http://3.141.159.106:5000/.htaccess.bak1
+403   280B   http://3.141.159.106:5000/.htaccess.sample
+403   280B   http://3.141.159.106:5000/.htaccess.orig
+403   280B   http://3.141.159.106:5000/.htaccess_extra
+403   280B   http://3.141.159.106:5000/.htaccess_orig
+403   280B   http://3.141.159.106:5000/.htaccess_sc
+403   280B   http://3.141.159.106:5000/.htaccessBAK
+403   280B   http://3.141.159.106:5000/.htaccessOLD
+403   280B   http://3.141.159.106:5000/.htaccessOLD2
+403   280B   http://3.141.159.106:5000/.htm
+403   280B   http://3.141.159.106:5000/.html
+403   280B   http://3.141.159.106:5000/.htpasswd_test
+403   280B   http://3.141.159.106:5000/.htpasswds
+403   280B   http://3.141.159.106:5000/.httr-oauth
+200    90B   http://3.141.159.106:5000/Dockerfile
+200    38B   http://3.141.159.106:5000/index.php
+200    38B   http://3.141.159.106:5000/index.php/login/
+403   280B   http://3.141.159.106:5000/server-status/
+403   280B   http://3.141.159.106:5000/server-status

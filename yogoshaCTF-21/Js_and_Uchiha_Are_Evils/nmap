@@ -1,0 +1,23 @@
+# Nmap 7.92 scan initiated Thu Dec 30 19:58:53 2021 as: nmap -sC -sV -A -T4 -v -Pn -oN nmap 3.141.109.49
+Nmap scan report for ec2-3-141-109-49.us-east-2.compute.amazonaws.com (3.141.109.49)
+Host is up (0.32s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT    STATE    SERVICE      VERSION
+22/tcp  open     ssh          OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 97:36:ff:8b:dd:b1:23:1c:5d:76:07:42:e9:6b:a1:94 (RSA)
+|   256 2a:da:e3:5d:2a:62:45:de:bb:55:55:be:69:94:1b:33 (ECDSA)
+|_  256 6b:50:45:65:da:07:dd:27:c8:ae:b9:e6:1e:c7:97:fa (ED25519)
+25/tcp  filtered smtp
+80/tcp  open     http         Node.js (Express middleware)
+|_http-title: Index
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+135/tcp filtered msrpc
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 30 19:59:34 2021 -- 1 IP address (1 host up) scanned in 40.21 seconds

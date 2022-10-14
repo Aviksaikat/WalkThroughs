@@ -1,0 +1,10 @@
+# Dirsearch started Thu Dec 30 23:37:20 2021 as: dirsearch.py -u http://3.141.109.49/ -e .js,.txt,.bak -H User-agent: Uchiha -o /home/avik/Desktop/ctf/WalkThroughs/yogoshaCTF-21/Js_and_Uchiha_Are_Evils/dirsearch.log -t 20
+
+301   171B   http://3.141.109.49:80/js    -> REDIRECTS TO: /js/
+301   173B   http://3.141.109.49:80/css    -> REDIRECTS TO: /css/
+302    28B   http://3.141.109.49:80/home    -> REDIRECTS TO: /login
+301   173B   http://3.141.109.49:80/img    -> REDIRECTS TO: /img/
+200     4KB  http://3.141.109.49:80/login/
+200     4KB  http://3.141.109.49:80/login
+302    28B   http://3.141.109.49:80/services    -> REDIRECTS TO: /login
+302    28B   http://3.141.109.49:80/services/    -> REDIRECTS TO: /login

@@ -1,0 +1,63 @@
+# Nmap 7.93 scan initiated Mon Oct 10 06:32:47 2022 as: /usr/bin/nmap -sC -sV -v -A -T4 -oN /scan/nmap.txt 10.10.118.8
+Nmap scan report for 10.10.118.8
+Host is up (0.23s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 621dd98801770a52bb59f9dac1a6e3cd (RSA)
+|   256 af677d24e595f44472d10c398dcc2115 (ECDSA)
+|_  256 202815ef13c89fb8a70f50e62f3b1e57 (ED25519)
+25/tcp  open  smtp     Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=ubuntu
+| Issuer: commonName=ubuntu
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-03-23T23:42:04
+| Not valid after:  2030-03-21T23:42:04
+| MD5:   9b8515ad46a7016e319a033d7d96edbe
+|_SHA-1: c4880c2da21038ddcfbba2994a2ab69c63fd2cdc
+|_smtp-commands: ubuntu.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+80/tcp  open  http     Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html).
+389/tcp open  ldap     OpenLDAP 2.2.X - 2.3.X
+443/tcp open  ssl/http Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: 400 Bad Request
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| ssl-cert: Subject: commonName=192.168.85.153/organizationName=Nagios Enterprises/stateOrProvinceName=Minnesota/countryName=US
+| Issuer: commonName=192.168.85.153/organizationName=Nagios Enterprises/stateOrProvinceName=Minnesota/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-03-24T00:14:58
+| Not valid after:  2030-03-22T00:14:58
+| MD5:   636cab0f639934e3b6dee6e2b294d4ef
+|_SHA-1: 80cd2e1b110f1b5f19431b3fc21871e78b986801
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+Aggressive OS guesses: Linux 3.10 - 3.13 (92%), Linux 3.10 - 4.11 (92%), Linux 3.12 (92%), Linux 3.13 (92%), Linux 3.13 or 4.2 (92%), Linux 3.2 - 3.5 (92%), Linux 3.2 - 3.8 (92%), Linux 4.2 (92%), Linux 4.4 (92%), HP P2000 G3 NAS device (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.013 days (since Mon Oct 10 06:14:37 2022)
+Network Distance: 6 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  ubuntu.localdomain; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 143/tcp)
+HOP RTT       ADDRESS
+1   0.04 ms   172.17.0.1
+2   132.04 ms 10.17.0.1
+3   ... 5
+6   251.76 ms 10.10.118.8
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 10 06:33:32 2022 -- 1 IP address (1 host up) scanned in 45.20 seconds

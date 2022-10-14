@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$1" == "" ]
 then
-	echo "Missing Arguments"
+	echo "Missing Arguments" | loclat 
 
 else
 	nmap $1 | cut -d " " -f 1 | tr -cd '[:digit:]\n' | sed '/^$/d;s/[[:blank:]]//g' > ports
@@ -20,8 +20,10 @@ else
 
 	while read -r line;
 	do
-		ports[$i] = $line
+		$ports[$i] = $line;
+		$i += 1;
 	done < fileName
 
 	#passing array name to the fn. by name reference
 	scan `ports[*]`
+fi

@@ -1,0 +1,16 @@
+{
+    "https://elfmail.hackyholidays.h1ctf.com/login-store": {
+        "headers": {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Encoding": "gzip, deflate",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Connection": "close",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:83.0) Gecko/20100101 Firefox/83.0"
+        },
+        "method": "POST",
+        "params": [
+            "debug"
+        ]
+    }
+}
