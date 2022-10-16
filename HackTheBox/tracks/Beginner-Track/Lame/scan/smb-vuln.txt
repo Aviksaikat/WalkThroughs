@@ -1,0 +1,17 @@
+# Nmap 7.93 scan initiated Fri Oct 14 06:05:27 2022 as: /usr/bin/nmap --script=smb-vuln* -v -oN scan/smb-vuln.txt 10.129.45.43
+Nmap scan report for 10.129.45.43
+Host is up (0.26s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms10-061: false
+|_smb-vuln-ms10-054: false
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Oct 14 06:08:12 2022 -- 1 IP address (1 host up) scanned in 164.86 seconds
