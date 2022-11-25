@@ -31,13 +31,13 @@ CVE-2019-15949
 ```
 6. After Metasploit has started, let's search for our target exploit using the command 'search applicationame'. What is the full path (starting with exploit) for the exploitation module?
 ```
-
+exploit/linux/http/nagios_xi_plugins_check_plugin_authenticated_rce
 ```
 7. Compromise the machine and locate user.txt
 ```
-
+THM{84b17add1d72a9f2e99c33bc568ae0f1}
 ```
 8. Locate root.txt
 ```
-
+THM{c89b2e39c83067503a6508b21ed6e962}
 ```
