@@ -1,0 +1,109 @@
+@font-face {
+   font-family: "Creepy";
+   src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true") format("woff"), url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true") format("woff2")
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+
+:root {
+   --bar-fill: #57e705;
+   --bar-top: #6aff03;
+   --pixel-size: 7;
+}
+
+.container {
+   width: calc(38px * var(--pixel-size));
+   margin: 4em auto;
+}
+
+.title {
+   width: calc(9px * var(--pixel-size));
+   margin-bottom: calc(2px * var(--pixel-size));
+   display: block;
+}
+
+.healthbar {
+   width: calc(38px * var(--pixel-size));
+   margin: 0 auto calc(2px * var(--pixel-size)) auto;
+   display: block;
+}
+
+.healthbar_fill {
+   /*    width: 100%; */
+   fill: var(--bar-fill);
+   transition: width 0.1s ease-in, fill 0.2s linear;
+}
+
+.healthbar_fill-top {
+   fill: var(--bar-top);
+}
+
+
+
+.character {
+   width: calc(40px * var(--pixel-size));
+   image-rendering: pixelated;
+   margin: 0 auto;
+   display: block;
+}
+
+.dead {
+   display: none;
+}
+
+.modal {
+
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+}
+
+.modalcontent {
+   position: fixed;
+   top: 40%;
+   left: 40%;
+   font-size: 100px;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+   color: #FF6D00;
+   font-family: Creepy, serif;
+}
+
+.modalspan {
+   position: fixed;
+   top: 55%;
+   left: 42%;
+   font-size: 44px;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+   color: #FF6D00;
+   font-family: Creepy, serif;
+   cursor: pointer;
+}
+
+.flipleft {
+   color: white;
+   font-size: 20px;
+   position: fixed;
+   margin-left: 20px;
+   margin-top: 10px;
+   font-family: "Press Start 2P" !important;
+}

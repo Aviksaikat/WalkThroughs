@@ -1,0 +1,90 @@
+*{
+    font-family: "Press Start 2P" !important;
+}
+body {
+    font-size: 9px !important;
+    color: #B3B5D2;
+    background: #0F1020;
+}
+
+.nav-container {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.nav-link a {
+    display: inline-block;
+    text-decoration: none;
+    color: #aeb0b0ed;
+    margin-top: 12px;
+}
+
+.nav-active a {
+    color: #fff !important;
+}
+
+.nav-link a:hover {
+    color: #fff !important;
+}
+
+.sw-text {
+    font-size: 11px;
+    text-align: left;
+    width: 170px;
+}
+
+.sw-img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.sw-path {
+    height: 30px;
+}
+
+.text-grey {
+    color: #8c98bf;
+}
+
+.fw-table {
+    margin-top: 50px;
+}
+
+.fw-progress {
+    display: none;
+}
+
+.fw-update-btn {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-fluid a{
+    font-size: 17px;
+}
+
+#navbarColor02 ul li a{
+    font-size: 12px;
+}
+
+.wel{
+    width: 40px;
+    height: 40px;
+}
+form a {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+span{
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+input{
+    font-size: 10px !important;
+}

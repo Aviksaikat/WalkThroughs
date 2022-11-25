@@ -1,0 +1,812 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Jolly+Lodger&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #FFE3B6;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: "Caveat Brush", sans-serif;
+  text-transform: lowercase;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem #9566C5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #FF7824;
+  outline: none;
+}
+
+.stars {
+  position: absolute;
+  font-size: 2rem;
+  color: #9566C5;
+  width: 100%;
+  height: 100%;
+}
+
+.stars>* {
+  position: absolute;
+  -webkit-animation: twinkle 3s linear infinite;
+  animation: twinkle 3s linear infinite;
+}
+
+@-webkit-keyframes twinkle {
+  50% {
+    transform: rotate(20deg) scale(0.5) translateY(0.25rem);
+  }
+}
+
+@keyframes twinkle {
+  50% {
+    transform: rotate(20deg) scale(0.5) translateY(0.25rem);
+  }
+}
+
+.stars #star-1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.stars #star-2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.stars #star-3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.stars #star-4 {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.stars #star-5 {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.stars #star-6 {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.stars div:nth-child(even) {
+  color: #FF7824;
+  font-size: 1.5rem;
+}
+
+.stars #star-1 {
+  top: 1rem;
+  left: -5rem;
+}
+
+.stars #star-2 {
+  top: 4rem;
+  left: -6rem;
+}
+
+.stars #star-3 {
+  top: 17rem;
+  left: 4rem;
+}
+
+.stars #star-4 {
+  top: -10rem;
+  left: 8rem;
+}
+
+.stars #star-5 {
+  top: 4rem;
+  left: 15rem;
+}
+
+.stars #star-6 {
+  top: 6rem;
+  left: 16rem;
+}
+
+.cat {
+  position: absolute;
+}
+
+.cat__hat {
+  position: relative;
+}
+
+.cat__hat>* {
+  position: absolute;
+}
+
+.cat__hat .brim {
+  top: -15.5rem;
+  left: -8.25rem;
+  width: 14rem;
+  height: 3rem;
+  border-radius: 60% 50%;
+  z-index: 3;
+  background: linear-gradient(to left, #BF87D9 10%, #9566C5 100%);
+  transform: rotate(-10deg);
+}
+
+.cat__hat .middle {
+  top: -20.75rem;
+  left: -4.25rem;
+  width: 5rem;
+  height: 8rem;
+  border-radius: 40% 60%;
+  z-index: 2;
+  background: linear-gradient(to left, #BF87D9 10%, #9566C5 100%);
+  transform: rotate(-10deg);
+}
+
+.cat__hat .top {
+  top: -20rem;
+  left: -6.5rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0% 60%;
+  background: #9566C5;
+  transform: rotate(-40deg);
+}
+
+.cat__head {
+  position: absolute;
+  top: -15rem;
+  left: -6.5rem;
+  width: 11.5rem;
+  height: 8.5rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(to left, #46001A 20%, #1F0100 100%);
+}
+
+.cat__eye__left {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 2;
+  border-radius: 60% 50%;
+  background: #FFFFFF;
+  -webkit-animation: blink 6s linear infinite;
+  animation: blink 6s linear infinite;
+}
+
+.cat__eye__right {
+  position: absolute;
+  top: 2rem;
+  left: 7.5rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 2;
+  border-radius: 50% 60%;
+  background: #FFFFFF;
+  -webkit-animation: blink 6s linear infinite;
+  animation: blink 6s linear infinite;
+}
+
+.cat .pupil {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 60% 40% 50% 40%;
+  background: linear-gradient(to left, #FF8C24 10%, #FF7824 100%);
+  transform: rotate(-50deg);
+  z-index: 2;
+  -webkit-animation: blink 6s linear infinite;
+  animation: blink 6s linear infinite;
+}
+
+@-webkit-keyframes blink {
+
+  0%,
+  100% {
+    transform: scale(1, 0.25);
+  }
+
+  1%,
+  99% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    transform: scale(1, 0.25);
+  }
+
+  1%,
+  99% {
+    transform: scale(1, 1);
+  }
+}
+
+.cat__nose {
+  position: absolute;
+  top: 4rem;
+  left: 5.75rem;
+  width: 1rem;
+  height: 0.75rem;
+  border-radius: 50% 60%;
+  background: #9566C5;
+}
+
+.cat__ear__left {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100% 10% 20% 20%;
+  z-index: 3;
+  background: #46001A;
+  transform: rotate(-20deg);
+}
+
+.cat__ear__left:before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100% 10% 20% 20%;
+  z-index: 3;
+  background: linear-gradient(to left, #FF8C24 10%, #FF7824 100%);
+  transform: rotate(0deg);
+}
+
+.cat__ear__right {
+  position: absolute;
+  top: -3.5rem;
+  left: 7rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100% 10% 20% 20%;
+  z-index: 2;
+  background: #46001A;
+  transform: rotate(0deg);
+  -webkit-animation: ear 5s linear infinite;
+  animation: ear 5s linear infinite;
+}
+
+.cat__ear__right:before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100% 10% 20% 20%;
+  z-index: 3;
+  background: linear-gradient(to left, #FF8C24 10%, #FF7824 100%);
+  transform: rotate(0deg);
+}
+
+@-webkit-keyframes ear {
+  1% {
+    transform: rotate(25deg);
+  }
+
+  2% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ear {
+  1% {
+    transform: rotate(25deg);
+  }
+
+  2% {
+    transform: rotate(0deg);
+  }
+}
+
+.cat__mouth__left {
+  position: absolute;
+  top: 4.75rem;
+  left: 5.25rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0 0 100% 0;
+  z-index: 3;
+  border-right: 0.25rem solid #FFFFFF;
+  border-bottom: 0.15rem solid #FFFFFF;
+  transform: rotate(30deg);
+}
+
+.cat__mouth__right {
+  position: absolute;
+  top: 4.5rem;
+  left: 6.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0 0 0 100%;
+  z-index: 3;
+  border-left: 0.25rem solid #FFFFFF;
+  border-bottom: 0.15rem solid #FFFFFF;
+  transform: rotate(-40deg);
+}
+
+.cat__paw {
+  position: absolute;
+  z-index: 6;
+}
+
+.cat__paw>* {
+  position: absolute;
+}
+
+.cat__paw .right {
+  top: -8.5rem;
+  left: 2.25rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  transform: rotate(30deg);
+  background: linear-gradient(to left, #46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .right:before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(#46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .right:after {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(#46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .left {
+  top: -6.75rem;
+  left: -7rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  transform: rotate(-20deg);
+  background: linear-gradient(to left, #46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .left:before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(#46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .left:after {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(#46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .bottom__left {
+  top: 3.75rem;
+  left: -8rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  transform: rotate(-120deg);
+  background: linear-gradient(to left, #46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .bottom__left:before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(#46001A 20%, #1F0100 100%);
+}
+
+.cat__paw .bottom__left:after {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40% 50%;
+  background: linear-gradient(#46001A 20%, #1F0100 100%);
+}
+
+.cat__body {
+  position: absolute;
+  top: -8.5rem;
+  left: -11rem;
+  width: 11rem;
+  height: 15rem;
+  border-radius: 40% 50% 20% 40%;
+  transform: rotate(20deg);
+  background: linear-gradient(to left, #46001A 20%, #1F0100 100%);
+}
+
+.cat__tail {
+  position: absolute;
+  left: -11rem;
+  bottom: -4rem;
+  z-index: -1;
+}
+
+.cat__tail__segment {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  bottom: -0.9rem;
+  left: 0;
+  border-bottom-right-radius: 0.3125rem;
+  border-top-right-radius: 50%;
+  background: linear-gradient(to left, #46001A 20%, #1F0100 100%);
+  z-index: 0;
+  transform: rotate(15deg);
+  -webkit-animation: tail 10s none infinite;
+  animation: tail 10s none infinite;
+}
+
+.cat__tail__segment {
+  height: 100%;
+  width: 0.875rem;
+  transform-origin: left;
+  border-bottom-left-radius: 1.25rem 1.25rem;
+  border-bottom-right-radius: 1.25rem 1.25rem;
+  border-top-right-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
+}
+
+.cat__tail__segment.last {
+  border-radius: 50%;
+}
+
+@-webkit-keyframes tail {
+
+  15%,
+  30%,
+  45% {
+    transform: rotate(10deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes tail {
+
+  15%,
+  30%,
+  45% {
+    transform: rotate(10deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(15deg);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  height: 20rem;
+  width: 15rem;
+  font-family: "Jolly Lodger", sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro .circle {
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  padding: 0.5rem;
+  border-radius: 50% 60% 40% 70%;
+  background: #BF87D9;
+  box-shadow: -0.5rem 0.5rem 0 0.25rem #62368f;
+  z-index: 3;
+}
+
+.intro h1.title {
+  font-size: 6rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.25rem;
+  margin-left: 1rem;
+  z-index: 10;
+  text-shadow: -0.25rem -0.25rem #62368f;
+  transform: skew(-28deg) rotate(-15deg);
+}
+
+.intro h1.sub {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  z-index: 4;
+  color: #FFE3B6;
+  text-shadow: -0.15rem -0.15rem #FF8C24;
+  transform: skew(-28deg) rotate(-15deg);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 30rem;
+  width: 25rem;
+  margin: 1rem;
+  padding: 2rem;
+  color: #62368f;
+  letter-spacing: 0.05rem;
+  font-size: 1.1rem;
+}
+
+.form .signup__field {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.form .label,
+.form legend {
+  font-family: "Caveat Brush", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.form input,
+.form select {
+  border: none;
+  width: 100%;
+  background: #FFE3B6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 0.075rem;
+  line-height: 1.3rem;
+  color: #49286a;
+}
+
+.form input:hover,
+.form select:hover {
+  background: rgba(255, 227, 182, 0.9);
+}
+
+.form input:focus,
+.form select:focus {
+  outline: 0.25rem solid #BF87D9;
+}
+
+.form .signup__field.name label {
+  color: #62368f;
+}
+
+.form .signup__field.name input {
+  background: #BF87D9;
+  color: white;
+}
+
+.form .signup__field.name input:focus {
+  outline: 0.25rem solid #9566C5;
+}
+
+.form fieldset {
+  text-align: center;
+  border: none;
+  background: #BF87D9;
+  border-radius: 30% 40% 60% 40%;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form fieldset>legend {
+  transform: translateY(2rem);
+}
+
+.form fieldset .choices {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.form fieldset .choices .choice1,
+.form fieldset .choices .choice2 {
+  position: relative;
+  margin: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.form fieldset .choices .choice1 input[type=radio],
+.form fieldset .choices .choice2 input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #9566C5;
+  background: #FFE3B6;
+  display: grid;
+  place-content: center;
+}
+
+.form fieldset .choices .choice1 input[type=radio]:before,
+.form fieldset .choices .choice2 input[type=radio]:before {
+  content: "";
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  border: 0.2rem solid #9566C5;
+  background: #FFE3B6;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #9566C5;
+}
+
+.form fieldset .choices .choice1 input[type=radio]:checked:before,
+.form fieldset .choices .choice2 input[type=radio]:checked:before {
+  transform: scale(1);
+}
+
+.form .signup__field.snack {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.form .signup__field.snack input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.15rem;
+  border: 0.2rem solid #9566C5;
+  background: #FFE3B6;
+  display: grid;
+  place-content: center;
+}
+
+.form .signup__field.snack input[type=checkbox]:before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #9566C5;
+}
+
+.form .signup__field.snack input[type=checkbox]:checked:before {
+  transform: scale(1);
+}
+
+.form .signup__field.snack input[type=checkbox]:focus {
+  outline: none;
+}
+
+.form .signup__button {
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.form .signup__button button {
+  font-family: "Caveat Brush", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+  background: #BF87D9;
+  border-radius: 50% 40% 30% 20%;
+  border: none;
+  cursor: pointer;
+}
+
+.form .signup__button button:hover {
+  box-shadow: -0.5rem 0.5rem #62368f;
+}
+
+.form .signup__button button:active {
+  box-shadow: -0.5rem 0.5rem #62368f;
+  transform: translateY(0.2rem);
+}
+
+@media (max-width: 51.9375rem) {
+  body {
+    transform: scale(0.75);
+  }
+
+  .intro {
+    margin: 12rem 0 0 2rem;
+  }
+}

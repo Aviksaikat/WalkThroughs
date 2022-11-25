@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  background: #422953;
+}
+
+.message-wrapper{
+  font-size: 11px !important;
+}
+.ground-cont {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.ground-first {
+  height: calc(100vh - 30vh);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background: #0D1517;
+  clip-path: polygon(100% 75%, 86% 74%, 73% 76%, 34% 76%, 6% 67%, 0% 68%, 0% 100%, 38% 100%, 71% 100%, 100% 100%);
+}
+
+.stones1 {
+  height: 70px;
+  width: 50px;
+  background: #0D1517;
+  position: fixed;
+  display: block;
+  border-radius: 170px 170px 0 0;
+}
+
+.cross1 {
+  height: 65px;
+  width: 8px;
+  background: #0D1517;
+  position: fixed;
+  display: block;
+}
+
+.cross1::after {
+  content: '';
+  height: 8px;
+  width: 34px;
+  position: fixed;
+  background: #0D1517;
+  top: 15px;
+  left: -14px
+}

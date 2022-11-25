@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Halloween Party</title>
+  <link rel="stylesheet" href="static/css/index.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="intro">
+    <div class="stars">
+      <div id="star-1">✦</div>
+      <div id="star-2">✦</div>
+      <div id="star-3">✦</div>
+      <div id="star-4">✦</div>
+      <div id="star-5">✦</div>
+      <div id="star-6">✦</div>
+    </div>
+    <div class="cat">
+      <div class="cat__hat">
+        <div class="brim"></div>
+        <div class="middle"></div>
+        <div class="top"></div>
+      </div>
+      <div class="cat__head">
+        <div class="cat__eye__left">
+          <div class="pupil"></div>
+        </div>
+        <div class="cat__eye__right">
+          <div class="pupil"></div>
+        </div>
+        <div class="cat__nose"></div>
+        <div class="cat__ear__left"> </div>
+        <div class="cat__ear__right"></div>
+        <div class="cat__mouth__left"></div>
+        <div class="cat__mouth__right"></div>
+      </div>
+      <div class="cat__paw">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom__left"> </div>
+      </div>
+      <div class="cat__body"></div>
+      <div class="cat__tail">
+        <div class="cat__tail__segment">
+          <div class="cat__tail__segment">
+            <div class="cat__tail__segment">
+              <div class="cat__tail__segment">
+                <div class="cat__tail__segment">
+                  <div class="cat__tail__segment last"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="circle">
+      <h1 class="sub">RSVP</h1>
+      <h1 class="title">Hallo</h1>
+      <h1 class="title">ween </h1>
+      <h1 class="sub">Party </h1>
+    </div>
+  </div>
+  <form class="form" id="form">
+    <div class="signup__field name">
+      <label class="label" for="halloween_name">Halloween Name</label>
+      <input class="name_field" id="halloween_name" type="text" name="halloween_name" />
+    </div>
+    <div class="signup__field name">
+      <label class="label" for="email">Email</label>
+      <input class="name_field" id="email" type="email" name="email" />
+    </div>
+    <fieldset>
+      <legend>Details</legend>
+      <div class="signup__field">
+        <label class="label costume" for="costume_type">What kind of costume are you wearing? </label>
+        <div class="select-field">
+          <select class="select-field__menu" id="costume_type" name="costume_type">
+            <option>Pick one</option>
+            <option value="monster">Monster</option>
+            <option value="spellcaster">Spellcaster</option>
+            <option value="vampire">Vampire</option>
+            <option value="ghost">Ghost</option>
+            <option value="zombie">Zombie</option>
+            <option value="pop_culture">Pop Culture Reference</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="signup__field">
+        <div class="label tricks-treats">Do you prefer Tricks or Treats?</div>
+        <div class="choices">
+          <div class="choice1">
+            <input id="tricks" type="radio" value="tricks" name="tricks" />
+            <label for="tricks">Tricks</label>
+          </div>
+          <div class="choice2">
+            <input id="treats" type="radio" value="treats" name="tricks" />
+            <label for="treats">Treats</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="signup__field snack">
+      <input id="bringing_snacks" type="checkbox" name="bringing_snacks" />
+      <label for="bringing_snacks">I volunteer to bring a shareable snack.</label>
+    </div>
+    <div class="signup__button">
+      <button class="button" type="submit">Submit</button>
+    </div>
+
+    <div id="message" role="alert">
+      
+    </div>
+  </form>
+  
+  <!-- partial -->
+  <script src="static/js/login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+#wrapper {
+    perspective: 700px;
+    perspective-origin: 50% 50%;
+}
+
+.card {
+    position: relative;
+    height: 150px;
+    width: 100px;
+    margin: auto 20px auto;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1.0s cubic-bezier(0, .75, .25, 1);
+}
+
+.face {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    backface-visibility: hidden;
+}
+
+.side2 {
+    transform: rotateY(180deg);
+}
+
+.cardImage {
+    height: 150px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+.textwrap {
+    position: fixed;
+    bottom: 0;
+}
+
+.cardRow1,
+.cardRow2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cardbox {
+    display: grid;
+}
+
+.cardboxwrap {
+    position: fixed;
+    bottom: calc(100vh - 90vh);
+    left: calc(100% - 88%);
+}
+
+@keyframes points {
+    0% {
+        top: -10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -30px;
+        opacity: 0;
+    }
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icon:before {
+    position: absolute;
+    top: -10px;
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px #000;
+    opacity: 0;
+}
+
+.icon.correct:before {
+    content: "+";
+    color: rgb(82, 255, 82);
+    -webkit-animation: points 0.8s;
+    animation: points 0.8s;
+}
+
+.icon.incorrect:before{
+    content: "-";
+    color: rgb(251, 17, 17);
+    -webkit-animation: points 0.8s;
+    animation: points 0.8s;
+    font-size: 80px;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Horror Feeds</title>
+  <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="/static/css/nes.css">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/grave.css">
+  <link rel="icon" href="/static/images/logo.png">
+</head>
+
+<body translate="no">
+  <div class="ground-cont">
+
+    <div class="ground-first"></div>
+    <div class="eyes"></div>
+    <div class="stones1" style="left: 10%;top: calc(100vh - 27vh); transform: rotate(-9deg);"></div>
+    <div class="stones1" style="left: 17%;top: calc(100vh - 27vh); transform: rotate(10deg);"></div>
+    <div class="cross1" style=" left: 28%; top: calc(100vh - 24vh); transform: rotate(-4deg) scale(1.1);"></div>
+    <div class="cross1" style=" left: 38%; top: calc(100vh - 22vh); transform: rotate(6deg) scale(1.1);"></div>
+    <div class="stones1" style="left: 46%;top: calc(100vh - 22vh); transform: rotate(-2deg);"></div>
+    <div class="stones1" style="left: 58%;top: calc(100vh - 22vh); transform: rotate(-14deg);"></div>
+    <div class="cross1" style=" left: 71%; top: calc(100vh - 22vh); transform: rotate(4deg);"></div>
+    <div class="stones1" style="left: 78%;top: calc(100vh - 23vh); transform: rotate(-12deg) scale(0.9);"></div>
+    <div class="cross1" style=" left: 88%; top: calc(100vh - 24vh); transform: rotate(-9deg) scale(1.1);"></div>
+  </div>
+  <div class="container">
+
+    <img src="/static/images/logo.png" id="logo">
+    <h1>Sign in</h1>
+    <div class="editor-field editor-field__textbox">
+      <div class="editor-field__label-container">
+        <label class="editor-field__label">Name</label>
+      </div>
+
+      <div class="">
+        <input type="text" id="username" class="nes-input" />
+      </div>
+      <div class="editor-field__noise"></div>
+    </div>
+    <div class="editor-field editor-field__textbox">
+      <div class="editor-field__label-container">
+        <label class="editor-field__label">Password</label>
+      </div>
+
+      <div class="">
+        <input type="password" id="password" class="nes-input" />
+      </div>
+      <div class="editor-field__noise"></div>
+    </div>
+
+    <div class="btn-wrapper">
+      <div class="btn-margin">
+        <div class="btn btn--primary" onmouseover="generateNoise(this, 'button')"
+          onmouseout="removeNoise(this, 'button')" id="login-btn" onclick="auth('login')">
+          <div class="btn__container">
+            Login
+          </div>
+          <div class="btn__bottom"></div>
+          <div class="btn__noise"></div>
+        </div>
+      </div>
+
+      <div class="btn btn--primary" onmouseover="generateNoise(this, 'button')" onmouseout="removeNoise(this, 'button')"
+        id="login-btn" onclick="auth('register')">
+        <div class="btn__container">
+          Register
+        </div>
+        <div class="btn__bottom"></div>
+        <div class="btn__noise"></div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <p class="alert alert-success hidden" id="resp-msg">Please wait!</p>
+    </div>
+  </div>
+
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/login.js"></script>
+  <script src="/static/js/glitch.js"></script>
+  <script id="rendered-js">
+    const removeNoise = ({ offsetParent: { offsetParent }, lastElementChild }, type) => {
+      let inputNoise;
+
+      if (type == "input") {
+        inputNoise = offsetParent.lastElementChild;
+        offsetParent.classList.remove("is-focused");
+      } else {
+        inputNoise = lastElementChild;
+      }
+
+      inputNoise.removeChild(inputNoise.childNodes[0]);
+    };
+
+    const createSvg = config => {
+      let svgGroup = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "svg");
+
+      svgGroup.setAttribute("x", config.svgGroupX);
+      svgGroup.setAttribute("y", config.svgGroupY);
+
+      let rect = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "rect");
+
+      rect.setAttribute("x", config.rectX);
+      rect.setAttribute("y", config.rectY);
+      rect.setAttribute("width", config.noiseWidth);
+      rect.setAttribute("height", config.noiseHeight);
+      rect.setAttribute("class", "noise__el");
+      svgGroup.appendChild(rect);
+
+      let rectOnBorder = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "rect");
+
+      rectOnBorder.setAttribute("x", config.rectBorderX);
+      rectOnBorder.setAttribute("y", config.rectBorderY);
+      rectOnBorder.setAttribute("width", config.noiseWidth);
+      rectOnBorder.setAttribute("height", config.noiseHeight);
+      rectOnBorder.setAttribute("fill", "rgb(15, 16, 32)");
+      svgGroup.appendChild(rectOnBorder);
+
+      let animate = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "animate");
+
+      animate.setAttribute("attributeType", "CSS");
+      animate.setAttribute("attributeName", "opacity");
+      animate.setAttribute("id", config.id);
+      animate.setAttribute("from", "0");
+      animate.setAttribute("to", "1");
+      animate.setAttribute("dur", `${Math.random() + 0.1}s`);
+      animate.setAttribute("repeatCount", "indefinite");
+      animate.setAttribute(
+        "begin",
+        `${Math.random() + 0.1}s;${config.id}.end+${Math.random() + 0.1}s`);
+
+      svgGroup.appendChild(animate);
+      return svgGroup;
+    };
+
+    const generateNoise = (e, type) => {
+      const svg = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "svg");
+
+
+      let input, inputNoise, noiseColor;
+
+      if (type == "input") {
+        input = e.offsetParent;
+        e.parentElement.parentElement.classList.add("is-focused");
+        inputNoise = e.parentElement.parentElement.lastElementChild;
+        noiseColor = "rgb(112, 113, 156)";
+      } else {
+        input = e;
+        inputNoise = e.lastElementChild;
+        noiseColor = "rgb(73, 77, 195)";
+      }
+
+      let inputHeight = input.offsetHeight;
+      let inputWidth = input.offsetWidth;
+
+      svg.setAttribute("width", "300");
+      svg.setAttribute("height", "66");
+
+      let maxNumberOfHorizontalNoise = Math.round(inputWidth / inputHeight);
+      let maxNumberOfVerticalNoise = Math.round(inputHeight / 10 / 2);
+
+      let verticalNoiseToGenerateBottom = Math.floor(
+        Math.random() * (maxNumberOfHorizontalNoise - 1) + 1);
+
+
+      let commonVerticalConfig = {
+        inputWidth,
+        noiseHeight: 2,
+        rectX: "4",
+        rectBorderX: "4",
+        rectBorderY: "14",
+        noiseColor
+      };
+
+
+      let commonHorizontalConfig = {
+        inputWidth,
+        maxNoiseWidth: 8,
+        minNoiseWidth: 2,
+        noiseWidth: 2,
+        rectBorderY: 14,
+        noiseColor
+      };
+
+
+      for (let i = 0; i <= verticalNoiseToGenerateBottom; i++) {
+        if (window.CP.shouldStopExecution(0)) break;
+        svg.appendChild(
+          createSvg({
+            ...commonVerticalConfig,
+            noiseWidth: Math.floor(Math.random() * (16 - 4) + 4),
+            svgGroupX: Math.floor(Math.random() * (inputWidth - 1) + 1),
+            rectY: Math.floor(Math.random() * (16 - 8) + 8),
+            svgGroupY: 46,
+            id: `bottom${i}`
+          }));
+
+
+      } window.CP.exitedLoop(0);
+
+      let verticalNoiseToGenerateTop = Math.floor(
+        Math.random() * (maxNumberOfHorizontalNoise - 1) + 1);
+
+
+      for (let i = 0; i <= verticalNoiseToGenerateTop; i++) {
+        if (window.CP.shouldStopExecution(1)) break;
+        svg.appendChild(
+          createSvg({
+            ...commonVerticalConfig,
+            noiseWidth: Math.floor(Math.random() * (16 - 4) + 4),
+            svgGroupX: Math.floor(Math.random() * (inputWidth - 1) + 1),
+            rectY: Math.floor(Math.random() * (20 - 8) + 8),
+            svgGroupY: 0,
+            id: `top${i}`
+          }));
+
+
+      } window.CP.exitedLoop(1);
+
+      for (let i = 0; i <= maxNumberOfVerticalNoise; i++) {
+        if (window.CP.shouldStopExecution(2)) break;
+        svg.appendChild(
+          createSvg({
+            ...commonHorizontalConfig,
+            noiseHeight: Math.floor(Math.random() * (8 - 2) + 2),
+            rectX: "2",
+            rectY: Math.floor(Math.random() * (20 - 12) + 12),
+            svgGroupX: 0,
+            svgGroupY: Math.floor(Math.random() * (20 - 1) + 1),
+            id: `left${i}`,
+            rectBorderX: 0
+          }));
+
+
+      } window.CP.exitedLoop(2);
+
+      for (let i = 0; i <= maxNumberOfVerticalNoise; i++) {
+        if (window.CP.shouldStopExecution(3)) break;
+        svg.appendChild(
+          createSvg({
+            ...commonHorizontalConfig,
+            noiseHeight: Math.floor(Math.random() * (8 - 2) + 2),
+            rectX: "0",
+            rectY: Math.floor(Math.random() * (20 - 12) + 12),
+            svgGroupX: inputWidth - 4,
+            svgGroupY: Math.floor(Math.random() * (20 - 5) + 5),
+            id: `right${i}`,
+            rectBorderX: 2
+          }));
+
+
+      } window.CP.exitedLoop(3);
+
+      inputNoise.appendChild(svg);
+    };
+
+  </script>
+
+</body>
+
+</html>
