@@ -218,40 +218,33 @@ THM{47C61A0FA8738BA77308A8A600F88E4B}
 
 1. What is the Guard's flag?
 ```
-
+THM{5_star_Fl4gzzz}
 ```
 2. What is the Yeti's flag?
 ```
-
+THM{yetiyetiyetiflagflagflag}
 ```
 
 
 ## Task 16
 
-1. There is an open port related to MS SQL Server accessible over the network. What is the port number?
+1. What is the Windows version number that the memory image captured?
 ```
-1433
+10
 ```
-2. If the connection is successful, you will get a prompt. What is the prompt that you have received?
+2. What is the name of the binary/gift that secret Santa left?
 ```
-1>
+mysterygift.exe
 ```
-3. We can see four columns in the table displayed above: id, first (name), last (name), and nickname. What is the first name of the reindeer of id 9?
+3. What is the Process ID (PID) of this binary?
 ```
-Rudolph
+2040
 ```
-4. Check the table schedule. What is the destination of the trip scheduled on December 7?
+4. Dump the contents of this binary. How many files are dumped?
 ```
-Prague
+16
 ```
-5. Check the table presents. What is the quantity available for the present “Power Bank”?
-```
-25000
-```
-6. There is a flag hidden in the grinch user's home directory. What are its contents?
-```
-THM{YjtKeUy2qT3v5dDH}
-```
+
 
 ## Task 17
 
