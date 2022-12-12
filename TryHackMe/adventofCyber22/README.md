@@ -248,33 +248,41 @@ mysterygift.exe
 
 ## Task 17
 
-1. Scan the target server with the IP MACHINE_IP. Remember that MS Windows hosts block pings by default, so we need to add -Pn, for example, nmap -Pn MACHINE_IP for the scan to work correctly. How many TCP ports are open?
+1. What is the architecture of the malware sample? (32-bit/64-bit)
 ```
-7
+64-bit
 ```
-2. In the scan results you received earlier, you should be able to spot NFS or mountd, depending on whether you used the -sV option with Nmap or not. Which port is detected by Nmap as NFS or using the mountd service?
+2. What is the packer used in the malware sample? (format: lowercase)
 ```
-2049
+upx
 ```
-3. How many shares did you find?
+3. What is the compiler used to build the malware sample? (format: lowercase)
 ```
-4
+nim
 ```
-4. How many shares show “everyone”?
+4. How many MITRE ATT&CK techniques have been discovered attributed to the DISCOVERY tactic?
 ```
-3
+2
 ```
-5. What is the title of file 2680-0.txt?
+5. What is the registry key abused by the malware?
 ```
-Meditations
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
 ```
-6. It seems that Grinch Enterprises has forgotten their SSH keys on our system. One of the shares contains a private key used for SSH authentication (id_rsa). What is the name of the share?
+6. What is the value written on the registry key based on the previous question?
 ```
-confidential
+C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\wishes.bat
 ```
-7. We can calculate the MD5 sum of a file using md5sum FILENAME. What is the MD5 sum of id_rsa?
+7. What are the names of two files created by the malware under the C:\Users\Administrator\ directory? (format: file1,file2 in alphabetical order)
 ```
-3e2d315a38f377f304f5598dc2f044de
+test.jpg, wishes.bat
+```
+8. What are the two domains wherein malware has initiated a network connection? (format: domain1,domain2 in alphabetical order)
+```
+bestfestivalcompany.thm, virustotal.com
+```
+9. Going back to strings inside the malware sample, what is the complete URL used to download the file hosted in the first domain accessed by the malware?
+```
+http://bestfestivalcompany.thm/favicon.ico
 ```
 
 ## Task 18
