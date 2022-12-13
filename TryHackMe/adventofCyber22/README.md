@@ -287,33 +287,45 @@ http://bestfestivalcompany.thm/favicon.ico
 
 ## Task 18
 
-1. Complete the username: p.....
+1. What is the "Percent Packets" value of the "Hypertext Transfer Protocol"?
 ```
-pepper
+0.3
 ```
-2. What is the OS version?
+2. Which port number has received more than 1000 packets?
 ```
-10.0.17763 N/A Build 17763
+3389
 ```
-3. What backup service did you find running on the system?
+3. What is the service name of the used protocol that received more than 1000 packets?
 ```
-IperiusSvc
+rdp
 ```
-4. What is the path of the executable for the backup service you have identified?
+4. What are the domain names?
 ```
-C:\Program Files (x86)\Iperius Backup\IperiusService.exe
+bestfestivalcompany[.]thm, cdn[.]bandityeti[.]thm
 ```
-5. Run the whoami command on the connection you have received on your attacking machine. What user do you have?
+5. What are the names of the requested files?
 ```
-the-grinch-hack\thegrinch
+favicon[.]ico, mysterygift[.]exe
 ```
-6. What is the content of the flag.txt file?
+5. Which IP address downloaded the executable file?
 ```
-THM-736635221
+10[.]10[.]29[.]186	
 ```
-7. The Grinch forgot to delete a file where he kept notes about his schedule! Where can we find him at 5:30?
+6. Which domain address hosts the malicious file?
 ```
-jazzercize
+cdn[.]bandityeti[.]thm
+```
+7. What is the "user-agent" value used to download the non-executable file?
+```
+Nim httpclient/1.6.8
+```
+8. What is the sha256 hash value of the executable file?
+```
+0ce160a54d10f8e81448d0360af5c2948ff6a4dbb493fe4be756fc3e2c3f900f
+```
+9. What are the connected IP addresses? Enter the IP addressed defanged and in numerical order. (format: IPADDR,IPADDR)
+```
+20[.]99[.]133[.]109, 20[.]99[.]184[.]37, 23[.]216[.]147[.]76
 ```
 
 ## Task 19
