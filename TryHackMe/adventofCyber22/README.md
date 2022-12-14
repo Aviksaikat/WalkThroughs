@@ -330,21 +330,13 @@ Nim httpclient/1.6.8
 
 ## Task 19
 
-1. How many pages did the dirb scan find with its default wordlist?
+1. What is the office number of Elf Pivot McRed?
 ```
-4
+134
 ```
-2. How many scripts do you see in the /home/thegrinch/scripts folder?
+2. Not only profile pages but also stored images are vulnerable. Start with a URL of a valid profile image; what is the hidden flag?
 ```
-4
-```
-3. What are the five characters following $6$G in pepper's password hash?
-```
-ZUP42
-```
-4. What is the content of the flag.txt file on the Grinch's user’s desktop?
-```
-DI3H4rdIsTheBestX-masMovie!
+THM{CLOSE_THE_DOOR}
 ```
 
 ## Task 21
