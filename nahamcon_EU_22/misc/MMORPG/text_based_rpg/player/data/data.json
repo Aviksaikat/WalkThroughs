@@ -1,0 +1,41 @@
+{
+    "attack_view": {
+        "title": "Your attacks",
+        "divider_character": "=",
+        "stamina_cost_template": "Stamina cost: {}.",
+        "mana_cost_template": "Mana cost: {}."
+    },
+
+    "messages": {
+        "item_already_equipped": "There is a {item} already equipped in that location. Would you like to unequip it and equip your new item? (y/n)",
+        "you_must_enter": "You must enter {}.",
+        "item_equipped": "You have equipped a {}.",
+        "item_consumed": "You have used a {}.",
+        "item_consumed_effect": "You have restored {amount} {value}.",
+        "item_equipped_increased": "Your {stat} has increased by {amount}.",
+        "item_equipped_decreased": "Your {stat} has decreased by {amount}.",
+        "no_item_equipped_in_location": "There is no item equipped in that location.",
+        "not_equippable": "That item is not equippable.",
+        "not_consumable": "That item is not usable.",
+        "item_unequipped": "You have unequipped a {}.",
+        "item_discarded": "You have discarded a {}."
+    },
+
+    "inventory_view": {
+        "no_items": "You do not have any items in your inventory.",
+        "no_equippable_items": "You do not have any items that can be equipped in your inventory.",
+        "no_consumable_items": "You do not have any items that can be used in your inventory.",
+        "item_line": "{number}. {name}",
+        "increase_effect": "Increases your {stat} by {amount}.",
+        "decrease_effect": "Decreases your {stat} by {amount}."
+    },
+
+    "equipment_view": {
+        "no_items": "You do not have any items equipped.",
+        "item_line": "{location} --- {name}",
+        "increase_effect": "Increases your {stat} by {amount}.",
+        "decrease_effect": "Decreases your {stat} by {amount}."
+    },
+
+    "stats_view_line": "{name}: {value}"
+}

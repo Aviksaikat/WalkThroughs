@@ -1,0 +1,21 @@
+{
+    "entity_values": [
+        "health",
+        "stamina",
+        "mana"
+    ],
+
+    "_other_stats": [
+        "strength",
+        "archery",
+        "magic",
+        "defence",
+        "dexterity",
+        "composure",
+        "critical_hit_chance"
+    ],
+
+    "critical_hit_multiplier": 3,
+
+    "values_view_line_template": "{value_name}: {current}/{maximum}"
+}

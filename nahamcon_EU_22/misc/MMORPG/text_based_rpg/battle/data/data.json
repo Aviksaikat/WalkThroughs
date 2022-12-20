@@ -1,0 +1,39 @@
+{
+    "prefixes": {
+        "player": "You",
+        "enemy": "The enemy"
+    },
+
+    "templates": {
+        "start_of_each_turn_stamina_regeneration": "restored {} stamina.",
+        "start_of_each_turn_mana_regeneration": "restored {} mana.",
+
+        "commands": "can {}.",
+
+        "rested_and_restored_stamina": "rested and restored {} stamina.",
+        "rested_and_restored_mana": "rested and restored {} mana.",
+
+        "fled": "successfully fled from the battle.",
+        "unable_to_flee": "were unable to flee from the battle.",
+
+        "not_enough_stamina": "do not have enough stamina for that attack.",
+        "not_enough_mana": "do not have enough mana for that attack.",
+
+        "player_attack_evaded": "evaded your attack!",
+        "enemy_attack_evaded": "evaded the enemy's attack!",
+
+        "critical_hit": "landed a critical hit!",
+        "damage_dealt": "{attack_description} {opponent}, dealing {damage} damage.",
+
+        "victory": "have won the battle!"
+    },
+
+    "values_view_divider_character": "=",
+
+    "list_of_attacks": {
+        "stamina_cost_template": "Stamina cost: {}.",
+        "mana_cost_template": "Mana cost: {}."
+    },
+
+    "rest_multiplier": 4
+}

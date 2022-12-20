@@ -1,0 +1,16 @@
+{
+    "input_prompt": "\n>>> ",
+    "forms_of_true": [
+        "yes",
+        "y"
+    ],
+    "forms_of_false": [
+        "no",
+        "n"
+    ],
+    "unsuitable_input_messages": {
+        "get_boolean_input": "You must enter \"yes\" or \"no\" (y/n).",
+        "get_integer_input": "You must enter a whole number between 1 and {upper_limit}.",
+        "get_command": "You must enter {commands}."
+    }
+}
