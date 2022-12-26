@@ -339,39 +339,50 @@ Nim httpclient/1.6.8
 THM{CLOSE_THE_DOOR}
 ```
 
+## Task 20
+
+1. What is the name given to file uploads that allow threat actors to upload any files that they want?
+```
+
+```
+2. What is the title of the web application developed by Santa's freelancer?
+```
+
+```
+3. What is the value of the flag stored in the HR Elf's Documents directory?
+```
+
+```
+4. What defence technique can be implemented to ensure that specific file types can be uploaded?
+```
+
+```
+5. What defence technique can be used to make sure the threat actor cannot recover their file again by simply using the file name?
+```
+
+```
+6. What defence technique can be used to make sure malicious files that can hurt elves are not uploaded?
+```
+
+```
+
 ## Task 21
 
-1. What is the operator's username?
+1. What is the value of Flag1?
 ```
-GrinchWho31
+
 ```
-2. What social media platform is the username associated with?
+2. What is the value of Flag2?
 ```
-twitter
+
 ```
-3. What is the cryptographic identifier associated with the operator?
+3. What is the value of Flag3?
 ```
-1GW8QR7CWW3cpvVPGMCF5tZz4j96ncEgrVaR
+
 ```
-4. What platform is the cryptographic identifier associated with?
+4. What is the value of Flag4?
 ```
-Keybase.io
-```
-5. What is the bitcoin address of the operator?
-```
-bc1q5q2w2x6yka5gchr89988p2c8w8nquem6tndw2f
-```
-6. What platform does the operator leak the bitcoin address on? 
-```
-github
-```
-7. What is the operator's personal email?
-```
-DonteHeath21@gmail.com
-```
-8. What is the operator's real name?
-```
-Donte Heath
+
 ```
 
 ## Task 22
