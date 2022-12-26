@@ -1,0 +1,9 @@
+dotenv: .env
+networks:
+  default: mainnet-fork
+  1337:
+    verify: False
+  HACKvent:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}

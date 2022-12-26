@@ -1,0 +1,7 @@
+dotenv: .env
+networks:
+  default: mainnet-fork
+  xmas:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}

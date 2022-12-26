@@ -1,0 +1,37 @@
+# Nmap 7.93 scan initiated Mon Dec 12 20:23:16 2022 as: /usr/bin/nmap -sC -sV -A -T4 -v -p443 -oN scan/nmap 62d8d6d0-31b7-454c-a9ad-37d26252bbe7.idocker.vuln.land
+Nmap scan report for 62d8d6d0-31b7-454c-a9ad-37d26252bbe7.idocker.vuln.land (152.96.7.3)
+Host is up (0.035s latency).
+
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-favicon: Spring Java Framework
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+| ssl-cert: Subject: commonName=*.idocker.vuln.land
+| Subject Alternative Name: DNS:*.idocker.vuln.land, DNS:idocker.vuln.land
+| Issuer: commonName=Thawte RSA CA 2018/organizationName=DigiCert Inc/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-08-19T00:00:00
+| Not valid after:  2023-09-09T23:59:59
+| MD5:   1e77dc3c751c87a624bda039380c42d3
+|_SHA-1: 53fb21121ef7b2afa34912c2389a13cf9e38220a
+|_http-title: Christmas Gift Search
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 3.12 (94%), Linux 4.4 (94%), Linux 4.9 (93%), Linux 2.6.18 (91%), Linux 3.10 - 3.16 (91%), Linux 4.0 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 4.1 (90%), Linux 3.2 - 4.9 (90%), Linux 5.1 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 26.136 days (since Wed Nov 16 17:07:27 2022)
+Network Distance: 3 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   0.04 ms  172.17.0.1
+2   30.42 ms 10.13.0.1
+3   30.65 ms 152.96.7.3
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 12 20:23:36 2022 -- 1 IP address (1 host up) scanned in 19.94 seconds

@@ -1,0 +1,50 @@
+{
+    "architecture": "arm64",
+    "config":
+    {
+        "Env":
+        [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Cmd":
+        [
+            "bash"
+        ],
+        "OnBuild": null
+    },
+    "created": "2022-12-18T22:10:21.831340295Z",
+    "history":
+    [
+        {
+            "created": "2022-12-09T01:46:43.867016893Z",
+            "created_by": "/bin/sh -c #(nop) ADD file:eb8b2914800b2ed866666fbff73c8234f4ac2a5ef01743d6fea0984230c2f464 in / "
+        },
+        {
+            "created": "2022-12-09T01:46:44.103096543Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+            "empty_layer": true
+        },
+        {
+            "created": "2022-12-18T22:10:21.639585587Z",
+            "created_by": "COPY secret_note.txt /data/ # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+        },
+        {
+            "created": "2022-12-18T22:10:21.831340295Z",
+            "created_by": "RUN /bin/sh -c rm /data/secret_note.txt # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+        }
+    ],
+    "os": "linux",
+    "rootfs":
+    {
+        "type": "layers",
+        "diff_ids":
+        [
+            "sha256:e9306b14c0d6d31ade5208e8a2fc761ed915faba6cb54382d45f8edb2d5a0d0e",
+            "sha256:ed11d161804b462b64c17dbb150500a2ded75dee3f545a8f4b3ea782316e0809",
+            "sha256:df0a13e1769ca46151f43c37f125012f190f7a789b044f1bd46f3bc5db3a12c2"
+        ]
+    },
+    "variant": "v8"
+}

@@ -1,0 +1,52 @@
+[2K/etc/motd               [Status: 200, Size: 1379, Words: 354, Lines: 75, Duration: 84ms][0m
+[2K/etc/apache2/apache2.conf [Status: 200, Size: 8208, Words: 1248, Lines: 289, Duration: 163ms][0m
+[2K/etc/group              [Status: 200, Size: 1740, Words: 319, Lines: 117, Duration: 84ms][0m
+[2K/etc/hosts              [Status: 200, Size: 1318, Words: 326, Lines: 72, Duration: 505ms][0m
+[2K/etc/fstab              [Status: 200, Size: 1130, Words: 324, Lines: 69, Duration: 558ms][0m
+[2K/etc/php5/apache2/php.ini [Status: 500, Size: 812, Words: 229, Lines: 46, Duration: 102ms][0m
+[2K/proc/self/stat         [Status: 200, Size: 1404, Words: 370, Lines: 69, Duration: 88ms][0m
+[2K/proc/self/status       [Status: 200, Size: 2406, Words: 410, Lines: 123, Duration: 89ms][0m
+[2K/etc/passwd             [Status: 200, Size: 2402, Words: 331, Lines: 92, Duration: 162ms][0m
+[2K/proc/version           [Status: 200, Size: 1265, Words: 338, Lines: 69, Duration: 86ms][0m
+[2K/etc/issue              [Status: 200, Size: 1119, Words: 323, Lines: 70, Duration: 86ms][0m
+[2K/etc/hosts              [Status: 200, Size: 1318, Words: 326, Lines: 72, Duration: 87ms][0m
+[2K/etc/motd               [Status: 200, Size: 1379, Words: 354, Lines: 75, Duration: 86ms][0m
+[2K/proc/cmdline           [Status: 200, Size: 1320, Words: 327, Lines: 69, Duration: 86ms][0m
+[2K/etc/group              [Status: 200, Size: 1740, Words: 319, Lines: 117, Duration: 91ms][0m
+[2K/etc/apache2/apache2.conf [Status: 200, Size: 8208, Words: 1248, Lines: 289, Duration: 96ms][0m
+[2K/proc/self/fd/2         [Status: 200, Size: 143953, Words: 16232, Lines: 749, Duration: 95ms][0m
+[2K/proc/self/fd/8         [Status: 200, Size: 534072, Words: 47576, Lines: 3292, Duration: 181ms][0m
+[2K/etc/php5/apache2/php.ini [Status: 500, Size: 812, Words: 229, Lines: 46, Duration: 86ms][0m
+[2K/proc/self/stat         [Status: 200, Size: 1404, Words: 370, Lines: 69, Duration: 119ms][0m
+[2K/proc/self/status       [Status: 200, Size: 2408, Words: 410, Lines: 123, Duration: 87ms][0m
+[2K/etc/passwd             [Status: 200, Size: 2402, Words: 331, Lines: 92, Duration: 173ms][0m
+[2K/proc/self/fd/2         [Status: 200, Size: 217002, Words: 24360, Lines: 1069, Duration: 105ms][0m
+[2K/etc/issue              [Status: 200, Size: 1119, Words: 323, Lines: 70, Duration: 153ms][0m
+[2K/etc/group              [Status: 200, Size: 1740, Words: 319, Lines: 117, Duration: 178ms][0m
+[2K/etc/motd               [Status: 200, Size: 1379, Words: 354, Lines: 75, Duration: 157ms][0m
+[2K/proc/version           [Status: 200, Size: 1265, Words: 338, Lines: 69, Duration: 131ms][0m
+[2K/proc/cmdline           [Status: 200, Size: 1320, Words: 327, Lines: 69, Duration: 131ms][0m
+[2K/etc/hosts              [Status: 200, Size: 1318, Words: 326, Lines: 72, Duration: 157ms][0m
+[2K/proc/self/fd/8         [Status: 200, Size: 566465, Words: 51312, Lines: 3502, Duration: 105ms][0m
+[2K/etc/apache2/apache2.conf [Status: 200, Size: 8208, Words: 1248, Lines: 289, Duration: 84ms][0m
+[2K/proc/self/fd/2         [Status: 200, Size: 224508, Words: 25224, Lines: 1103, Duration: 85ms][0m
+[2K/etc/php5/apache2/php.ini [Status: 500, Size: 812, Words: 229, Lines: 46, Duration: 85ms][0m
+[2K/proc/self/stat         [Status: 200, Size: 1404, Words: 370, Lines: 69, Duration: 84ms][0m
+[2K/proc/self/status       [Status: 200, Size: 2406, Words: 410, Lines: 123, Duration: 84ms][0m
+[2K/proc/self/fd/2         [Status: 200, Size: 302395, Words: 33898, Lines: 1444, Duration: 87ms][0m
+[2K/proc/self/fd/8         [Status: 200, Size: 600419, Words: 55244, Lines: 3722, Duration: 95ms][0m
+[2K/etc/passwd             [Status: 200, Size: 2402, Words: 331, Lines: 92, Duration: 110ms][0m
+[2K/etc/group              [Status: 200, Size: 1740, Words: 319, Lines: 117, Duration: 112ms][0m
+[2K/etc/passwd             [Status: 200, Size: 2402, Words: 331, Lines: 92, Duration: 113ms][0m
+[2K/etc/motd               [Status: 200, Size: 1379, Words: 354, Lines: 75, Duration: 113ms][0m
+[2K/etc/php5/apache2/php.ini [Status: 500, Size: 812, Words: 229, Lines: 46, Duration: 82ms][0m
+[2K/etc/passwd             [Status: 200, Size: 2402, Words: 331, Lines: 92, Duration: 81ms][0m
+[2K/etc/group              [Status: 200, Size: 1740, Words: 319, Lines: 117, Duration: 80ms][0m
+[2K/etc/hosts              [Status: 200, Size: 1318, Words: 326, Lines: 72, Duration: 80ms][0m
+[2K/etc/motd               [Status: 200, Size: 1379, Words: 354, Lines: 75, Duration: 81ms][0m
+[2K/etc/issue              [Status: 200, Size: 1119, Words: 323, Lines: 70, Duration: 81ms][0m
+[2K/proc/version           [Status: 200, Size: 1265, Words: 338, Lines: 69, Duration: 84ms][0m
+[2K/proc/cmdline           [Status: 200, Size: 1320, Words: 327, Lines: 69, Duration: 84ms][0m
+[2K/etc/apache2/apache2.conf [Status: 200, Size: 8208, Words: 1248, Lines: 289, Duration: 86ms][0m
+[2K/etc/php5/apache2/php.ini [Status: 500, Size: 812, Words: 229, Lines: 46, Duration: 82ms][0m
+[2K/proc/self/fd/2         [Status: 200, Size: 512239, Words: 56128, Lines: 2335, Duration: 93ms][0m

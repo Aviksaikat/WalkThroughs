@@ -1,0 +1,104 @@
+<html>
+
+<head> 
+<title>Error</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/550x/77/ba/ec/77baecdea3e0a230b1470b4d4d4440a4.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-dark-grey">
+    <div class="w3-col s3">
+      <a href="/report" class="w3-button w3-block w3-dark-grey">Report To Admin</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Naruto is The Best</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">The Forbidden<br>Jutsu</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Yogosha</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">The Jutsu</span></h5>
+<p>{{paste}}</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p id="total"><i></i></p>
+      <p>Report?</p><!-- We are still implementing this feature-->
+      <div class="g-recaptcha" data-sitekey="6LdBZ38hAAAAABuFCH0e6DQouw5kUEfV0-XgJSlD"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">Yogosha</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+<script src="https://raw.githack.com/stretchr/arg.js/master/dist/arg-1.4.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    fetch("/search",{method:"POST",credentials:"include"}).then((resp)=>resp.json()).then((data)=>{
+        document.getElementById("total").innerText="The total of pastes now: "+data.Total;
+    }).catch(
+        console.log("error")
+    )
+    var args=Arg.parse(location.search);
+    
+</script>
+</body>
+</html>
