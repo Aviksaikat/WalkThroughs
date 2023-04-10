@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Drobots</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="/static/images/logo.png" style="width: 90px;margin-right: 8px;" />
+            <a class="navbar-brand" href="#">Drobots</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inventory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Available Robots</h1>
+
+        <table class="table table-hover mt-5">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">Robot ID</th>
+                    <th scope="col">Robot Name</th>
+                    <th scope="col">Robot Model</th>
+                    <th scope="col">Robot Manufacturer</th>
+                    <th scope="col">Robot Price</th>
+                    <th scope="col">Robot Rental Price</th>
+                    <th scope="col">Robot Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-dark">
+                    <td scope="row">ID-001</td>
+                    <td scope="row">RoboForge</td>
+                    <td scope="row">Alpha</td>
+                    <td scope="row">{{ flag }}</td>
+                    <td scope="row">$999</td>
+                    <td scope="row">$99/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-002</td>
+                    <td scope="row">RoboTron</td>
+                    <td scope="row">Beta</td>
+                    <td scope="row">Automatronix Inc.</td>
+                    <td scope="row">$1299</td>
+                    <td scope="row">$149/day</td>
+                    <td scope="row">Out of Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-003</td>
+                    <td scope="row">RoboCortex</td>
+                    <td scope="row">Gamma</td>
+                    <td scope="row">Robotronics Inc.</td>
+                    <td scope="row">$1199</td>
+                    <td scope="row">$99/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-004</td>
+                    <td scope="row">RoboSurge</td>
+                    <td scope="row">Sigma</td>
+                    <td scope="row">Robotronics Inc.</td>
+                    <td scope="row">$1399</td>
+                    <td scope="row">$199/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-005</td>
+                    <td scope="row">RoboMaximus</td>
+                    <td scope="row">Gamma</td>
+                    <td scope="row">Robotronics Inc.</td>
+                    <td scope="row">$1599</td>
+                    <td scope="row">$399/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-006</td>
+                    <td scope="row">RoboSavior</td>
+                    <td scope="row">Beta</td>
+                    <td scope="row">Robotronics Inc.</td>
+                    <td scope="row">$1099</td>
+                    <td scope="row">$299/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-007</td>
+                    <td scope="row">RoboSapiens</td>
+                    <td scope="row">Epison</td>
+                    <td scope="row">RoboCorp Inc.</td>
+                    <td scope="row">$1599</td>
+                    <td scope="row">$169/day</td>
+                    <td scope="row">Out of Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-008</td>
+                    <td scope="row">AutonX</td>
+                    <td scope="row">Zeta</td>
+                    <td scope="row">RoboCorp Inc.</td>
+                    <td scope="row">$1799</td>
+                    <td scope="row">$139/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-009</td>
+                    <td scope="row">MechDroid</td>
+                    <td scope="row">Gamma</td>
+                    <td scope="row">Robotronics Inc.</td>
+                    <td scope="row">$599</td>
+                    <td scope="row">$199/day</td>
+                    <td scope="row">In Stock</td>
+                </tr>
+                <tr class="table-dark">
+                    <td scope="row">ID-010</td>
+                    <td scope="row">CyberMachine</td>
+                    <td scope="row">Lambda</td>
+                    <td scope="row">RoboCorp Inc.</td>
+                    <td scope="row">$599</td>
+                    <td scope="row">$399/day</td>
+                    <td scope="row">Out of Stock</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

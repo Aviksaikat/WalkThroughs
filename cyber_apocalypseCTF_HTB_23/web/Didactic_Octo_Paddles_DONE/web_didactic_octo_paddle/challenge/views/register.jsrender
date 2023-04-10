@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Didactic Octo Paddles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/static/images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <form id="form" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+            <br />
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                autocomplete="off"
+                required
+            />
+            <br />
+            <button type="submit">Register</button>
+            <div class="error-message" id="error-message">{^{: error }}</div>
+        </form>
+    </body>
+    <script src="/static/js/register.js"></script>
+</html>

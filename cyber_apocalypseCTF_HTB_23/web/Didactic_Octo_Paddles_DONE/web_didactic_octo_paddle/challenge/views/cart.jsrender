@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Didactic Octo Paddles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/images/favicon.png" />
+    <link href=" https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css " rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
+        {{if products}}
+        <h1 style="text-align: center; margin-bottom: 30px;">Cart</h1>
+        <table class="table table-hover" style="width: 80%;">
+            <thead>
+                <tr>
+                    <th scope="col" style="color: #32FBE2">Product Name</th>
+                    <th scope="col" style="color: #32FBE2">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{for products}}
+                <tr class="cart">
+                    <th scope="row" class="cart">{{>title}}</td>
+                    <td class="cart">{{>price}}𐂠</td>
+                </tr>
+                {{/for}}
+            </tbody>
+            {{else}}
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="cart-empty">
+                        <h3>Your Cart is empty</h3>
+                    </td>
+                </tr>
+            </tfoot>
+            {{/if}}
+        </table>
+    </div>
+</body>
+
+</html>

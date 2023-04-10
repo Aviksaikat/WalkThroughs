@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/static/images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+</head>
+
+<body>
+  <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
+    <h1>Active Users</h1>
+    <ul class="list-group small-list">
+      {{for users.split(',')}}
+        <li class="list-group-item d-flex justify-content-between align-items-center ">
+          <span>{{>}}</span>
+        </li>
+      {{/for}}
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto Condensed';
+    color: white;
+}
+p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-form {
+    display: flex;
+    min-width: 400px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 0.5rem;
+}
+
+
+/* query-msg */
+
+.c-foot {
+    margin-bottom: 3rem;
+}
+
+#resp-msg {
+    display: none;
+    margin-top: 2rem;
+}
+
+.alert {
+    position: relative;
+    padding: .50rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.auth-container {
+   background-color: #140528;
+   max-width: 600px;
+}
+
+#auth-p1 {
+    font-size: 16pt;
+    font-weight: lighter;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+#signup-group, #register-btn {
+    display: none;
+}
+
+.sb2 {
+    height: 45px;
+    width: auto !important;
+    display: inline !important;
+    padding-right: 10px;
+}

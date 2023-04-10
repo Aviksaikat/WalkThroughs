@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous');
+body {
+    background-image: linear-gradient(#c8c8c8 0,#282331 7%,#2e1f44 80%,#030304 100%) !important;
+font-family: 'Righteous', cursive;
+  
+}
+
+.card .h1, .card .h2, .card .h3, .card .h4, .card .h5, .card .h6, .card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .btn  {
+    text-shadow: none !important;
+}
+
+.btn {
+    height: 40px;
+    border-radius: 2px;
+    border-top: solid 1px rgba(61, 96, 110, 0.8);
+    border-bottom: solid 1px rgba(61, 96, 110, 0.8);
+    border-left: solid 4px rgba(61, 96, 110, 0.8);
+    border-right: solid 4px rgba(61, 96, 110, 0.8);
+    text-align: center;
+    color: white;
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.15);
+    line-height: 0px;
+  }
+  .btn:hover {
+    border-top: solid 1px rgba(61, 96, 110, 1);
+    border-bottom: solid 1px rgba(61, 96, 110, 1);
+    border-left: solid 4px rgba(209, 219, 188, 1);
+    border-right: solid 4px rgba(209, 219, 188, 1);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.45);
+    color: rgba(209, 219, 188, 1);
+  }
+  .btn-top-l {
+    position: relative;
+    top: -10px;
+    left: 0;
+    height: 1px;
+    width: 5px;
+  }
+  .btn-top-r {
+    position: relative;
+    top: -11px;
+    height: 1px;
+    width: 5px;
+    left: 144px;
+  }
+  .btn-btm-l {
+    position: relative;
+    top: 10px;
+    left: 0;
+    height: 1px;
+    width: 5px;
+  }
+  .btn-btm-r {
+    position: relative;
+    top: 10px;
+    height: 1px;
+    width: 5px;
+    left: 145px;
+  }
+
+label {
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #140528 !important;
+}

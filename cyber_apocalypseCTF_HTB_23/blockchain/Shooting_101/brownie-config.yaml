@@ -1,0 +1,9 @@
+dotenv: .env
+# settings:
+#   gas_limit: "100000000000"
+networks:
+  default: mainnet-fork
+  HTB:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}

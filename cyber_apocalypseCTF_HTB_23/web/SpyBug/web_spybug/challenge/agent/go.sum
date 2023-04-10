@@ -1,0 +1,4 @@
+github.com/gordonklaus/portaudio v0.0.0-20221027163845-7c3b689db3cc h1:yYLpN7bJxKYILKnk20oczGQOQd2h3/7z7/cxdD9Se/I=
+github.com/gordonklaus/portaudio v0.0.0-20221027163845-7c3b689db3cc/go.mod h1:WY8R6YKlI2ZI3UyzFk7P6yGSuS+hFwNtEzrexRyD7Es=
+github.com/zenwerk/go-wave v0.0.0-20190102022600-1be84bfef50c h1:DgZMI1Q1YuuaY69YbTu3arBk0qlnKWzv4YM2GmNC5tk=
+github.com/zenwerk/go-wave v0.0.0-20190102022600-1be84bfef50c/go.mod h1:qCAwkQ567FyudNBeV5wgzDEUsdEEcPgciHPmPlnIgXA=

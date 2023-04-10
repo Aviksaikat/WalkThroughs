@@ -1,0 +1,16 @@
+doctype html
+head
+	title Spybug | Log-in
+	include head.pug
+body
+	.container.center
+		.row
+			.col-md-6.offset-md-3
+				.jumbotron.login
+					h1
+						i.las.la-sign-in-alt.mb-2
+						| Log-in
+					form(action="" method="POST")
+						input.form-control.login-input#username(type="text" name="username" placeholder="Username" required="")
+						input.form-control.login-input.mt-2#password(type="password" name="password" placeholder="Password" required="")
+						input.btn.login-btn.mt-3#loginButton(type="submit" value="Log-in")

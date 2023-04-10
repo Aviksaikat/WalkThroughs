@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Didactic Octo Paddles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/images/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Didactic Octo Paddles</h1>
+        <div class="row">
+            {{for products}}
+            <div class="col-md-4 mb-5">
+                <div class="card">
+                    <img
+                        src="../static/images/{{>title}}.png"
+                        class="card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body" style="background-color: #1a0933">
+                        <h5 class="card-title">{{>title}}</h5>
+                        <p class="card-text" style="color: #4caf50">{{>price}}𐂠</p>
+
+                        <button
+                            class="btn btn-success add-to-cart-btn"
+                            data-item="{{>id}}"
+                            type="submit"
+                        >
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {{/for}}
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

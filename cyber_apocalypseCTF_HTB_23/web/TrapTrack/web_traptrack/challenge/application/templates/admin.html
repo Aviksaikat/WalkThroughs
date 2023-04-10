@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TrapTrack Administration</title>
+    <meta name="author" content="rayhan0x01">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/theme.css" rel="stylesheet" />
+    <link href="/static/css/main.css" rel="stylesheet" />
+  </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/"><img src="/static/images/logo.png" class="sb2"> <span class="sb3">TrapTrack </span></a>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item nav-li">
+                <a class="nav-item text-decoration-none" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-xl mt-5">
+            <div class="content-wrapper ">
+            <div class="row">
+                <div class="col-md-12 grid-margin">
+                    <div class="d-flex justify-content-between flex-wrap">
+                    <div class="d-flex align-items-end flex-wrap">
+                        <div class="mr-md-3 mr-xl-5">
+                        <h2></h2>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end flex-wrap">
+                        <button type="button" class="btn btn-dark bg-dark btn-icon mr-3 mt-2 mt-xl-0" id="showFormBtn">
+                        Add Trap Track
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+              <div class="row mt-5" id="addForm">
+                <div class="col-md-12 stretch-card grid-margin">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title text-start">Add Trap Track</p>
+                        <div class="form-group">
+                          <label for="trapName">Trap Service Name</label>
+                          <input type="text" class="form-control" id="trapName" placeholder="Facebook">
+                        </div>
+                        <div class="form-group">
+                          <label for="trapURL">Trap URL</label>
+                          <input type="text" class="form-control" id="trapURL" placeholder="Trap URL">
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary mr-2" id="addRecordBtn">Add</button>
+                          <button class="btn btn-light" id="cancelBtn">Cancel</button>
+                        </div>
+                        <div class="form-group">
+                          <p class="alert alert-info" id="resp-msg">Please Wait...</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5" id="trapList">
+                <div class="col-md-12 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title text-start">Trap List</p>
+                      <div class="table-responsive table-striped">
+                        <table id="trap-listing" class="table text-center">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>URL</th>
+                              <th>Track Status</th>
+                              <th>Track ID</th>
+                              <th>Health</th>
+                              <th class="text-center" style="width: 200px;">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {% for trap in tracks %}
+                            <tr>
+                                <td>{{trap.trap_name}}</td>
+                                <td>{{trap.trap_url}}</td>
+                                <td>---</td>
+                                <td>{% if trap.track_cron_id %}{{trap.track_cron_id}}{% else %}0{% endif %}</td>
+                                <td>
+                                     <span class="health hred"></span>
+                                </td>
+                                <td class="text-center">
+                                <button type="button" class="btn btn-danger" onclick="delRecord('{{trap.id}}')">
+                                    DELETE
+                                </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+        <script src="/static/js/jquery-3.6.0.min.js"></script>
+        <script src="/static/js/main.js"></script>
+    </body>
+</html>

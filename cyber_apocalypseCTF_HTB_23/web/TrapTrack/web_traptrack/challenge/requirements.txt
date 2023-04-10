@@ -1,0 +1,8 @@
+Flask-Session==0.4.0
+Flask==2.2.2
+flask-sqlalchemy==3.0.0
+SQLAlchemy==1.4.41
+SQLAlchemy-serializer==1.4.1
+Flask-Login==0.6.2
+pycurl==7.45.1
+redis==4.3.4

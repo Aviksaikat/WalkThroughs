@@ -1,0 +1,111 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    height: 100% !important;
+}
+.row {
+    margin-top: 2em;
+}
+
+.col {
+    padding: 1em;
+}
+
+.fifty {
+    width: 50%;
+}
+
+.graphiq {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.graphiq__graph-layout {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+.graphiq__graph-values {
+    font-size: 0.75em;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.25em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.graphiq__line {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+.graphiq__graph-key {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graphiq__graph-key .key {
+    font-size: 0.75em;
+    text-align: center;
+    display: block;
+}
+
+.graphiq__y-division {
+    fill: none;
+    stroke-miterlimit: 10;
+    z-index: -1;
+    transition: 0.25s ease-in;
+}
+
+.graphiq__graph-dot {
+    transition: stroke-width ease-in-out 0.2s;
+    transform-origin: 50% 50%;
+}
+
+.graphiq__value-dialog {
+    display: block;
+    position: absolute;
+    background: transparent;
+    font-size: 0.75em;
+    line-height: 0;
+    padding: 0.66em 0.33em;
+    font-weight: bold;
+    -webkit-animation: float 0.3s ease-out forwards;
+    animation: float 0.3s ease-out forwards;
+}
+
+.export {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes float {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY();
+    }
+}
+
+@keyframes float {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY();
+    }
+}

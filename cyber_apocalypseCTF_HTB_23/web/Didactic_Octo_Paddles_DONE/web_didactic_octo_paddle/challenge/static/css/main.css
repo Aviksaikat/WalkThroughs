@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #1a0933;
+    --secondary-color: #32fbe2;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Press Start 2P", cursive;
+    margin: 0;
+}
+
+#form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #6f42c1;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--tertiary-color);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Press Start 2P", cursive;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Press Start 2P", cursive;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: darkred;
+    font-weight: bold;
+    text-align: center;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0069d9;
+}
+
+.small-list {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 400px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.small-list li {
+    background-color: #281539;
+    color: #178ad1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.cart {
+    background-color: #281539;
+    color: #178ad1;
+}
+
+.cart-empty {
+    background-color: #281539;
+    /* color: #ff007f; */
+    text-align: center;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: #32fbe2;
+}

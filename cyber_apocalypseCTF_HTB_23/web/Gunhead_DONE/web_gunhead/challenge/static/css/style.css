@@ -1,0 +1,537 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/orbitron.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: intFallPlus;
+  src: url('/static/fonts/intfallplus.ttf');
+}
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/vt323.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  background: #041729;
+  background-size: 400px 400px, 499px 307px, 100% 100vh, 10px 10px, 10px 10px;
+  background-position: 20% -30px, 98% 40px, 0 0, 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat, repeat, repeat;
+  background-blend-mode: lighten, lighten, normal, normal, normal;
+  box-sizing: border-box;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  z-index: 1;
+}
+
+#border {
+  background: #fc0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(100% - 36px);
+  max-width: 766px;
+  clip-path: polygon(0 0, 100% 0px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 50%, 10px calc(50% - 10px), 10px calc(25% + 10px), 0 25%);
+}
+
+wrapper {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 4px);
+  max-width: 800px;
+  background: linear-gradient(#333, #333), repeating-linear-gradient(-45deg, transparent 4px, #530 0, #530 6px, transparent 0, transparent 9px), linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(255, 200, 0, 0.1) 2px), linear-gradient(to right, transparent 9px, #004), linear-gradient(#001 9px, #004);
+  background-size: 8px 100%, 296px 7px, 100% 2px, 10px 10px, 10px 10px;
+  background-position: calc(100% - 7px) 0, 99.5% calc(100% - 3px), 0 0, 0 0, 0 0;
+  background-repeat: repeat-y, no-repeat, repeat, repeat, repeat;
+  clip-path: polygon(0 0, 100% 0px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 50%, 10px calc(50% - 10px), 10px calc(25% + 10px), 0 25%);
+  overflow: hidden;
+}
+
+scroller {
+  position: absolute;
+  top: 0;
+  bottom: 15px;
+  width: calc(100% - 28px);
+  padding-right: 35px;
+  overflow: hidden;
+  color: #fc0;
+}
+
+content {
+  position: relative;
+  box-sizing: initial;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+scrollbar {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 13px;
+  width: 10px;
+  height: 50px;
+  background: #fc0;
+  z-index: 2;
+}
+
+scrollbar:hover {
+  background: #fd3;
+}
+
+scrollbar:hover:after {
+  border-top: 10px solid #fd3;
+}
+
+scrollbar::after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  top: 100%;
+  left: 0;
+  border-top: 10px solid #fc0;
+  border-right: 10px solid transparent;
+  z-index: 2;
+}
+
+sidebar {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  bottom: 60px;
+  width: 34px;
+  border: 2px solid #fc0;
+  border-bottom-right-radius: 5px;
+  background: #090909;
+}
+
+sidebar a.s {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-top: 1px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+sidebar a.s:hover {
+  background: #fc0;
+}
+
+sidebar a.s p {
+  box-sizing: border-box;
+  position: absolute;
+  top: 3px;
+  left: calc(100%);
+  margin: 0;
+  width: 0;
+  padding: 5px 0px;
+  border: 1px solid #fc0;
+  background: #050505;
+  color: #fc0;
+  transition: all 0.09s ease-out;
+  overflow: hidden;
+  font-family: 'VT323', monospace;
+  white-space: nowrap;
+  z-index: 99;
+}
+
+sidebar a.s:hover p {
+  left: calc(100% + 1px);
+  width: 100px;
+  padding: 5px 5px;
+}
+
+sidebar a.s p:hover {
+  background: #fc0;
+  color: #000;
+}
+
+#blog-content .my-post {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px 30px 10px 30px;
+  background-color: rgba(255, 200, 0, 0.2);
+  background-repeat: no-repeat;
+  color: #c93;
+  clip-path: polygon(0 0, calc(100% - 30px) 0px, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px), 0 50%, 10px calc(50% - 10px), 10px calc(15% + 10px), 0 15%);
+}
+
+#blog-content .my-post:not(:last-child) {
+  background: repeating-linear-gradient(-45deg, transparent 4px, #750 0, #750 6px, transparent 0, transparent 9px), rgba(255, 200, 0, 0.2);
+  background-size: 296px 7px;
+  background-position: 99.5% calc(100% - 3px), 0 0;
+  background-repeat: no-repeat;
+}
+
+#blog-content .my-post h2 {
+  display: block;
+  position: relative;
+  width: 103%;
+  margin: 0 0 0 -10px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fc0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: 'Orbitron';
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+  clip-path: polygon(0 0, calc(100% - 30px) 0px, 100% 30px, 100% 100%, 0 100%);
+}
+
+#blog-content .my-post p {
+  margin-top: 10px;
+  font-family: 'Orbitron';
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#blog-content .my-post p:not(last-child) {
+  margin-bottom: 10px;
+}
+
+#blog-content .my-post.text h2::before {
+  position: relative;
+  top: -3px;
+  margin-right: 5px;
+  background: #444;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 14px;
+}
+
+#integer-status {
+  top: 2vh;
+  left: 102%;
+  width: 100%;
+  max-width: 300px;
+  display: grid;
+  justify-items: center;
+}
+
+#integer-status.opened {
+  top: -1000px;
+}
+
+.pop {
+  display: block;
+  position: absolute;
+  border: 2px solid #fc0;
+  background: linear-gradient(transparent, rgba(0, 0, 50, .7)), linear-gradient(#001 1px, #226 0);
+  padding-bottom: 5px;
+  background-size: 100%, 100% 2px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.pop.red {
+  border-color: #c33;
+}
+
+.pop .ribbon {
+  margin: 0;
+  background: #fc0;
+  padding: 2px;
+  font-family: Orbitron;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.pop .ribbon close {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  cursor: pointer;
+}
+
+#integer {
+  float: left;
+  margin: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.codetext {
+  display: block;
+  float: right;
+  width: 61%;
+  margin: 10px 5px 0 0;
+  padding: 0 0 5px 2px;
+  border: 1px solid #3c5;
+  background: rgba(0, 255, 0, 0.1);
+  color: #3c5;
+}
+
+.codetext,
+.bio-access,
+.scrollbox {
+  font-family: intFallPlus;
+  font-size: 24px;
+  line-height: 14px;
+  font-smooth: never;
+}
+
+.bio-access {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ccc;
+}
+
+.bio-access a,
+.pop a {
+  color: #fc0;
+}
+
+.dir {
+  list-style-type: none;
+  margin: 0 0 5px 0;
+  padding: 5px 0 5px 0;
+  background: rgba(0, 48, 80, 0.5);
+}
+
+.dir li {
+  padding-left: 5px;
+  line-height: 16px;
+}
+
+.dirtitle {
+  display: inline-block;
+  color: #fc0;
+  background: rgba(0, 48, 80, 0.5);
+  margin: 10px 0 0 0;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+}
+
+.dirtitleAfter {
+  display: inline;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -19px;
+  border-bottom: 18px solid rgba(0, 48, 80, 0.5);
+  border-right: 18px solid transparent;
+}
+
+#dotpat {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  width: 25%;
+  height: 400px;
+  background: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  background-repeat: repeat;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.scrollbox {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  padding: 0 10px;
+  overflow-y: scroll;
+  color: #ccc;
+  transition: all 0.25s;
+}
+
+#needs {
+  width: 300px;
+  height: 313px;
+  top: 40px;
+  right: 100%;
+  z-index: 2;
+  transition: all 0.25s;
+}
+
+#needs:not(.opened) {
+  top: 170px;
+  height: 0;
+  padding: 0;
+  border-width: 0;
+  overflow: hidden;
+}
+
+#needs.opened .scrollbox {
+  height: 300px;
+}
+
+.pop.red .ribbon {
+  background: #c33;
+  color: #fff;
+}
+
+#side-needs {
+  display: block;
+}
+
+@keyframes blip {
+  0% {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  90% {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  90.1% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  100% {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+#celia-window {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100%;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 10, .9) 1px, rgba(0, 0, 150, 0.95) 2px);
+  background-size: 100% 2px;
+  color: #fc0;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#celia-window.opened {
+  padding: 20px;
+  bottom: 0;
+}
+
+/* Celia */
+.c1 {
+  color: #d00;
+}
+
+.c2 {
+  color: #d0d;
+}
+
+.c3 {
+  color: #ddd;
+}
+
+.c4 {
+  color: #0d0;
+}
+
+.c5 {
+  color: #0ad;
+}
+
+#term-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#term {
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  overflow-x: none;
+  overflow-y: scroll;
+  font-family: monospace;
+}
+
+#term>div {
+  margin: 0 auto 5px auto;
+  width: 90%;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ddd;
+}
+
+#term-entry {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  font-family: Orbitron;
+  font-size: 12px;
+  color: #000;
+}
+
+#term-entry>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 2px;
+  padding-top: 0;
+  background: #fff;
+}
+
+#term-entry>div>input {
+  margin: 0 0 3px 10px;
+  width: 90%;
+  max-width: 90%;
+  height: 45px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #000;
+  background: none;
+  font-size: 12px;
+  font-family: Orbitron;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+}

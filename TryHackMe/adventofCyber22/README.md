@@ -343,257 +343,246 @@ THM{CLOSE_THE_DOOR}
 
 1. What is the name given to file uploads that allow threat actors to upload any files that they want?
 ```
-
+Unrestricted
 ```
 2. What is the title of the web application developed by Santa's freelancer?
 ```
-
+SantaSideKick2
 ```
 3. What is the value of the flag stored in the HR Elf's Documents directory?
 ```
-
+THM{Naughty.File.Uploads.Can.Get.You.RCE}
 ```
 4. What defence technique can be implemented to ensure that specific file types can be uploaded?
 ```
-
+File Extension Validation
 ```
 5. What defence technique can be used to make sure the threat actor cannot recover their file again by simply using the file name?
 ```
-
+File Renaming
 ```
 6. What defence technique can be used to make sure malicious files that can hurt elves are not uploaded?
 ```
-
+Malware Scanning
 ```
 
 ## Task 21
 
 1. What is the value of Flag1?
 ```
-
+THM{McCode, Elf McCode}
 ```
 2. What is the value of Flag2?
 ```
-
+THM{KodeNRoll}
 ```
 3. What is the value of Flag3?
 ```
-
+THM{Are we secure yet?}
 ```
 4. What is the value of Flag4?
 ```
-
+THM{SQLi_who???}
 ```
 
 ## Task 22
 
-1. What is the name of the S3 Bucket used to host the HR Website announcement?
+1. Filtering for Usernames: How many usernames fit the syntax above?
+
 ```
-images.bestfestivalcompany.com
+
 ```
-2. What is the message left in the flag.txt object from that bucket?
+2. Filtering for Usernames: One username consists of a readable word concatenated with a number. What is it?
 ```
-It's easy to get your elves data when you leave it so easy to find!
+
 ```
-3. What other file in that bucket looks interesting to you?
+3. Filtering for Emails: How many emails fit the syntax above?
 ```
-wp-backup.zip
+
 ```
-4. What is the AWS Access Key ID in that file?
+4. Filtering for Emails: How many unique domains are there?
 ```
-AKIAQI52OJVCPZXFYAOI
+
 ```
-5. What is the AWS Account ID that access-key works for?
+5. Filtering for Emails: What is the domain of the email with the local-part "lewisham44"?
 ```
-019181489476
+
 ```
-6. What is the Username for that access-key?
+6. Filtering for Emails: What is the domain of the email with the local-part "maxximax"?
 ```
-ElfMcHR@bfc.com
+
 ```
-7. There is an EC2 Instance in this account. Under the TAGs, what is the Name of the instance?
+7. Filtering for Emails: What is the local-part of the email with the domain name "hotmail.com"?
 ```
-HR-Portal
+
 ```
-8. What is the database password stored in Secrets Manager?
+8. Filtering for URLs: How many URLs fit the syntax provided?
 ```
-Winter2021!
+
+```
+9. Filtering for URLs: How many of these URLs start with "https"?
+```
+
 ```
 
 ## Task 23
 
-1. What command will list container images stored in your local container registry?
-```
-docker images
-```
-2. What command will allow you to save a docker image as a tar archive?
-```
-docker save
-```
-3. What is the name of the file (including file extension) for the configuration, repository tags, and layer hash values stored in a container image?
-```
-manifest.json
-```
-4. What is the token value you found for the bonus challenge?
-```
-7095b3e9300542edadbc2dd558ac11fa
+1. What is the Challenge #1 flag?
 ```
 
+```
+2. From the Challenge 1 log, what user account was created?
+```
+
+```
+3. What is the Challenge #2 flag?
+```
+
+```
+4. What was the User's path in the Challenge #2 log file?
+```
+
+```
+5. What is the Challenge #3 flag?
+```
+
+```
+6. What was the MD5 hash associated with Challenge #3 logs?
+```
+2F6CE97FAF2D5EEA919E4393BDD416A7
+```
 ## Task 24
 
-1. Who was the email sent to? (Answer is the email address)
-```
-elfmcphearson@tbfc.com
-```
-2. Phishing emails use similar domains of their targets to increase the likelihood the recipient will be tricked into interacting with the email. Who does it say the email was from? (Answer is the email address)
-```
-customerservice@t8fc.info
-```
-3. Sometimes phishing emails have a different reply-to email address. If this email was replied to, what email address will receive the email response?
-```
-fisher@tempmailz.grinch
-```
-4. Less sophisticated phishing emails will have typos. What is the misspelled word?
-```
-stright
-```
-5. The email contains a link that will redirect the recipient to a fraudulent website in an effort to collect credentials. What is the link to the credential harvesting website?
-```
-https://89xgwsnmo5.grinch/out/fishing/
-```
-6. View the email source code. There is an unusual email header. What is the header and its value?
-```
-X-GrinchPhish: >;^)
-```
-7. You received other reports of phishing attempts from other colleagues. Some of the other emails contained attachments. Open attachment.txt. What is the name of the attachment?
-```
-password-reset-instaructions.pdf
-```
-8. What is the flag in the PDF file?
-```
-THM{A0C_Thr33_Ph1sh1ng_An4lys!s}
+1. What device can be used to probe the signals being sent on electrical wires between two devices?
 ```
 
+```
+2. USART is faster than SPI for communication? (Yea,Nay)
+```
+
+```
+3. USART communication uses fewer wires than SPI? (Yea,Nay)
+```
+
+```
+4. USART is faster than I2C for communication? (Yea,Nay)
+```
+
+```
+5. I2C uses more wires than SPI for communication? (Yea,Nay)
+```
+
+```
+6. SPI is faster than I2C for communication? (Yea,Nay)
+```
+
+```
+7. What is the maximum number of devices that can be connected on a single pair of I2C lines?
+```
+
+```
+8. What is the new baud rate that is negotiated between the microprocessor and ESP32 chip?
+```
+
+```
+9. What is the flag that is transmitted once the new baud rate was accepted?
+```
+THM{Hacking.Hardware.Is.Fun}
+```
 ## Task 25
 
-1. Open the terminal and navigate to the file on the desktop named 'testfile'. Using the 'strings' command, check the strings in the file. There is only a single line of output to the 'strings' command. What is the output?
-```
-X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
-```
-2. Check the file type of 'testfile' using the 'file' command. What is the file type?
-```
-EICAR virus test files
-```
-3. Calculate the file's hash and search for it on VirusTotal. When was the file first seen in the wild?
-```
-2005-10-17 22:03:48 
-```
-4. On VirusTotal's detection tab, what is the classification assigned to the file by Microsoft?
-```
-Virus:DOS/EICAR_Test_File
-```
-5. Go to this link to learn more about this file and what it is used for. What were the first two names of this file?
-```
-ducklin.htm or ducklin-html.htm
-```
-6. The file has 68 characters in the start known as the known string. It can be appended with whitespace characters upto a limited number of characters. What is the maximum number of total characters that can be in the file?
-```
-128
+1. What is the flag value after reversing the file firmwarev2.2-encrypted.gpg?
 ```
 
+```
+2. What is the Paraphrase value for the binary firmwarev1.0_unsigned?
+```
+
+```
+3. After reversing the encrypted firmware, can you find the build number for rootfs?
+```
+
+```
 ## Task 26
 
-1. We changed the text in the string $a as shown in the eicaryara rule we wrote, from X5O to X50, that is, we replaced the letter O with the number 0. The condition for the Yara rule is $a and $b and $c and $d. If we are to only make a change to the first boolean operator in this condition, what boolean operator shall we replace the 'and' with, in order for the rule to still hit the file?
-```
-or
-```
-2. What option is used in the Yara command in order to list down the metadata of the rules that are a hit to a file? 
-```
--m
-```
-3. What section contains information about the author of the Yara rule?
-```
-metadata
-```
-4. What option is used to print only rules that did not hit?
-```
--n
-```
-5. Change the Yara rule value for the $a string to X50. Rerun the command, but this time with the -c option. What is the result?
-```
-0
+1. What port is Mosquitto running on? 
 ```
 
+```
+2. Is the device/init topic enumerated by Nmap during a script scan of all ports? (y/n)
+```
+
+```
+3. What Mosquitto version is the device using?
+```
+
+```
+4. What flag is obtained from viewing the RTSP stream? 
+```
+
+```
 ## Task 27
 
-1. What is the username (email address of Grinch Enterprises) from the decoded script?
+1. Follow the instructions in the attached static site to help McSkidy reduce her attack surface against attacks from the Yeti. Use the flag as an answer to complete the task. 
 ```
-Grinch.Enterprises.2021@gmail.com
-```
-2. What is the mailbox password you found?
-```
-S@ntai$comingt0t0wn
-```
-3. What is the subject of the email?
-```
-Christmas Wishlist
-```
-4. What port is the script using to exfiltrate data from the North Pole?
-```
-587
-```
-5. What is the flag hidden found in the document that Grinch Enterprises left behind? (Hint: use the following command oledump.py -s {stream number} -d, the answer will be in the caption).
-```
-YouFoundGrinchCookie
-```
-6. There is still a second flag somewhere... can you find it on the machine?
-```
-S@nt@c1Au$IsrEAl
+THM{4TT4CK SURF4C3 R3DUC3D}
 ```
 
 ## Task 28
 
-1. What command was executed as Elf McNealy to add a new user to the machine?
-```
-Invoke-Nightmare
-```
-2. What user executed the PowerShell file to send the password.txt file from the administrator's desktop to a remote server?
-```
-adm1n
-```
-3. What was the IP address of the remote server? What was the port used for the remote connection? (format: IP,Port)
-```
-10.10.148.96,4321
-```
-4. What was the encryption key used to encrypt the contents of the text file sent to the remote server?
-```
-j3pn50vkw21hhurbqmxjlpmo9doiukyb
-```
-5. What application was used to delete the password.txt file?
-```
-sdelete.exe
-```
-6. What is the date and timestamp the logs show that password.txt was deleted? (format: MM/DD/YYYY H:MM:SS PM)
-```
-11/11/2021 7:29:27 PM
-```
-7. What were the contents of the deleted password.txt file?
-```
-Mission Control:letitsnowletitsnowletitsnow
+1. Case 1: What is the password for Santa’s Vault?
 ```
 
+```
+2. Case 1: What is the Flag?
+```
 
-## Task 29
+```
+3. Case 2: What is Santa’s favourite thing?
+```
 
-1. What is the username of the other user on the system?
 ```
-emily
+4. Case 2: What is the password for Santa’s Vault?
 ```
-2. What is the NTLM hash of this user?
+
 ```
-8af326aa4850225b75c592d4ce19ccf5
+5. Case 2: What is the Flag?
 ```
-3. What is the password for this user?
+
 ```
-1234567890
+6. Case 3: What is the Executive Assistant’s favourite thing?
+```
+
+```
+7. Case 3: What is Santa’s previous password?
+```
+
+```
+8. Case 3: What is Santa’s current password?
+```
+
+```
+9. Case 3: What is the 1st part of the vault’s password?
+```
+
+```
+10. Case 3: What is the 2nd part of the vault’s password?
+```
+
+```
+11. Case 3: What is the password for Santa’s Vault?
+```
+
+```
+12. Case 3: What is the Flag?
+```
+
+```
+13. What is Santa's Code?
+```
+
+```
+14. Mission ELFPossible: What is the Abominable for a Day Flag?
+```
+
 ```

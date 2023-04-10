@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ORBITAL</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/static/images/logo.png" />
+    <link rel="stylesheet" href="/static/css/star.css">
+    <link rel="stylesheet" href="/static/css/graph.css">
+</head>
+
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div style="display: flex;justify-content: center;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3 rounded"
+            style="width: 90%; color: white; font-size: 20px;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Visualizer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Decoder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Map View</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid bg-dark mt-3 rounded" style="width: 90%; color: white; font-size: 20px;">
+        <div class="row">
+            <div class="col section-1 section-description mt-3 ">
+                <h1>Statistics</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s-12 m-6">
+                <p>Communications Monitored</p>
+                <div class="graph-communication"></div>
+            </div>
+            <div class="col s-12 m-6">
+                <p>Active Source</p>
+                <div class="graph-active"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s-12 m-6">
+                <p>Signal Strength</p>
+                <div class="graph-strength"></div>
+            </div>
+            <div class="col s-12 m-6">
+                <p>CPU Usage</p>
+                <div class="graph-usage"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col section-1 section-description mt-3 ">
+                <h1>Recent Communications</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">ID</th>
+                        <th scope="col">Source</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Decoded Name</th>
+                        <th scope="col">Export</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for communication in allCommunication %}
+                    <tr class="table-dark">
+                        <td scope="row">{{ communication.id }}</td>
+                        <td scope="row">{{ communication.source }}</td>
+                        <td scope="row">{{ communication.destination }}</td>
+                        <td scope="row">{{ communication.name }}</td>
+                        <td scope="row">
+                            <div class="export" onclick="exportFile('{{communication.downloadable}}')">
+                                <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 493.525 493.525"
+                                    xml:space="preserve">
+                                    <g id="XMLID_30_">
+                                        <path id="XMLID_32_"
+                                            d="M430.557,79.556H218.44c21.622,12.688,40.255,29.729,54.859,49.906h157.258c7.196,0,13.063,5.863,13.063,13.06v238.662c0,7.199-5.866,13.064-13.063,13.064H191.894c-7.198,0-13.062-5.865-13.062-13.064V222.173c-6.027-3.1-12.33-5.715-18.845-7.732c-3.818,11.764-12.105,21.787-23.508,27.781c-2.39,1.252-4.987,2.014-7.554,2.844v136.119c0,34.717,28.25,62.971,62.968,62.971h238.663c34.718,0,62.969-28.254,62.969-62.971V142.522C493.525,107.806,465.275,79.556,430.557,79.556z" />
+                                        <path id="XMLID_31_"
+                                            d="M129.037,175.989c51.419,1.234,96.388,28.283,122.25,68.865c2.371,3.705,6.434,5.848,10.657,5.848c1.152,0,2.322-0.162,3.46-0.486c5.377-1.545,9.114-6.418,9.179-12.006c0-0.504,0-1.01,0-1.51c0-81.148-64.853-147.023-145.527-148.957V64.155c0-5.492-3.038-10.512-7.879-13.078c-2.16-1.139-4.533-1.707-6.889-1.707c-2.94,0-5.848,0.88-8.35,2.584L5.751,120.526C2.162,122.98,0.018,127.041,0,131.394c-0.017,4.338,2.113,8.418,5.687,10.902l100.17,69.451c2.518,1.753,5.459,2.631,8.414,2.631c2.355,0,4.696-0.553,6.857-1.676c4.855-2.549,7.909-7.6,7.909-13.092V175.989z" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/dashboard.js"></script>
+
+</html>

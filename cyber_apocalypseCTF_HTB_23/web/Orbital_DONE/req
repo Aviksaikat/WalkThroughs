@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2023.1.2" exportTime="Sun Mar 19 14:26:03 UTC 2023">
+  <item>
+    <time>Thu Jan 01 00:00:00 UTC 1970</time>
+    <url><![CDATA[http://165.232.108.240:31952/api/login]]></url>
+    <host ip="165.232.108.240">165.232.108.240</host>
+    <port>31952</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/api/login]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[UE9TVCAvYXBpL2xvZ2luIEhUVFAvMS4xDQpIb3N0OiAxNjUuMjMyLjEwOC4yNDA6MzE5NTINCkNvbnRlbnQtTGVuZ3RoOiAzOQ0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExMC4wLjU0ODEuNzggU2FmYXJpLzUzNy4zNg0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uDQpBY2NlcHQ6ICovKg0KT3JpZ2luOiBodHRwOi8vMTY1LjIzMi4xMDguMjQwOjMxOTUyDQpSZWZlcmVyOiBodHRwOi8vMTY1LjIzMi4xMDguMjQwOjMxOTUyLw0KQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlDQpBY2NlcHQtTGFuZ3VhZ2U6IGVuLUdCLGVuLVVTO3E9MC45LGVuO3E9MC44DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InVzZXJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6ImFkbWluIn0=]]></request>
+    <status></status>
+    <responselength></responselength>
+    <mimetype></mimetype>
+    <response base64="true"></response>
+    <comment></comment>
+  </item>
+</items>

@@ -1,0 +1,56 @@
+doctype html
+head
+	title Spybug | Panel
+	include head.pug
+body
+	div.container.login.mt-5.mb-5
+		div.row
+			div.col-md-10
+				h1
+					i.las.la-satellite-dish
+					| &nbsp;Spybug v1
+			div.col-md-2.float-right
+				a.btn.login-btn.mt-3(href="/panel/logout") Log-out
+		hr 
+		h2 #{"Welcome back " + username}
+		hr
+		h3
+			i.las.la-laptop
+			| &nbsp;Agents
+		if agents.length > 0
+			table.w-100
+				thead
+					tr
+					th ID
+					th Hostname
+					th Platform
+					th Arch
+				tbody
+					each agent in agents
+						tr
+							td= agent.identifier
+							td !{agent.hostname}
+							td !{agent.platform}
+							td !{agent.arch}
+		else
+			h2 No agents
+
+		hr
+		h3
+			i.las.la-play-circle
+			| &nbsp;Recordings
+		if recordings.length > 0
+			table.w-100
+				thead
+					tr
+					th Agent ID
+					th Audio
+				tbody
+					each recording in recordings
+						tr
+							td= recording.agentId
+							td
+								audio(controls='')
+									source(src=recording.filepath)
+		else
+			h2 No recordings
