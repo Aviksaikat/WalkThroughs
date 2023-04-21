@@ -1,0 +1,7 @@
+dotenv: .env
+networks:
+  default: mainnet-fork
+  sepolia:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}
