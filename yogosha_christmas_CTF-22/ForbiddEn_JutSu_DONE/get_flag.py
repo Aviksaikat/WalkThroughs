@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from requests import Session
 from re import findall
+
+from requests import Session
 
 
 def send_payload():

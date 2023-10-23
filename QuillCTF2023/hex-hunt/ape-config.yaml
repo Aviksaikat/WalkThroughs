@@ -1,0 +1,25 @@
+name: hex-hunt
+plugins:
+  - name: solidity
+  - name: alchemy
+  - name: foundry
+  - name: infura
+  - name: etherscan
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+    gas_limit: auto
+    transaction_acceptance_timeout: 180
+    default_transaction_type: 0
+  mainnet:
+    default_provider: alchemy
+    transaction_acceptance_timeout: 180
+foundry:
+  fork:
+    ethereum:
+      mainnet_fork:
+        upstream_provider: alchemy
+test:
+  mnemonic: test test test test test test test test test test test junk
+  number_of_accounts: 10

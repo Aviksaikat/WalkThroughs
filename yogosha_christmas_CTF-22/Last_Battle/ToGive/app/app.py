@@ -1,8 +1,13 @@
-from flask import Flask,request,render_template,session,redirect,jsonify
-from form import ReportForm,LoginForm,RegisterForm
-import os,pymysql
-import requests,secrets,random,string
+import os
+import random
+import secrets
+import string
+
+import pymysql
+import requests
+from flask import Flask, jsonify, redirect, render_template, request, session
 from flask_wtf.csrf import CSRFProtect
+from form import LoginForm, RegisterForm, ReportForm
 
 app= Flask(__name__)
 app.config["SECRET_KEY"]=os.urandom(15).hex()

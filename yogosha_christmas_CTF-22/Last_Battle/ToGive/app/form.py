@@ -1,5 +1,6 @@
 from flask_wtf import Form, RecaptchaField
-from wtforms import StringField, validators,PasswordField,SubmitField
+from wtforms import PasswordField, StringField, SubmitField, validators
+
 
 class ReportForm(Form):   
 	url = StringField('Url To Visit', [validators.DataRequired(), validators.Length(max=255)],render_kw={"placeholder": "http://link/"})

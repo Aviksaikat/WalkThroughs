@@ -1,6 +1,7 @@
 ##!/usr/bin/python3
-from pwn import *
 from re import findall
+
+from pwn import *
 
 # https://ctf.zeyu2001.com/2022/securinets-ctf-finals-2022/struggle
 # https://jfrog.com/blog/critical-vulnerability-in-haproxy-cve-2021-40346-integer-overflow-enables-http-smuggling/

@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-import hashpumpy
-from requests import post
-from warnings import filterwarnings
 from concurrent.futures import ThreadPoolExecutor
+from warnings import filterwarnings
+
+import hashpumpy
 from colorama import Fore, Style
 from get_hash import gen
+from requests import post
 
 #* who likes warnings in clean code right.... so forget about them
 filterwarnings("ignore", category=DeprecationWarning)

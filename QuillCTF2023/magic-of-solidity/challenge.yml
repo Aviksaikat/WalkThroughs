@@ -1,0 +1,4 @@
+contract: Challenge
+
+description: |
+  Can you make the isSolved() function return true?

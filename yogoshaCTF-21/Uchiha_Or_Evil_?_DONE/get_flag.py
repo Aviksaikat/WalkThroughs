@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from requests import post
 from re import findall
+
+from requests import post
 
 url = "http://3.141.159.106/"
 headers = {"User-Agent": "Uchiha"}
