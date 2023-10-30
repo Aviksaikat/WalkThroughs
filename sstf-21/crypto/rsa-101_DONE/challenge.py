@@ -1,6 +1,7 @@
-from base64 import b64encode, b64decode
-from Crypto.Util.number import getStrongPrime, bytes_to_long, long_to_bytes
+from base64 import b64decode, b64encode
 from os import system
+
+from Crypto.Util.number import bytes_to_long, getStrongPrime, long_to_bytes
 
 p = getStrongPrime(512)
 q = getStrongPrime(512)

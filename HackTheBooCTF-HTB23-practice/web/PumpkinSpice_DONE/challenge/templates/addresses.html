@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="lean, xclow3n">
+	<title>🎃 Pumpkin Spice 🎃</title>
+</head>
+<body>
+    <h1>System stats:</h1>
+    <p id="stats"></p>
+    <h1>Addresses:</h1>
+    {% for address in addresses %}
+        <p>{{ address|safe }}</p>
+    {% endfor %}
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

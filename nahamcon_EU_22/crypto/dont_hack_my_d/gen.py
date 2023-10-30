@@ -1,6 +1,9 @@
 import random
 import time
-from Crypto.Util.number import bytes_to_long as b2l, long_to_bytes as l2b, getPrime
+
+from Crypto.Util.number import bytes_to_long as b2l
+from Crypto.Util.number import getPrime
+from Crypto.Util.number import long_to_bytes as l2b
 
 time.clock = time.time
 

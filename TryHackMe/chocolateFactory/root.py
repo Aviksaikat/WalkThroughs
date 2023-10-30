@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 
-from cryptography.fernet import Fernet
 import pyfiglet
+from cryptography.fernet import Fernet
 
 key = input("Enter the key:  ")
 

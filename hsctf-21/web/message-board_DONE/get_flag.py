@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import requests
-import urllib.parse 
 import re
+import urllib.parse
+
+import requests
 
 url = "https://message-board.hsc.tf/"
 

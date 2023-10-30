@@ -1,6 +1,6 @@
 from .. import interface
-from ..util import move
 from ..room import Room
+from ..util import move
 
 map_ = """You are out in the town of Regan.
 To your west is the town square.

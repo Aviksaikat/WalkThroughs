@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import requests
 from sys import argv
+
+import requests
 
 url = "http://10.10.253.120/#/login"
 

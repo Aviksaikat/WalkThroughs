@@ -1,0 +1,95 @@
+{
+    "fr-CA": {
+        "personalData": {
+            "nom": {
+                "variations": [
+                    "nom"
+                ],
+                "fieldTypes": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            },
+            "adresse": {
+                "variations": [
+                    "adresse",
+                    "accueil",
+                    "pays/région",
+                    "état",
+                    "ville"
+                ],
+                "fieldTypes": [
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43
+                ]
+            },
+            "téléphone": {
+                "variations": [
+                    "mobile",
+                    "téléphone",
+                    "téléphone",
+                    "tel"
+                ],
+                "fieldTypes": [
+                    10,
+                    14
+                ]
+            },
+            "courriel": {
+                "variations": [
+                    "courriel"
+                ],
+                "fieldTypes": [
+                    9
+                ]
+            },
+            "société": {
+                "variations": [
+                    "société",
+                    "organisation",
+                    "org"
+                ],
+                "fieldTypes": [
+                    60
+                ]
+            },
+            "date de naissance": {
+                "variations": [
+                    "dob",
+                    "date de naissance"
+                ],
+                "fieldTypes": [
+                    514,
+                    515,
+                    516,
+                    517,
+                    518,
+                    519,
+                    520
+                ]
+            }
+        },
+        "customData": {
+            "passeport": [
+                "passeport",
+                "identification"��[
+                    514,
+                    515,
+          m
+       �
+  �     

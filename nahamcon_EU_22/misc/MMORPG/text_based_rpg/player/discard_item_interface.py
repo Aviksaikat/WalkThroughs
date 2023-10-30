@@ -1,6 +1,7 @@
 from .. import interface
 from .data import DATA
 
+
 def discard_item_interface(player):
     """
     Display an interface to the user allowing them to discard items from their

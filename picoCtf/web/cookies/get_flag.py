@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import requests
 import re
+
+import requests
 
 #* for cookies always better to use sessions
 requests.session()

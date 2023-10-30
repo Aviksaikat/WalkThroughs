@@ -1,5 +1,6 @@
-from pwn import * # pip install pwntools
 import json
+
+from pwn import *  # pip install pwntools
 
 r = remote('socket.cryptohack.org', 13377, level = 'debug')
 

@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 import sys
-from pdfminer.pdfdocument import PDFDocument
-from pdfminer.pdfparser import PDFParser
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.pdfdevice import PDFDevice, TagExtractor
-from pdfminer.pdfpage import PDFPage
-from pdfminer.converter import XMLConverter, HTMLConverter, TextConverter
+
 from pdfminer.cmapdb import CMapDB
-from pdfminer.layout import LAParams
+from pdfminer.converter import HTMLConverter, TextConverter, XMLConverter
 from pdfminer.image import ImageWriter
+from pdfminer.layout import LAParams
+from pdfminer.pdfdevice import PDFDevice, TagExtractor
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfinterp import PDFPageInterpreter, PDFResourceManager
+from pdfminer.pdfpage import PDFPage
+from pdfminer.pdfparser import PDFParser
+
 
 # main
 def main(argv):

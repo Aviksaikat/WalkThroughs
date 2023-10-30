@@ -1,6 +1,7 @@
 #!/usr/bin/env/python3
 
 from pwn import xor
+
 """
 pwnlib.util.fiddling.xor(*args, cut = 'max') → str[source]
 Flattens its arguments using pwnlib.util.packing.flat() and then xors them together. If the end of a string is reached, it wraps around in the string.

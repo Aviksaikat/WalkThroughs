@@ -1,9 +1,9 @@
+import redis
+from application.blueprints.routes import api, response, web
+from application.database import User, db
 from flask import Flask
-from application.blueprints.routes import web, api, response
-from application.database import db, User
 from flask_login import LoginManager
 from flask_session import Session
-import redis
 
 app = Flask(__name__)
 app.config.from_object('application.config.Config')

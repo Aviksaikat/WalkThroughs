@@ -2,6 +2,7 @@ from .. import interface, item
 from .data import DATA
 from .exceptions import ItemIsNotConsumableError
 
+
 def use_item_interface(player):
     """
     Display an interface to the user allowing them to use items in their

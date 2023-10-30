@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from textwrap import wrap
 
-
 txt = "ct1a0aF_i_nrbut1t0ryX_XXXXXX1X"
 
 print(txt)

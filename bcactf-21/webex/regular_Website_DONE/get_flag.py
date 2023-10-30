@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import requests
 import re
+
+import requests
 
 url = "http://webp.bcactf.com:49155/"
 our_url = "https://hookb.in/Z2yqQeVM6dIR33eLoxZl"

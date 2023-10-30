@@ -1,6 +1,5 @@
 #!/usr/share/python3
-from PIL import Image
-from PIL import GifImagePlugin
+from PIL import GifImagePlugin, Image
 from qrtools import QR
 
 im = Image.open("hackvent2022_01.gif")

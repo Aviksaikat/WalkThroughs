@@ -1,5 +1,6 @@
-from Crypto.Util.number import long_to_bytes, bytes_to_long
+from Crypto.Util.number import bytes_to_long, long_to_bytes
 from gmpy2 import mpz, to_binary
+
 #from secret import flag, key
 
 ALPHABET = bytearray(b"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ#")

@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import requests
 from os import rename
+
+import requests
 
 ip = "10.10.104.250"
 url = f"http://{ip}:3333/internal/index.php"

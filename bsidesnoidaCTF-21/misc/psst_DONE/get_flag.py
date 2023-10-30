@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import os 
+import os
 
 folder = "/home/avik/Desktop/ctf/WalkThroughs/bsidesnoidaCTF-21/misc/psst_DONE/chall/Security"
 results = ""

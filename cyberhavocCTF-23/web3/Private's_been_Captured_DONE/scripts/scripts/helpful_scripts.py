@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from brownie import network, accounts, config
+from brownie import accounts, config, network
 
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = [

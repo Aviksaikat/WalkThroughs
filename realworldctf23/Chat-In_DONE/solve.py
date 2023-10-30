@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from hashlib import sha256
-import sys
-from pwn import *
-from pwnlib.util.iters import mbruteforce
 import string
+import sys
+from hashlib import sha256
 from re import findall
 
+from pwn import *
+from pwnlib.util.iters import mbruteforce
 
 prefixes = sys.argv[1]
 

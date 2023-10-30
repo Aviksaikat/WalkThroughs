@@ -1,5 +1,8 @@
+import base64
+import pickle
+
 from flask import current_app
-import pickle, base64
+
 
 def env(key):
     val = False

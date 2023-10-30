@@ -1,5 +1,6 @@
 from brownie import *
 
+
 def deploy():
     pass
     # EscrowReward.at('0x34a1Ba8Ab01a78747e3623be9Fa90926e0019c87')

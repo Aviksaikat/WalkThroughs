@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-from pwn import *
 import codecs
+
 from Crypto.Util.number import long_to_bytes
+from pwn import *
+
 
 def decoded(type_,encoded_text):
 	

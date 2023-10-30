@@ -77,24 +77,25 @@ Todo:
 
 """
 
-import re
-import optparse
-import zlib
 import binascii
 import hashlib
-import sys
-import zipfile
-import time
+import optparse
 import os
+import re
+import sys
 import textwrap
+import time
+import zipfile
+import zlib
+
 if sys.version_info[0] >= 3:
-    from io import StringIO
     import urllib.request
+    from io import StringIO
     urllib23 = urllib.request
     import configparser as ConfigParser
 else:
-    from cStringIO import StringIO
     import urllib2
+    from cStringIO import StringIO
     urllib23 = urllib2
     import ConfigParser
 try:

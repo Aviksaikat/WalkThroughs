@@ -1,5 +1,6 @@
 from .. import interface
 
+
 def run_player_turn(battle):
     """
     Execute the player's turn in the battle, seeking input from the player as to

@@ -2,8 +2,9 @@
 #works kind of not for the sol. for this prob.
 
 import random
-from pwn import *
 import re
+
+from pwn import *
 
 context.log_level = 'critical'
 #nc jupiter.challenges.picoctf.org 50581

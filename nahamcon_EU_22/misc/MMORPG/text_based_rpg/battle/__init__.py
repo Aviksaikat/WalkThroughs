@@ -1,7 +1,8 @@
 from .. import util
-from . import battle_util, commands, print_list_of_attacks, rest, \
-    run_enemy_turn, run_player_attack_phase, run_player_turn, run_turn, run, \
-    start_of_turn_value_recovery
+from . import (battle_util, commands, print_list_of_attacks, rest, run,
+               run_enemy_turn, run_player_attack_phase, run_player_turn,
+               run_turn, start_of_turn_value_recovery)
+
 
 class Battle:
     """

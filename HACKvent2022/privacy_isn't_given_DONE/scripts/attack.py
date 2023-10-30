@@ -1,7 +1,8 @@
-from brownie import NotSoPrivate, web3, convert
+from brownie import NotSoPrivate, convert, web3
+from colorama import Fore
+
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
-from colorama import Fore
 
 # * colours
 green = Fore.GREEN

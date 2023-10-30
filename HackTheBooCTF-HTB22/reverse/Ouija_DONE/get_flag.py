@@ -6,9 +6,10 @@ import sys
 
 sys.path.append("../")
 from qiling import *
-from qiling.const import QL_INTERCEPT
-from qiling.os.const import STRING, BYTE
 from qiling.const import *
+from qiling.const import QL_INTERCEPT
+from qiling.os.const import BYTE, STRING
+
 
 def my_sleep(ql: Qiling):
 	return 0

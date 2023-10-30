@@ -4,8 +4,8 @@
 #targets because of the special option which has to be set.
 #see CVE Entry CVE-2008-1218
 #Exploit written by Kingcope
-import sys
 import imaplib
+import sys
 
 print("Dovecot IMAP [1.0.10 -> 1.1rc2] Exploit")
 print("Prints out all E-Mails for any account if special configuration option is set")

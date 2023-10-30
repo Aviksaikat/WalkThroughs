@@ -1,11 +1,12 @@
-import socketserver 
-import socket, os
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad,unpad
-from Crypto.Random import get_random_bytes
+import os
+import socket
+import socketserver
 from binascii import unhexlify
-from secret import FLAG
 
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+from Crypto.Util.Padding import pad, unpad
+from secret import FLAG
 
 wlcm_msg ='########################################################################\n'+\
 		  '#                  Welcome to the Bank of the World                    #\n'+\

@@ -3,8 +3,8 @@
 # Just provide an IP/port and the command you want to run and you're good to go. (if command has spaces, put cmd between "" ) 
 # Twitter: @AnubisOnSec
 
-import socket
 import argparse
+import socket
 
 parser = argparse.ArgumentParser(description='Nostromo Remote Code execution')
 parser.add_argument('host',help='domain/IP of the Nostromo web server')

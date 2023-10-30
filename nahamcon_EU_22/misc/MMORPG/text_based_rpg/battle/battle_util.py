@@ -5,6 +5,7 @@ This module contains general utility functions for use by Battle methods.
 from .. import interface
 from .data import DATA
 
+
 class PlayerHasDiedError(Exception):
     """
     An exception superclass to be raised when the player has died.

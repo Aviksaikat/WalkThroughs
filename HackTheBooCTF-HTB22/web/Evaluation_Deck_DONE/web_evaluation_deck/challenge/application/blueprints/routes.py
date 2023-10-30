@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template, request
 from application.util import response
+from flask import Blueprint, render_template, request
 
 web = Blueprint('web', __name__)
 api = Blueprint('api', __name__)

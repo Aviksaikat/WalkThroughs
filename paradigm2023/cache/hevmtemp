@@ -1,0 +1,2 @@
+hevm exec     --code 0x3460101161000b575f80fd5b5f5f5f5f346002023363fffffffff1
+     --address 7bc087f4ef9d0dc15fef823bff9c78cc5cca8be0a8     --caller 0x00000000000000000000000000000000000000420     --gas 0xffffffff                    --debug

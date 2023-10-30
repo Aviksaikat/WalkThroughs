@@ -1,7 +1,7 @@
-from .. import interface, enemies
-from ..util import move
-from ..room import Room
+from .. import enemies, interface
 from ..battle import Battle
+from ..room import Room
+from ..util import move
 
 map_ = """You are outside Goneril Mountain, at the entrace of the caves.
 To the south is the town of Regan."""

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+html {
+	position: relative;
+	min-height: 100%;
+	font-family: "Fredoka One", cursive;
+}
+
+body {
+	background: linear-gradient(#3E1C33, #130912);
+	background-size: cover;
+	color: #ffffff;
+	background-repeat: no-repeat;
+}
+
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 290px;
+	height: 350px;
+	background: linear-gradient(#F6921D, #B14623);
+	border-radius: 20px;
+	padding: 16px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.label {
+	margin-top: 8px;
+	font-size: 1.2em;
+}
+
+.title {
+	margin-top: 4px;
+	font-size: 2em;
+}
+
+.image {
+	position: absolute;
+	bottom: 0;
+	left: -40px;
+	width: 200px;
+	height: auto;
+}
+
+.address {
+	width: 95%;
+	padding: 5px;
+	background-color: #2c152a;
+	transition-duration: 0.3s;
+	border: none;
+	color: #ffffff;
+	border-radius: 15px;
+	resize: none;
+}
+
+.address:hover, .address:focus {
+	outline: none;
+	background-color: #6e3467;
+}
+
+.submit-btn {
+	margin-top: 8px;
+	width: 100%;
+	padding: 10px;
+	color: #ffffff;
+	transition-duration: 0.3s;
+	border: none;
+	background-color: #751e5a;
+	border-radius: 15px;
+}
+
+.submit-btn:hover {
+	cursor: pointer;
+	background-color: #ad2c84;
+}
+
+.submit-btn:focus {
+	transform: translateX(4px);
+}

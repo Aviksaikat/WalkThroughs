@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import requests
 import re
+
+import requests
 
 url = "https://saas.chal.imaginaryctf.org/"
 

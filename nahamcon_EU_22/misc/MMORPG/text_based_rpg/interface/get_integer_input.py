@@ -1,6 +1,7 @@
+from .built_in_methods import print_
 from .data import DATA
 from .get_input import get_input
-from .built_in_methods import print_
+
 
 def get_integer_input(upper_limit):
     """

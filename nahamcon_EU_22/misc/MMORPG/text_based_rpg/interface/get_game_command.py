@@ -1,9 +1,10 @@
 """This module contains code for the main command loop of the game."""
 
+import sys
+
+from .built_in_methods import print_
 from .get_command import get_command
 from .print_multiple_lines import print_multiple_lines
-from .built_in_methods import print_
-import sys
 
 _MAP = "map"
 _STATS = "stats"

@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from requests import get
-from sys import argv
 from re import findall
+from sys import argv
+
+from requests import get
 
 url = argv[1]
 

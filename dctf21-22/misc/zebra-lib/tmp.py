@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from pwn import *
 from base64 import b64decode
 from zlib import decompress
+
+from pwn import *
 
 debug_level = "critical"
 

@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from requests import post
-from sys import argv
 from re import findall
+from sys import argv
+
+from requests import post
 
 # data = """
 # 		<?xml version="1.0" encoding="UTF-8" ?>

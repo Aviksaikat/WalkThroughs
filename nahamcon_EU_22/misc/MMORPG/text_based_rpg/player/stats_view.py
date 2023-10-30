@@ -2,6 +2,7 @@ from .. import interface
 from ..combat_entity.data import DATA as COMBAT_ENTITY_DATA
 from .data import DATA
 
+
 def _print_line(player, value_name):
     """
     Print a line of the view displaying the player's stats.

@@ -1,6 +1,7 @@
-from flask import Flask, request, render_template
 from urllib.parse import unquote
+
 from bot import visit_report
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 

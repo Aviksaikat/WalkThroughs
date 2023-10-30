@@ -1,6 +1,6 @@
-from flask import Flask
-from application.blueprints.routes import web, api
+from application.blueprints.routes import api, web
 from application.util import response
+from flask import Flask
 
 app = Flask(__name__)
 

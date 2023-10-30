@@ -1,5 +1,6 @@
 from .generate_random_multiplier import generate_random_multiplier
 
+
 def _generate_amount_of_value_to_restore(entity, value_name, multiplier=1):
     """
     Generates the amount of an entity value for the given entity to restore.

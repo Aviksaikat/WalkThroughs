@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import requests
 import re
+
+import requests
 
 with open("/usr/share/seclists/Usernames/xato-net-10-million-usernames.txt", 'r') as f:
 	dat = f.read()

@@ -1,4 +1,4 @@
-from .optimized_field_elements import FQ2, FQ12, field_modulus, FQ
+from .optimized_field_elements import FQ, FQ2, FQ12, field_modulus
 
 curve_order = 21888242871839275222246405745257275088548364400416034343698204186575808495617
 

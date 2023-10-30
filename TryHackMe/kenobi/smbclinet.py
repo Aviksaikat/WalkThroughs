@@ -14,15 +14,17 @@
 # Reference for:
 #  SMB DCE/RPC
 #
-from __future__ import division
-from __future__ import print_function
-import sys
-import logging
+from __future__ import division, print_function
+
 import argparse
+import logging
+import sys
+
+from impacket import version
 from impacket.examples import logger
 from impacket.examples.smbclient import MiniImpacketShell
-from impacket import version
 from impacket.smbconnection import SMBConnection
+
 
 def main():
     # Init the example's logger theme

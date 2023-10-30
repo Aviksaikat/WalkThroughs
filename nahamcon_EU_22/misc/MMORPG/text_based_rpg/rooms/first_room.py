@@ -1,7 +1,7 @@
-from .. import interface, enemies, items
-from ..util import move
-from ..room import Room
+from .. import enemies, interface, items
 from ..battle import Battle
+from ..room import Room
+from ..util import move
 
 map_ = """You are in the first room of the caves under Goneril Mountain.
 There is another room past this one, and then the final chamber.

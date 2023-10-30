@@ -3,10 +3,9 @@ This modules handles the interface and the logic behind creating the player's
 character.
 """
 
-from . import interface
+from . import attack, interface
 from .combat_entity import CombatEntity
 from .player import Player
-from . import attack
 
 _ENTITY_DISPLAY_NAME = "You"
 _CRITICAL_HIT_CHANCE = 4

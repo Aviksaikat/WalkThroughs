@@ -1,6 +1,7 @@
+import os
+
 from Crypto.Cipher import AES
 from Crypto.Util import Counter
-import os
 
 #!os.urandom() method is used to generate a string of 
 #size random bytes suitable

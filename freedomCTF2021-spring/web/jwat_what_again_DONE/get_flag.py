@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import jwt 
-import requests
 import re
+
+import jwt
+import requests
 
 url = "https://jwt.freedomctf.org/"
 

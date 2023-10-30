@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-from pwn import *
 import re
+
+from pwn import *
 
 # nc 178.62.10.52 30030
 

@@ -2,6 +2,7 @@ from .. import interface, item
 from .data import DATA
 from .exceptions import ItemIsNotEquippableError
 
+
 def equip_item_interface(player):
     """
     Display an interface to the user allowing them to equip items in their

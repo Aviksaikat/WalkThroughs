@@ -1,6 +1,7 @@
 import os
-from flask import Flask, request, session
+
 from flag import flag
+from flask import Flask, request, session
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(24)

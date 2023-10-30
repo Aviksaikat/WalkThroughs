@@ -1,4 +1,5 @@
 import random
+
 from Crypto.Cipher import AES
 
 # generate key

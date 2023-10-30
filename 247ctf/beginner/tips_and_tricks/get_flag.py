@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-from pwn import *
 import re
+
+from pwn import *
 
 #* tcp://1986c693c18bc0fa.247ctf.com:50406 
 

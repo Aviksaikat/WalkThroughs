@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-import subprocess, json
+import json
+import subprocess
 from http.server import SimpleHTTPRequestHandler
 from socketserver import TCPServer
+
 
 def get_json(content):
 	return json.dumps(content).encode()

@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-from requests import get
 from re import findall
+
+from requests import get
 
 url = "http://178.128.162.158:30796/?format="
 

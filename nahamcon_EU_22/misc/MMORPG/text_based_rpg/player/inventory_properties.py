@@ -1,5 +1,6 @@
 from .. import item
 
+
 @property
 def consumable_items(player):
     items = []

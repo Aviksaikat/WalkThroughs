@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import hashlib
-import requests
 import re
+
+import requests
 
 salt = "f789bbc328a3d1a3"
  

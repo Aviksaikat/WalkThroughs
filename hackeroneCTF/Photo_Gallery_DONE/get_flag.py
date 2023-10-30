@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import requests
 from re import findall
 from sys import argv
+
+import requests
 
 try :
 	url = argv[1]

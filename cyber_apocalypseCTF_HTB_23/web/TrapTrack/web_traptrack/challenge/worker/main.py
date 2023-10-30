@@ -1,4 +1,8 @@
-import redis, pickle, time, base64
+import base64
+import pickle
+import time
+
+import redis
 from healthcheck import request
 
 config = {

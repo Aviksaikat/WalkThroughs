@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from pwn import xor, unhex
+from pwn import unhex, xor
 
 #https://crypto.stackexchange.com/questions/2991/why-must-iv-key-pairs-not-be-reused-in-ctr-mode
 

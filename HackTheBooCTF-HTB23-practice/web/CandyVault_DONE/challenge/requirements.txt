@@ -1,0 +1,5 @@
+Faker==19.6.2
+Flask==2.3.2
+Flask_Bcrypt==1.0.1
+pymongo==4.5.0
+python-dotenv==1.0.0

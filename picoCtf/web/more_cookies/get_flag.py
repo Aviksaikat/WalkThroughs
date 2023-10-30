@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
-import requests
 from base64 import *
-from sys import argv, exit
 from re import findall
+from sys import argv, exit
+
+import requests
 
 url = argv[1]
 s = requests.Session()

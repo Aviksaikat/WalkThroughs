@@ -19,8 +19,9 @@
 #          You may need to run it multiple times for success!
 
 
-import urllib2
 import sys
+
+import urllib2
 
 try:
 	def script_create():

@@ -2,10 +2,9 @@
 
 # nc jupiter.challenges.picoctf.org 29956
 
-from pwn import * 
 import re
 
-
+from pwn import *
 
 c = remote("jupiter.challenges.picoctf.org",29956)
 

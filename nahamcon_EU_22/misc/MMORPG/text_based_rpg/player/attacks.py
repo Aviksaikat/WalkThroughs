@@ -1,5 +1,6 @@
 from .data import DATA
 
+
 @property
 def attack_names(self):
     return [attack.name for attack in self.entity.attacks]

@@ -22,20 +22,20 @@ import argparse
 import csv
 import ctypes as ct
 import json
-import logging
 import locale
+import logging
 import os
 import platform
+import shutil
 import sqlite3
 import sys
-import shutil
 from base64 import b64decode
+from configparser import ConfigParser
 from getpass import getpass
 from itertools import chain
-from subprocess import run, PIPE, DEVNULL
+from subprocess import DEVNULL, PIPE, run
+from typing import Any, Iterator, Optional
 from urllib.parse import urlparse
-from configparser import ConfigParser
-from typing import Optional, Iterator, Any
 
 LOG: logging.Logger
 VERBOSE = False

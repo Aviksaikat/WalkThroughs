@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from pwn import *
 from re import findall
+
+from pwn import *
 
 #debug_level = "critical"
 context.log_level = 'error'

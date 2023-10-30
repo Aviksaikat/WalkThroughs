@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from requests import get, post
 from re import findall
+
+from requests import get, post
 
 url = "http://165.227.224.40:30917/"
 

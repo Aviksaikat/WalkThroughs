@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-import zipfile
-import re
 import codecs
+import re
+import zipfile
 
 with open("./FreedomCTF.docx", "rb") as f:
 	zip = zipfile.ZipFile(f)

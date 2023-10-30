@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 #Aoc-1 day 9
-import requests
 import traceback
+
+import requests
 
 url = "http://10.10.169.100:3000/"
 _next = ""

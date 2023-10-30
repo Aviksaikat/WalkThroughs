@@ -1,0 +1,24 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Oct 27 13:28:35 2023
+Invocation: foremost capture.pcap 
+Output directory: /home/avik/Desktop/ctf/WalkThroughs/HackTheBooCTF23/forensics/Trick_or_Treat/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: capture.pcap
+Start: Fri Oct 27 13:28:35 2023
+Length: 22 MB (23631669 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00032096.zip 	     364 KB 	   16433524 	 
+1:	00035733.zip 	     201 KB 	   18295642 	 
+Finish: Fri Oct 27 13:28:35 2023
+
+2 FILES EXTRACTED
+	
+zip:= 2
+------------------------------------------------------------------
+
+Foremost finished at Fri Oct 27 13:28:35 2023

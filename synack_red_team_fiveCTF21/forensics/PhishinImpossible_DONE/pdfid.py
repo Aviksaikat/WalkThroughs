@@ -63,20 +63,21 @@ Todo:
   - code review, cleanup
 """
 
-import optparse
-import os
-import re
-import xml.dom.minidom
-import traceback
+import collections
+import fnmatch
+import glob
+import json
 import math
 import operator
+import optparse
+import os
 import os.path
+import re
 import sys
-import json
+import traceback
+import xml.dom.minidom
 import zipfile
-import collections
-import glob
-import fnmatch
+
 if sys.version_info[0] >= 3:
     import urllib.request as urllib23
 else:

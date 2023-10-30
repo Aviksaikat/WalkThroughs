@@ -1,6 +1,7 @@
 from .. import interface
 from .data import DATA
 
+
 def rest(battle, entity):
     """
     Execute the entity resting in the battle, printing relevant messages.

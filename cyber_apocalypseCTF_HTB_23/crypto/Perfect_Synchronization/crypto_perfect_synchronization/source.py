@@ -1,6 +1,8 @@
-from os import urandom
-from Crypto.Cipher import AES
 import string
+from os import urandom
+
+from Crypto.Cipher import AES
+
 #from secret import MESSAGE
 
 MESSAGE = string.ascii_uppercase + ' ' + '{' + '_' + '}'

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-from brownie import ShootingArea, Setup
+from brownie import Setup, ShootingArea
+
 from scripts.helpful_scripts import get_account
 
 

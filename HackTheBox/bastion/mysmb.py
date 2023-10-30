@@ -1,10 +1,11 @@
 # impacket SMB extension for MS17-010 exploit.
 # this file contains only valid SMB packet format operation.
-from impacket import smb, smbconnection
-from impacket.dcerpc.v5 import transport
-from struct import pack
 import os
 import random
+from struct import pack
+
+from impacket import smb, smbconnection
+from impacket.dcerpc.v5 import transport
 
 
 def getNTStatus(self):

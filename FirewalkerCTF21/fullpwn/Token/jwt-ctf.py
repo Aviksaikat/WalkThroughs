@@ -1,9 +1,11 @@
 #!/bin/python3
-from base64 import b64encode
-import jwt
-from urllib.parse import quote
-import ast
 import argparse
+import ast
+from base64 import b64encode
+from urllib.parse import quote
+
+import jwt
+
 
 def jwt_encode(data):
     return quote(b64encode(data))

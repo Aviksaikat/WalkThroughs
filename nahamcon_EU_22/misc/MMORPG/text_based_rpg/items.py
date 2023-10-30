@@ -1,6 +1,6 @@
 """This modules contains the code representing the items in the game."""
 
-from . import item, attack
+from . import attack, item
 
 iron_sword = item.Item(
     display_name="Iron sword",

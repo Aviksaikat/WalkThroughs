@@ -1,6 +1,7 @@
-from flask import Blueprint, render_template, request, session, current_app, redirect
 from application.database import login, register
-from application.util import response, is_authenticated, token_verify
+from application.util import is_authenticated, response, token_verify
+from flask import (Blueprint, current_app, redirect, render_template, request,
+                   session)
 
 web = Blueprint('web', __name__)
 api = Blueprint('api', __name__)

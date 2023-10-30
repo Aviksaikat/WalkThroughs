@@ -3,8 +3,9 @@
 #error while reading the pass file 
 
 
+from sys import argv
+
 import requests
-from sys import argv 
 
 url = "https://webexploit.freedomctf.org/_/sqli1/login/"
 

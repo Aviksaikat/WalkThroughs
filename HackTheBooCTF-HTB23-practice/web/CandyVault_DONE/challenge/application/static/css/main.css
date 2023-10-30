@@ -1,0 +1,276 @@
+@font-face {
+    font-family: azaretmono;
+    src: url("/static/fonts/azaretmono.ttf");
+}
+
+body,
+html,
+#wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background: #1b1b1b;
+    font-family: azaretmono, monospace;
+    color: #fff;
+}
+
+a {
+    color: #549be6;
+}
+
+#web {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -0.9vh;
+    height: 90vh;
+    max-height: 500px;
+    z-index: 1;
+}
+
+#wrapper {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.parent {
+    display: grid;
+}
+
+.spacer {
+    grid-area: 1/1/2/2;
+}
+
+#narration-and-select {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#narration-and-select img {
+    flex: auto;
+}
+
+.ghosts-home {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.ghosts-home:before {
+    display: block !important;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #2a2a2a;
+    align-self: center;
+}
+
+#ghost {
+    grid-area: 1/3/2/4;
+    margin: 3em;
+    position: relative;
+    align-self: center;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+#narration::-webkit-scrollbar {
+    width: 8px;
+}
+
+#narration::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+#narration::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+#narration {
+    text-align: center;
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 2em;
+    max-height: 30vh;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#narrationInput {
+    transition-duration: 0.3s;
+    list-style-type: none;
+    border: 1px solid #666;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 1em;
+}
+
+#narrationInput:focus {
+    outline: none;
+}
+
+#narrationInput:hover {
+    border: 1px solid #868686;
+}
+
+#narrationButton {
+    border: 1px solid transparent;
+    transition-duration: 0.3s;
+    background-color: white;
+    list-style-type: none;
+    padding: 1em;
+    border-radius: 5px;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+#narrationButton:hover {
+    cursor: pointer;
+    border: 1px solid #666;
+    background-color: transparent;
+}
+
+#narrationButton strong span {
+    color: #e737a4;
+}
+
+#narrationButton strong span~span {
+    color: #f5a623;
+}
+
+#narrationButton strong span~span~span {
+    color: #1ac330;
+}
+
+#narrationButton strong span~span~span~span {
+    color: #549be6;
+}
+
+#narrationButton strong span~span~span~span~span {
+    color: #ca3cff;
+}
+
+#narrationButton strong span~span~span~span~span~span {
+    color: #e737a4;
+}
+
+#narrationButton strong span~span~span~span~span~span~span {
+    color: #f5a623;
+}
+
+#narration strong span~span~span~span~span~span~span~span {
+    color: #1ac330;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span {
+    color: #549be6;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span {
+    color: #e737a4;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span~span {
+    color: #f5a623;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span~span~span {
+    color: #1ac330;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span~span~span~span {
+    color: #549be6;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span~span~span~span~span {
+    color: #ca3cff;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span~span~span~span~span~span {
+    color: #e737a4;
+}
+
+#narrationButton strong span~span~span~span~span~span~span~span~span~span~span~span~span~span~span~span {
+    color: #f5a623;
+}
+
+#narrationButton strong:hover {
+    transform: scale(105%);
+}
+
+#narration .instructions {
+    margin-top: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+#advancer {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

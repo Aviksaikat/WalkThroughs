@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from pwn import *
 from base64 import b64encode
+
+from pwn import *
 
 context.log_level = 'error'
 

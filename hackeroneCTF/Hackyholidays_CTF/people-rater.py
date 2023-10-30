@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from requests import get 
 from base64 import b64encode
+
+from requests import get
 
 # payload = '{"id":3}'
 

@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-from pwn import *
-import subprocess
 import re
+import subprocess
+
+from pwn import *
+
 # nc return-of-the-intro-to-netcat.hsc.tf 1337
 debug_level = "critical"
 

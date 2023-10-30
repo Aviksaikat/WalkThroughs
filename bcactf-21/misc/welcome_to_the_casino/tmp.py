@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 # nc misc.bcactf.com 49156
-from pwn import *
 import multiprocessing
+
+from pwn import *
 
 debug_mode = "critical"
 

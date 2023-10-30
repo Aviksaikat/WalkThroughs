@@ -1,7 +1,9 @@
 """This module contains general utility functions for the game."""
 
 import random
+
 from . import interface
+
 
 def set_multiple_attributes(object_, **attributes):
     """

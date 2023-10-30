@@ -1,5 +1,5 @@
-from models import Metal, Flag
 from database import db_session, init_db
+from models import Flag, Metal
 
 
 def seed_db():

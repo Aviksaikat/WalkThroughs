@@ -8,12 +8,12 @@
 # Tested on: Ubuntu 18.04 LTS
 # CVE : CVE-2019-9053
 
-import requests
-from termcolor import colored
-import time
-from termcolor import cprint
-import optparse
 import hashlib
+import optparse
+import time
+
+import requests
+from termcolor import colored, cprint
 
 parser = optparse.OptionParser()
 parser.add_option('-u', '--url', action="store", dest="url", help="Base target uri (ex. http://10.10.10.100/cms)")

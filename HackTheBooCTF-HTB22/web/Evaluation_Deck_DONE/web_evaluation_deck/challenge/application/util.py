@@ -1,5 +1,6 @@
-from flask import jsonify
 import os
+
+from flask import jsonify
 
 generate = lambda x: os.urandom(x).hex()
 

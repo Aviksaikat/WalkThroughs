@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import requests
 import string
+
+import requests
 
 URL="http://138.68.168.137:32634"
 

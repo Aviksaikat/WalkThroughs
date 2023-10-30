@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os
+
 flag = open('flag.txt', 'r').read().strip().encode()
 
 class XOR:

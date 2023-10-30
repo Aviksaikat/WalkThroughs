@@ -20,12 +20,13 @@
 
 
 
-import requests
-import re
 import argparse
-import random
-import string
 import base64
+import random
+import re
+import string
+
+import requests
 from requests.exceptions import Timeout
 
 url = 'http://10.10.10.191'  # CHANGE ME

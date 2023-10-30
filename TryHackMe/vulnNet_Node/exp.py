@@ -5,10 +5,11 @@
 # Version: 0.0.4
 # CVE: CVE-2017-5941
 
-import requests
-import re
 import base64
+import re
 import sys
+
+import requests
 
 url = 'http://10.10.220.10:8080/' # change this
 

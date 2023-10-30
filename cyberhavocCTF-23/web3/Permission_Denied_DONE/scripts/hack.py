@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-from brownie import PermissionDenied, Attack
-from scripts.helpful_scripts import get_account
-from scripts.deploy import deploy
+from brownie import Attack, PermissionDenied
 from colorama import Fore
 
+from scripts.deploy import deploy
+from scripts.helpful_scripts import get_account
 
 # * colours
 green = Fore.GREEN

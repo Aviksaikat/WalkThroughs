@@ -1,6 +1,7 @@
 #!/usr/bin/env sage
 
 import sys
+
 from sage.all import *
 
 if len(sys.argv) != 2:

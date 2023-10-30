@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-from Crypto.Cipher import AES
 from binascii import unhexlify
 
-
+from Crypto.Cipher import AES
 
 user = "admin"
 passwd = "g0ld3n_b0y"

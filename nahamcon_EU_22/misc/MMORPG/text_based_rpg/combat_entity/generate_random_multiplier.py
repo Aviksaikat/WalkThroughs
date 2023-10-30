@@ -1,5 +1,6 @@
 from .. import util
 
+
 def generate_random_multiplier():
     """
     Generate a random multiplier for use in different parts of the battle

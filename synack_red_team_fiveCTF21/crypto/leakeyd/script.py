@@ -1,5 +1,6 @@
-from Crypto.Util.number import getPrime, bytes_to_long
 from math import gcd
+
+from Crypto.Util.number import bytes_to_long, getPrime
 
 flag = open("flag.txt").read().strip().encode()
 

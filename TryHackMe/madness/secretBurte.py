@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
 from bs4 import BeautifulSoup as bs4
+
 url = "http://10.10.53.147/th1s_1s_h1dd3n/?secret="
 
 def req(url):

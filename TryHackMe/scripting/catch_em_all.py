@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-from socket import *
-from re import findall, split
-from time import sleep
 import sys
+from re import findall, split
+from socket import *
+from time import sleep
 
 
 def cal(operation, oldNum, newNum):

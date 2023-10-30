@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import requests
-import re
 import base64
+import re
+
+import requests
 
 url = "http://144.126.196.198:32160/"
 

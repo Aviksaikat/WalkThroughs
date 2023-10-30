@@ -1,5 +1,5 @@
-from flask import Flask, jsonify
 from application.blueprints.routes import web
+from flask import Flask, jsonify
 from flask_mako import MakoTemplates
 
 app = Flask(__name__)

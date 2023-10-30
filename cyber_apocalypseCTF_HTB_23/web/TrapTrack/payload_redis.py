@@ -1,12 +1,12 @@
 #!/usr/bin/python2
 from __future__ import print_function
 
-import os
-import sys
 import base64
-import urllib
+import os
 import pickle
 import subprocess
+import sys
+import urllib
 
 
 def generate_resp(command):

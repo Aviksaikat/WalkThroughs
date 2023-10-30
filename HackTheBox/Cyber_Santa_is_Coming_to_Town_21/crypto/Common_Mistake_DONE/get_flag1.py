@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 #? RSA Common modulus attack
-import gmpy2
 from binascii import unhexlify
+
+import gmpy2
+
 
 class RSAModuli:
     def __init__(self):

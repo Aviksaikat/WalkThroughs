@@ -1,0 +1,88 @@
+body {
+  height: 100vh;
+  /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
+  overflow: hidden;
+}
+
+
+
+#title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.small {
+  font-size: 20px;
+  font-weight: 800;
+  color: white !important;
+  background: -webkit-linear-gradient(white, #38495a);
+
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+textarea {
+  height: 400px;
+  width: 200px;
+}
+
+#resp-msg,
+#form-card,
+#password-listing,
+.hidden {
+    display: none;
+}
+
+#main-logo {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+#slogan {
+    display: block;
+    margin: auto;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-nav-logo {
+    width: 90px;
+    padding-bottom: 10px;
+}
+
+.message {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+td {
+  color: white !important;
+}

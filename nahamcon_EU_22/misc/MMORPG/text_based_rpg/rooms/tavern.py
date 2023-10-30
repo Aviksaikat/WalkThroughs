@@ -1,6 +1,6 @@
 from .. import interface
-from ..util import move
 from ..room import Room
+from ..util import move
 
 map_ = """You are in the tavern in Regan.
 Outside is the town square and the weapons and armour shop.

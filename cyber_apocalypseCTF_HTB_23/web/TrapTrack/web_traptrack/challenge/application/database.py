@@ -1,8 +1,8 @@
+from application.cache import create_job_queue
+from flask import current_app
+from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_serializer import SerializerMixin
-from flask_login import UserMixin
-from flask import current_app
-from application.cache import create_job_queue
 
 db = SQLAlchemy()
 

@@ -2,6 +2,7 @@
 
 import re
 
+
 def xor(bytes_arr, key):
     return bytes(b ^ key for b in bytes_arr)
 

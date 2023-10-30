@@ -9,8 +9,9 @@
 # CVE : CVE-2018-16763
 
 
-import requests
 import urllib.parse as urllib
+
+import requests
 
 url = "http://10.10.94.213"
 def find_nth_overlapping(haystack, needle, n):

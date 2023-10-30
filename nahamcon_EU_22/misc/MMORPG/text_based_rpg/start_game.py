@@ -1,9 +1,10 @@
 from . import interface
 from .battle.battle_util import PlayerHasDiedError
 from .create_player import create_player
+from .rooms.reset import reset as reset_rooms
 from .rooms.tavern import room as tavern
 from .util import GameOver
-from .rooms.reset import reset as reset_rooms
+
 
 def start_game():
     """

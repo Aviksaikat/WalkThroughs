@@ -2,17 +2,14 @@ import sys
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from fastapi_utils.tasks import repeat_every
+from loguru import logger
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
-from fastapi_utils.tasks import repeat_every
-
-from loguru import logger
-
-from src.routers import admin_endpoints, user_endpoints
-from src import schemas, auth, config
+from src import auth, config, schemas
 from src.abstract_helper import AbstractHelper as helper
+from src.routers import admin_endpoints, user_endpoints
 
 logger.remove()
 logger.add(sys.stdout, colorize=True,

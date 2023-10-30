@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, url_for, redirect
-from models import Metal
 from database import db_session, init_db
+from flask import Flask, redirect, render_template, request, url_for
+from models import Metal
 from seed import seed_db
 from sqlalchemy import text
 

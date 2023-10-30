@@ -1,7 +1,7 @@
 #!/usr/bin/env/python3
 
-from sys import argv
 import os
+from sys import argv
 
 #print(f"Usage: {argv[0]} <string>")
 

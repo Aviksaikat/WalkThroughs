@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-from pwn import xor
 from binascii import unhexlify
+
+from pwn import xor
 
 debug_level = "critical"
 

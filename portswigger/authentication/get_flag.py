@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
-from requests_futures.sessions import FuturesSession
 from concurrent.futures import as_completed
-import requests
 from sys import argv
+
+import requests
+from requests_futures.sessions import FuturesSession
 
 #url = "https://ac761f261ff80af080766ac2006c00a3.web-security-academy.net/"
 url = argv[1]

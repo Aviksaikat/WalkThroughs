@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 #? RSA Common modulus attack
 import argparse
-from binascii import unhexlify
 import math
+from binascii import unhexlify
 
 
 def egcd(a, b):

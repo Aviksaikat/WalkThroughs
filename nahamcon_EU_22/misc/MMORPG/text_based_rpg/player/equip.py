@@ -1,6 +1,7 @@
-from .. import item, interface
+from .. import interface, item
 from .data import DATA
 from .exceptions import ItemIsNotEquippableError
+
 
 def equip(self, item_to_equip):
     """

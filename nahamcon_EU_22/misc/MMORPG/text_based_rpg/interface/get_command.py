@@ -1,7 +1,8 @@
-from .data import DATA
-from .get_input import get_input
-from .generate_readable_list import generate_readable_list
 from .built_in_methods import print_
+from .data import DATA
+from .generate_readable_list import generate_readable_list
+from .get_input import get_input
+
 
 def get_command(commands, list_options=True):
     """

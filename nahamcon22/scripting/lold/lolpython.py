@@ -12,13 +12,13 @@
 #   http://creativecommons.org/licenses/publicdomain/
 
 
-import sys
 import keyword
 import os
+import sys
 import types
+
 from cStringIO import StringIO
 from ply import *
-
 
 __NAME__ = "lolpython"
 __VERSION__ = "1.0"

@@ -1,6 +1,7 @@
 from .. import item
 from .exceptions import ItemIsNotConsumableError
 
+
 def consume(self, item_to_consume):
     """
     Execute the player using an item.

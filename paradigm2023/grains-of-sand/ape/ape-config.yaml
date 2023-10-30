@@ -1,0 +1,29 @@
+name: grain-of-sand
+plugins:
+  - name: solidity
+  - name: ganache
+  - name: alchemy
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+    gas_limit: auto
+    transaction_acceptance_timeout: 180 # 3 Minutes
+    default_transaction_type: 0
+  mainnet:
+    default_provider: alchemy
+    transaction_acceptance_timeout: 180
+foundry:
+  host: http://grains-of-sand.challenges.paradigm.xyz:8545/a4fe03b1-3c1b-4d0c-b979-93c3f30697d2/main
+  request_timeout: 40  # Defaults to 30
+  fork_request_timeout: 600  # Defaults to 300
+dependencies:
+  - name: OpenZeppelin
+    github: OpenZeppelin/openzeppelin-contracts
+    version: 3.0.0
+solidity: 
+  import_remapping:
+    - "@openzeppelin/contracts=OpenZeppelin/3.0.0"
+test:
+  mnemonic: test test test test test test test test test test test junk
+  number_of_accounts: 10

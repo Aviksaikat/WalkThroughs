@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-import requests
 import sys
 import time
+
+import requests
 
 url = "http://10.10.248.119:8080/api/user/login"
 password = "invalidPassword!"

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+import hashlib
+
 import requests
 from bs4 import BeautifulSoup as bs4
-import hashlib
 
 url = "http://167.99.86.47:31661/"
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-from pycookiecheat import chrome_cookies
 import requests
+from pycookiecheat import chrome_cookies
 
 url = "http://178.62.14.240:30251/"
 

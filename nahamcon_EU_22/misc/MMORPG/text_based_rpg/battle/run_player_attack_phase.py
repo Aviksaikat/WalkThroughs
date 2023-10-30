@@ -1,6 +1,7 @@
 from .. import interface
 from ..combat_entity import flags as combat_entity_flags
 
+
 def run_player_attack_phase(battle):
     while True:
         battle.print_list_of_attacks()

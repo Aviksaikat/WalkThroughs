@@ -4,11 +4,12 @@
 # Usage : python peas.py
 
 import pickle
-from base64 import b64encode, b64decode
+import subprocess
+from base64 import b64decode, b64encode
+from copy import deepcopy
+
 import jsonpickle
 import yaml
-import subprocess
-from copy import deepcopy
 
 
 class Gen(object):

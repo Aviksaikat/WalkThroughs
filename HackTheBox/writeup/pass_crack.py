@@ -4,7 +4,6 @@
 import hashlib
 import sys
 
-
 salt = "5a599ef579066807"
 password = "62def4866937f08cc13bab43bb14e6f7"
 output = ""

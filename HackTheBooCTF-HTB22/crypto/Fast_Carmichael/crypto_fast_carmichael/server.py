@@ -1,7 +1,8 @@
-from secret import FLAG
-from Crypto.Util.number import isPrime
-import socketserver
 import signal
+import socketserver
+
+from Crypto.Util.number import isPrime
+from secret import FLAG
 
 
 class Handler(socketserver.BaseRequestHandler):

@@ -3,8 +3,8 @@ import time
 from typing import Optional
 
 from sqlalchemy.orm import Session as saSession
-
 from src.abstract_helper import AbstractHelper as helper
+
 
 class ImaginaryGuesser:
 

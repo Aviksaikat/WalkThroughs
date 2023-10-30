@@ -1,6 +1,10 @@
-import os, hashlib, jwt, datetime
-from flask import jsonify,abort,session
+import datetime
+import hashlib
+import os
 from functools import wraps
+
+import jwt
+from flask import abort, jsonify, session
 
 generate = lambda x: os.urandom(x).hex()
 key = generate(50)

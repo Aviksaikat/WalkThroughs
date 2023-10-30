@@ -1,6 +1,7 @@
 from .. import interface
 from .data import DATA
 
+
 def unequip_item_interface(player):
     """
     Display an interface to the user allowing them to unequip items they have equipped.

@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "BLACK_SHEEP"
+version = "0.1.0"
+description = ""
+authors = ["Saikat K <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+eth-ape = "^0.6.22"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

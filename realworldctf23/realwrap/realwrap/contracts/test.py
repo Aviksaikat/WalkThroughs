@@ -1,4 +1,5 @@
 from brownie import Factory
+
 from scripts.deploy import deploy
 
 

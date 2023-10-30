@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
+import os
 import signal
 import socketserver
 import string
-import os
-from secret import flag
+
 from py_ecc import bn128
+from secret import flag
 
 lib = bn128
 FQ, FQ2, FQ12, field_modulus = lib.FQ, lib.FQ2, lib.FQ12, lib.field_modulus

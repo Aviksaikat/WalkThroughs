@@ -5,10 +5,11 @@
 # Tested on: Android
 # CVE : CVE-2019-6447
 
-import requests
-import json
 import ast
+import json
 import sys
+
+import requests
 
 if len(sys.argv) < 3:
     print(f"USAGE {sys.argv[0]} <command> <IP> [file to download]")

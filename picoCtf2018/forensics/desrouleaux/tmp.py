@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from pwn import *
 import json
 
+from pwn import *
 
 
 def main():

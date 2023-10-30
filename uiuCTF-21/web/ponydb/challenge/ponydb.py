@@ -1,9 +1,10 @@
-from flask import Flask, render_template, session, request, redirect, flash
-import mysql.connector
-import secrets
-import time
 import json
 import os
+import secrets
+import time
+
+import mysql.connector
+from flask import Flask, flash, redirect, render_template, request, session
 
 app = Flask(__name__)
 app.secret_key = os.environ['SECRET_KEY']

@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-from sys import argv
 import string
+from sys import argv
+
 import requests
+
 
 def main():
 	try:

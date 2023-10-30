@@ -1,0 +1,6 @@
+Flask
+flask_mysqldb
+colorama
+mysqlclient
+requests
+pyjwt

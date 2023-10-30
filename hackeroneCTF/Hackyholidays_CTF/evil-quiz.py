@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-from requests import post, get
 import string
+
+from requests import get, post
 
 letters = string.printable
 cookies = {"quizsession": "a3e4c87da67d163ef3b35e01898f7c78"}

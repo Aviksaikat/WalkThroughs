@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
+from re import findall
+
 import requests
 from bs4 import BeautifulSoup
-from re import findall
 
 url = "https://infinity.freedomctf.org/"
 

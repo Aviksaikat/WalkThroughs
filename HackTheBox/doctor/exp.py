@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
+import base64
+import re
+import sys
+import threading
+import urllib.error
+import urllib.parse
+import urllib.request
+from optparse import OptionParser
+
 from sec1httplib.requestbuilder import Requestobj
 from sec1httplib.thread_dispatcher import *
-import threading
-import re
-import urllib.parse
-import sys
-import urllib.request, urllib.parse, urllib.error
-import base64
-from optparse import OptionParser
-import sys
-
 
 """
 Source: http://www.sec-1.com/blog/?p=233

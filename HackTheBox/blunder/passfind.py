@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import re
-import requests
 import sys
+
+import requests
 
 try:
     host = "http://" + sys.argv[1]

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-import jwt 
+import jwt
+
 # import requests
 # import re
 

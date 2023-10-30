@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from brownie import accounts, network, config
+from brownie import accounts, config, network
 from web3 import Web3 as w3
 
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]

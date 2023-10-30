@@ -1,9 +1,10 @@
-from Crypto.Cipher import AES
-import socketserver
-import signal
 import os
 import random
+import signal
+import socketserver
 import time
+
+from Crypto.Cipher import AES
 from secret import flag
 
 KEY_LENGTH = 16

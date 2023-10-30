@@ -3,7 +3,6 @@
 import random
 import sys
 
-
 if len(sys.argv) != 2:
     print(f'''usage: {sys.argv[0]} flag''')
     sys.exit()

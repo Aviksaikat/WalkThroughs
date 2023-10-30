@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import random
+
 from solve import solve
 
 banner = '''

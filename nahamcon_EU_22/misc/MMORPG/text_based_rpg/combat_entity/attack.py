@@ -3,6 +3,7 @@ from . import flags
 from .data import DATA
 from .generate_random_multiplier import generate_random_multiplier
 
+
 def attack(attacking_entity, enemy, attack_to_use):
     """
     Execute the given entity attacking an opponent.

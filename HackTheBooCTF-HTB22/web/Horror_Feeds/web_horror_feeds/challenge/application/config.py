@@ -1,5 +1,6 @@
 from application.util import generate
 
+
 class Config(object):
     SECRET_KEY = generate(50)
     MYSQL_HOST = 'localhost'

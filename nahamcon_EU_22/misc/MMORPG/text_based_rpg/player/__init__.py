@@ -1,7 +1,8 @@
-from . import equip, unequip, consume, attacks, inventory_view, \
-    use_item_interface, inventory_properties, equipment_view, \
-    equip_item_interface, stats_view, discard_item_interface, \
-    unequip_item_interface
+from . import (attacks, consume, discard_item_interface, equip,
+               equip_item_interface, equipment_view, inventory_properties,
+               inventory_view, stats_view, unequip, unequip_item_interface,
+               use_item_interface)
+
 
 class Player:
     def __init__(self, entity, class_):

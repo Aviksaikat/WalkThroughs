@@ -1,7 +1,7 @@
-from .. import interface, enemies, items
-from ..util import move, GameOver
-from ..room import Room
+from .. import enemies, interface, items
 from ..battle import Battle
+from ..room import Room
+from ..util import GameOver, move
 
 map_ = """You are in the second room of the caves under Goneril Mountain.
 It is even darker and more eery than the first room.

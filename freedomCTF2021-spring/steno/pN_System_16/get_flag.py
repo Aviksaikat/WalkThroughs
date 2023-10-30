@@ -1,9 +1,9 @@
 #!/usr/bin/python3.7
 
 #from resizeimage import resizeimage
-from PIL import Image
 import webcolors
 from colorthief import ColorThief
+from PIL import Image
 
 image_path = './colorFullImage.png'
 max_width = 1800

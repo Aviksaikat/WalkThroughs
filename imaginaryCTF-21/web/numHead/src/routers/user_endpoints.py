@@ -1,9 +1,8 @@
 from typing import Optional
 
 from fastapi import Request
-
-from src.abstract_helper import get_config
 from src import config
+from src.abstract_helper import get_config
 from src.routers import *
 
 models.database.Base.metadata.create_all(bind=database.engine)

@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
-from requests import post, get
-from requests_html import HTMLSession
-import string
 import random
+import string
+
+from requests import get, post
+from requests_html import HTMLSession
 
 session = HTMLSession()
 

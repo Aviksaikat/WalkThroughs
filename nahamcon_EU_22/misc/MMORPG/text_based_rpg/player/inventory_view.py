@@ -1,6 +1,6 @@
-from .. import interface
+from .. import interface, item
 from .data import DATA
-from .. import item
+
 
 def inventory_view(player, item_type=None):
     """

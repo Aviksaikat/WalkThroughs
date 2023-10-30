@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from Crypto.Util.number import bytes_to_long, long_to_bytes, getPrime, GCD
 import random
 from math import log
+
+from Crypto.Util.number import GCD, bytes_to_long, getPrime, long_to_bytes
 
 flag = b''
 

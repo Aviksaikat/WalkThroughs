@@ -1,0 +1,1 @@
+strings candybowl | grep "HTB{.*}"

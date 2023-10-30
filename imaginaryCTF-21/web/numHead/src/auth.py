@@ -1,14 +1,15 @@
-from uuid import uuid4
 import time
 from typing import Union
+from uuid import uuid4
 
 from fastapi import Depends, HTTPException, Security, status
 from fastapi.security import APIKeyHeader
 from fastapi_utils.session import FastAPISessionMaker
 from sqlalchemy.orm import Session as saSession
-
 from src import crud, models
+
 from .abstract_helper import AbstractHelper
+
 
 class Authentication():
     @staticmethod

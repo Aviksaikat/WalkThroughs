@@ -1,11 +1,13 @@
-from Crypto.Util.number import *
-import Crypto.PublicKey.DSA
-from Crypto.Hash import SHA
-import socketserver
 import signal
+import socketserver
 import time
 from itertools import cycle
-from secret import KEY, FLAG
+
+import Crypto.PublicKey.DSA
+from Crypto.Hash import SHA
+from Crypto.Util.number import *
+from secret import FLAG, KEY
+
 
 class DSA:
 	def __init__(self):

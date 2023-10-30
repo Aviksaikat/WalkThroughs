@@ -1,5 +1,6 @@
+from application.util import (generate_password_hash, generate_token,
+                              verify_hash)
 from colorama import Cursor
-from application.util import generate_password_hash, verify_hash, generate_token
 from flask_mysqldb import MySQL
 
 mysql = MySQL()

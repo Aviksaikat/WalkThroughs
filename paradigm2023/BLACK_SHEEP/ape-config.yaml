@@ -1,0 +1,34 @@
+name: BLACK_SHEEP
+plugins:
+  - name: solidity
+  - name: alchemy
+  - name: foundry
+  - name: infura
+  - name: etherscan
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+    gas_limit: auto
+    transaction_acceptance_timeout: 180
+    default_transaction_type: 0
+  mainnet:
+    default_provider: alchemy
+    transaction_acceptance_timeout: 180
+foundry:
+  host: http://black-sheep.challenges.paradigm.xyz:8545/8964238a-91cb-417d-af23-9f9e24bce43c/main
+  fork:
+    ethereum:
+      mainnet_fork:
+        upstream_provider: alchemy
+dependencies:
+  - name: OpenZeppelin
+    github: OpenZeppelin/openzeppelin-contracts
+    version: 4.2.0
+solidity:
+  version: 0.8.13
+  import_remapping:
+    - "@openzeppelin/contracts=OpenZeppelin/4.2.0"
+test:
+  mnemonic: test test test test test test test test test test test junk
+  number_of_accounts: 10

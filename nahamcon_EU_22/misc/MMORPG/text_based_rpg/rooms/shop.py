@@ -1,6 +1,6 @@
 from .. import interface, items
-from ..util import move
 from ..room import Room
+from ..util import move
 
 map_ = """You are in the weapons and armour shop in Regan.
 Outside is the center of town, from where the tavern and the town square can be accessed.

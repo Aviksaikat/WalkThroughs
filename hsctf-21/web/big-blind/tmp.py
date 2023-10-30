@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import requests 
+import string
 import time
-import string	
+
+import requests
 
 url = "https://big-blind.hsc.tf/"
 

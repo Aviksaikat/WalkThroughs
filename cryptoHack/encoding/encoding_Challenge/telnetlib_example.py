@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #for windows
 
-import telnetlib
 import json
+import telnetlib
 
 HOST = "socket.cryptohack.org"
 PORT = 13377

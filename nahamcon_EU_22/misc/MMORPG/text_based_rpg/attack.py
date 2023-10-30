@@ -2,6 +2,7 @@ from collections import namedtuple
 
 from .util import set_multiple_attributes
 
+
 class Attack:
     def __init__(
             self,

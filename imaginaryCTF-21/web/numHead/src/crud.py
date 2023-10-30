@@ -1,15 +1,16 @@
-import time
 import json
-from typing import Optional, Set, Union, Callable
+import time
+from typing import Callable, Optional, Set, Union
 
-from sqlalchemy.orm import Session as saSession
 from fastapi import status
 from fastapi.responses import JSONResponse
+from sqlalchemy.orm import Session as saSession
+from src import game, models
+from src.abstract_helper import AbstractHelper as helper
+from src.abstract_helper import get_config
+from src.auth import Authentication
 from starlette import requests
 
-from src import models, game
-from src.auth import Authentication
-from src.abstract_helper import AbstractHelper as helper, get_config
 
 def create_imaginary_user(headers: requests.Headers, db: saSession) -> JSONResponse:
     imaginary_id = Authentication.generate_id()

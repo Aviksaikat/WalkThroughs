@@ -1,7 +1,13 @@
 #! /usr/bin/env python
+import _thread
+import http.client
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from socket import *
 from threading import Thread
-import _thread, time, http.client, urllib.request, urllib.parse, urllib.error, sys 
 
 stop = False
 proxyhost = ""

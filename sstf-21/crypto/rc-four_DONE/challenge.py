@@ -1,6 +1,8 @@
-from Crypto.Cipher import ARC4
-from secret import key, flag
 from binascii import hexlify
+
+from Crypto.Cipher import ARC4
+from secret import flag, key
+
 
 #RC4 encrypt function with "key" variable.
 def encrypt(data):

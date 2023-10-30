@@ -1,5 +1,7 @@
 import time
+
 from Crypto.Util.number import *
+
 flag = open('flag.txt','r').read()
 p = getPrime(1024)
 q = getPrime(1024)

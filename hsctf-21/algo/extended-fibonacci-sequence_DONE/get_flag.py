@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
+import re
+
 from fib_cal import sum_
 from pwn import *
-import re
 
 debug_mode = "critical"
 

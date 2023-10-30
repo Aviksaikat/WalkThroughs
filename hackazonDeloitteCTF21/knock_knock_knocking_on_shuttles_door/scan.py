@@ -8,8 +8,9 @@ Sources:
 - https://securitylair.wordpress.com/2014/02/21/simple-port-scanner-in-python-with-scapy-2/
 I have merged the two to do paralell scanning, and other cleanups.
 """
-import time
 import logging
+import time
+
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR) # Disable the annoying No Route found warning !
 from scapy.all import *
 

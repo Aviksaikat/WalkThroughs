@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-from binascii import unhexlify
 from base64 import b64decode
+from binascii import unhexlify
 from re import findall
 
 
 # https://stackoverflow.com/questions/92438/stripping-non-printable-characters-from-a-string-in-python
 def filter_nonprintable(text):
     import itertools
+
     # Use characters of control category
     nonprintable = itertools.chain(range(0x00, 0x20),range(0x7f, 0xa0))
     

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-from base64 import b64encode, b64decode
+from base64 import b64decode, b64encode
+
 from Crypto.Util.number import bytes_to_long, long_to_bytes
 from pwn import *
 

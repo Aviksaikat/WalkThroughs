@@ -5,6 +5,7 @@ CombatEntity class.
 
 from .data import DATA
 
+
 @property
 def evasion(entity):
     value = entity.dexterity + entity.composure

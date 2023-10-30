@@ -10,8 +10,9 @@
 # Tested on: Linux
 '''
 
-import requests
 import sys
+
+import requests
 from urllib3.exceptions import InsecureRequestWarning
 
 # Suppress only the single warning from urllib3 needed.

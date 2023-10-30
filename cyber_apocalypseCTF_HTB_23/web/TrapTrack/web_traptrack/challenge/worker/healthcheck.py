@@ -1,5 +1,6 @@
 import pycurl
 
+
 def request(url):
     response = False
     try:

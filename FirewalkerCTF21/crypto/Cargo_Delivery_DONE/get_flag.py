@@ -1,9 +1,11 @@
 #!/usr/bin/python2
-from pwn import *
-from paddingoracle import BadPaddingException, PaddingOracle
 import json
 from binascii import hexlify, unhexlify
+
 from Crypto.Cipher import AES
+from paddingoracle import BadPaddingException, PaddingOracle
+from pwn import *
+
 
 class PadBuster(PaddingOracle):
 	

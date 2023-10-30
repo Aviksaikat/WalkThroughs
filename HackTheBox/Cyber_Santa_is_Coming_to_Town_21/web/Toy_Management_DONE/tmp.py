@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import string
+
 from requests import post
 
 char_set = string.ascii_lowercase + string.ascii_uppercase + string.digits + '_' + '{' + '}'  

@@ -15,15 +15,15 @@
 # limitations under the License.
 
 import argparse
-import pwnlib
-import challenge_pb2
 import struct
 import sys
 
+import challenge_pb2
+import pwnlib
 from cryptography.hazmat.primitives import hashes, hmac
+from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives.kdf.hkdf import HKDF
-from cryptography.hazmat.primitives.asymmetric import ec
 
 CHANNEL_CIPHER_KDF_INFO  = b"Channel Cipher v1.0"
 CHANNEL_MAC_KDF_INFO = b"Channel MAC v1.0"

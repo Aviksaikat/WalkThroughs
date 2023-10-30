@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import requests
 import string
-from bs4 import BeautifulSoup
 from re import findall
+
+import requests
+from bs4 import BeautifulSoup
 
 url = "http://45.79.195.170:5000/"
 

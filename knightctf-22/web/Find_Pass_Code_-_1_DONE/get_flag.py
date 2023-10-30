@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from requests import post
 from re import findall
+
+from requests import post
 
 url = "http://find-pass-code-one.kshackzone.com/"
 

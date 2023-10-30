@@ -1,0 +1,27 @@
+body {
+  background: #233944;
+}
+
+#resp-msg , #form-card, #password-listing, .hidden {
+  display: none;
+}
+
+#main-logo {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+#slogan {
+  display: block;
+  margin: auto;
+  font-size: 28px;
+  font-weight: bold;
+  color: #233944;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav-logo {
+  width: 44px;
+  padding-right: 10px;
+}

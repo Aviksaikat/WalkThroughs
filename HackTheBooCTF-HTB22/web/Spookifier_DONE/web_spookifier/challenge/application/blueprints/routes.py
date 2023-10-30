@@ -1,6 +1,6 @@
+from application.util import spookify
 from flask import Blueprint, request
 from flask_mako import render_template
-from application.util import spookify
 
 web = Blueprint('web', __name__)
 

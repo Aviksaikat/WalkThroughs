@@ -4,6 +4,7 @@ from .. import interface
 from ..combat_entity import flags as combat_entity_flags
 from .data import DATA
 
+
 def run_enemy_turn(battle):
     """
     Execute the enemy's turn in the battle.

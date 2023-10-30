@@ -1,7 +1,8 @@
 #!/usr/bin/env python3 
 
+import os
+import sys
 from zipfile import ZipFile
-import sys,os
 
 #os.remove(filename)
 

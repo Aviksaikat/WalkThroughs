@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys
+
 print('[0] argument is:', sys.argv[1])
 
 def my_f(a, counter):

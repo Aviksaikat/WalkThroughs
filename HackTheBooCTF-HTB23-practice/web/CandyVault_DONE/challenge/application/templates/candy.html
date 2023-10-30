@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="lean">
+	<link rel="shortcut icon" href="/static/images/candy.png" type="image/png">
+    <title>🍬 Candy-Vault 🍬</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: #1b1b1b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Pimlico Glow";
+            background-size: cover;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            font-weight: 400;
+            text-align: center;
+            font-size: 3vw;
+            font-variation-settings: "GLOW" 0;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        p::before {
+            content: attr(data-text);
+            font-variation-settings: "GLOW" 1000;
+            filter: invert(0.7) grayscale(1);
+            position: absolute;
+            z-index: 2;
+        }
+
+        p::after {
+            content: attr(data-text);
+            position: absolute;
+            z-index: 3;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(-45deg, red 25%, white 25%, white 50%, red 50%, red 75.2%, white 75%, white);
+            background-size: 20px 20px;
+            background-position: 0 0;
+            mix-blend-mode: overlay;
+            -webkit-animation: stripes 4s linear infinite;
+            animation: stripes 4s linear infinite;
+        }
+
+        @-webkit-keyframes stripes {
+            100% {
+                background-position: 20px 0, 20px 0, 20px 0;
+            }
+        }
+
+        @keyframes stripes {
+            100% {
+                background-position: 20px 0, 20px 0, 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p data-text="{{ flag }}">{{ flag }}</p>
+</body>
+
+</html>

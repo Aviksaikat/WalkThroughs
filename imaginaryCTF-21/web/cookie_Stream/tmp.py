@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
 from binascii import hexlify, unhexlify
 from os import urandom
+
 import requests
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad, unpad
 from pwn import xor
 
 url = "https://cookie-stream.chal.imaginaryctf.org/"

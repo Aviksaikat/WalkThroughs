@@ -1,5 +1,7 @@
-import hashlib, hmac
+import hashlib
+import hmac
 import sys
+
 if sys.version[0] == '2':
     safe_ord = ord
 else:

@@ -1,5 +1,7 @@
-from application.util import generate
 import os
+
+from application.util import generate
+
 
 class Config(object):
     SECRET_KEY = generate(50)

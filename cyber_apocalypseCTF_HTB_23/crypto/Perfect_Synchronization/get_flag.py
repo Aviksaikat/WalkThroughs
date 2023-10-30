@@ -1,7 +1,8 @@
 import ast
-from pwn import *
-from collections import Counter
 from binascii import unhexlify
+from collections import Counter
+
+from pwn import *
 
 context.log_level = 'error'
 

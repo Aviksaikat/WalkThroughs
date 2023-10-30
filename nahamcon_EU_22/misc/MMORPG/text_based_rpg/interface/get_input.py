@@ -1,5 +1,6 @@
-from .data import DATA
 from .built_in_methods import input_
+from .data import DATA
+
 
 def get_input():
     """

@@ -1,10 +1,11 @@
-from flask import Flask, render_template, request, make_response, redirect
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
 from binascii import hexlify, unhexlify
+from hashlib import sha512
 from os import urandom
 from random import randint
-from hashlib import sha512
+
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad, unpad
+from flask import Flask, make_response, redirect, render_template, request
 
 app = Flask(__name__)
 

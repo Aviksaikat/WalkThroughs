@@ -3,6 +3,7 @@
 import random
 from math import gcd
 
+
 def encrypt(dt):
 	mod = 256
 	while True:

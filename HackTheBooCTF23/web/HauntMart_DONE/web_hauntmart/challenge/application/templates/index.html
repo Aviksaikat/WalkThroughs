@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HauntMart | Home</title>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons" rel="stylesheet" />
+
+	<link rel="stylesheet" href="/static/css/home.css">
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<nav class="navbar navbar-expand-lg bg-light mt-2 mb-2" data-bs-theme="light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">HauntMart</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+				aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarColor03">
+				<ul class="navbar-nav ms-auto">
+					{% if user['role'] == 'admin' %}
+						{{flag}}
+					{% endif %}
+					<li class="nav-item">
+						<a class="nav-link active" href="/home">Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/product">Sell Product</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cart</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div class="responsive-container">
+			<div class="grid">
+				<div class="grid-column">
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product1.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Cursed Reliquary of Whispers</h2>
+								<p class="product-price">$ 10</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product2.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Shadowbound Mirror of Reflection</h2>
+								<p class="product-price">$ 9</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product3.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Abyssal Cryptogram Codex</h2>
+								<p class="product-price">$ 9</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+				</div>
+				<div class="grid-column">
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product4.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Abyssal Cryptogram Codex</h2>
+								<p class="product-price">$ 9</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product5.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Ectoplasmic Elixir Ewer</h2>
+								<p class="product-price">$ 12</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product6.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Phantasmal Timekeeper Hourglass</h2>
+								<p class="product-price">$ 5</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+				</div>
+				<div class="grid-column">
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product7.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Veilshifter's Veil</h2>
+								<p class="product-price">$ 15</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+					<a class="product" href="#">
+						<div class="product-image">
+							<img src="/static/images/product8.png" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">Whispers in the Shadows Amulet</h2>
+								<p class="product-price">$ 5</p>
+							</div>
+							<button class="product-action"><i
+									class="material-icons-outlined">favorite_border</i></button>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- partial -->
+
+</body>
+
+</html>

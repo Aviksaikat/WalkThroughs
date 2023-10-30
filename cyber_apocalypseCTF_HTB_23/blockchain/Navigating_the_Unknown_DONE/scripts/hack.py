@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-from brownie import Unknown, Setup, web3
-from scripts.helpful_scripts import get_account
-from scripts.deploy import deploy
+from brownie import Setup, Unknown, web3
 from colorama import Fore
+
+from scripts.deploy import deploy
+from scripts.helpful_scripts import get_account
 
 """
 Private key     :  0x8c09cee15b6dc818d28e50a24c6778f0a4fd25d801087d4a78372cbdd97d147a

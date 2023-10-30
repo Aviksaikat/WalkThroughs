@@ -1,5 +1,5 @@
-from application.main import app
 from application.database import db, migrate_db
+from application.main import app
 
 with app.app_context():
     db.create_all()

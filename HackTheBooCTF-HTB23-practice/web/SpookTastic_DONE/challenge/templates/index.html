@@ -1,0 +1,514 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="lean">
+	<link rel="shortcut icon" type="image/png" href="{{ url_for("static", filename="images/favicon.png" ) }}" />
+	<title>SpookTastic</title>
+	<link rel="stylesheet" href="/static/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/static/css/boxicons.min.css">
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav__logo"> Spooky </a>
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#home" class="nav__link active-link">Graveyard</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">Track Record</a>
+					</li>
+					<li class="nav__item">
+						<a href="#trick" class="nav__link">Services</a>
+					</li>
+					<li class="nav__item">
+						<a href="#new" class="nav__link">Know More</a>
+					</li>
+					<a href="#" class="button button--ghost">Support</a>
+				</ul>
+				<div class="nav__close" id="nav-close">
+					<i class="bx bx-x"></i>
+				</div>
+				<img src="/static/images/nav-img.webp" alt="" class="nav__img">
+			</div>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="bx bx-grid-alt"></i>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="home container" id="home">
+			<div class="swiper home-swiper">
+				<div class="swiper-wrapper">
+					<section class="swiper-slide">
+						<div class="home__content grid">
+							<div class="home__group">
+								<img src="/static/images/home3-img.webp" alt="" class="home__img">
+								<div class="home__indicator"></div>
+								<div class="home__details-img">
+									<h4 class="home__details-title">Captain Sem</h4>
+									<span class="home__details-subtitle">Veteran Spooky Ghost</span>
+								</div>
+							</div>
+							<div class="home__data">
+								<h3 class="home__subtitle">#1 Top Scariest Ghost</h3>
+								<h1 class="home__title">RESPAWN <br> THE SPOOKY <br> SKULL </h1>
+								<p class="home__description">In search for cute little puppy, Captain Sem has come back from his
+									tragic death. With his hogwarts certified power he promise to be a hero for all of
+									<strong>ghostkind. </strong>
+								</p>
+								<div class="home__buttons">
+									<a href="#" class="book--now">
+										<img src="/static/images/svgviewer-output+(1)_3.svg" alt="" />
+									</a>
+									<a href="#" class="button--link button--flex">Track Record →</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="swiper-slide">
+						<div class="home__content grid">
+							<div class="home__group">
+								<img src="/static/images/home2-img.webp" alt="" class="home__img">
+								<div class="home__indicator"></div>
+								<div class="home__details-img">
+									<h4 class="home__details-title">Adino & Grahami</h4>
+									<span class="home__details-subtitle">No words can describe them</span>
+								</div>
+							</div>
+							<div class="home__data">
+								<h3 class="home__subtitle">#2 top Best duo</h3>
+								<h1 class="home__title">BRING BACK <br> MY COTTON <br> CANDY </h1>
+								<p class="home__description">Adino steals cotton candy from his brother and eats them all in one
+									bite, a hungry beast. Grahami can no longer contain his anger towards Adino. </p>
+								<div class="home__buttons">
+									<a href="#" class="book--now">
+										<img src="/static/images/svgviewer-output+(1)_3.svg" alt="" />
+									</a>
+									<a href="#" class="button--link button--flex">Track Record <i
+											class="bx bx-right-arrow-alt button__icon"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="swiper-slide">
+						<div class="home__content grid">
+							<div class="home__group">
+								<img src="/static/images/home1-img.webp" alt="" class="home__img">
+								<div class="home__indicator"></div>
+								<div class="home__details-img">
+									<h4 class="home__details-title">The Labu “Reiza”</h4>
+									<span class="home__details-subtitle">The Living Pumpkin</span>
+								</div>
+							</div>
+							<div class="home__data">
+								<h3 class="pumpkin__subtitle">#3 Top Scariest Ghost 2020</h3>
+								<h1 class="home__title">UOOOO <br> TRICK OR <br> TREAT!! </h1>
+								<p class="home__description">Hi I’m Reiza, people call me “The Labu” currently I’m trying to
+									learn something new, building my own bike with parts only made from Malaysia. </p>
+								<div class="home__buttons">
+									<a href="#" class="book--now">
+										<img src="/static/images/svgviewer-output+(2)_2.svg" alt="" />
+									</a>
+									<a href="#" class="button--link button--flex">Track Record <i
+											class="bx bx-right-arrow-alt button__icon"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<section class="section category">
+			<h2 class="section__title">Favorite Scare <br> Category </h2>
+			<div class="category__container container grid">
+				<div class="category__data">
+					<img src="/static/images/category1-img.webp" alt="" class="category__img">
+					<h3 class="category__title">Ghosts</h3>
+					<p class="category__description">Choose the ghosts, the scariest there are.</p>
+				</div>
+				<div class="category__data">
+					<img src="/static/images/category2-img.webp" alt="" class="category__img">
+					<h3 class="category__title">Pumpkins</h3>
+					<p class="category__description">You look at the scariest pumpkins there is.</p>
+				</div>
+				<div class="category__data">
+					<img src="/static/images/category3-img.webp" alt="" class="category__img">
+					<h3 class="category__title">Witch Hat</h3>
+					<p class="category__description">Pick the most stylish witch hats out there.</p>
+				</div>
+			</div>
+		</section>
+		<section class="section about" id="about">
+			<div class="about__container container grid">
+				<div class="about__data">
+					<h2 class="section__title about__title">About Halloween <br> Night </h2>
+					<p class="about__description">Night of all the saints, or all the dead, is celebrated on October 31 and
+						it is a very fun international celebration, this celebration comes from ancient origins, and is
+						already celebrated by everyone. </p>
+					<a href="#" class="book--now">
+						<img src="/static/images/svgviewer-output+(1)_3.svg" alt="" />
+					</a>
+				</div>
+				<img src="/static/images/about-img.webp" alt="" class="about__img">
+			</div>
+		</section>
+		<section class="section trick" id="trick">
+			<h2 class="section__title">Trick Or Treat</h2>
+			<div class="trick__container container grid">
+				<div class="trick__content">
+					<img src="/static/images/trick-treat1-img.webp" alt="" class="trick__img">
+					<h3 class="trick__title">Toffee</h3>
+					<span class="trick__subtitle">Candy</span>
+					<span class="trick__price">$11.99</span>
+					<button class="button trick__button">
+						<i class="bx bx-cart-alt trick__icon"></i>
+					</button>
+				</div>
+				<div class="trick__content">
+					<img src="/static/images/trick-treat2-img.png" alt="" class="trick__img">
+					<h3 class="trick__title">Bone</h3>
+					<span class="trick__subtitle">Accessory</span>
+					<span class="trick__price">$8.99</span>
+					<button class="button trick__button">
+						<i class="bx bx-cart-alt trick__icon"></i>
+					</button>
+				</div>
+				<div class="trick__content">
+					<img src="/static/images/trick-treat3-img.webp" alt="" class="trick__img">
+					<h3 class="trick__title">Scarecrow</h3>
+					<span class="trick__subtitle">Accessory</span>
+					<span class="trick__price">$15.99</span>
+					<button class="button trick__button">
+						<i class="bx bx-cart-alt trick__icon"></i>
+					</button>
+				</div>
+				<div class="trick__content">
+					<img src="/static/images/trick-treat4-img.webp" alt="" class="trick__img">
+					<h3 class="trick__title">Candy Cane</h3>
+					<span class="trick__subtitle">Candy</span>
+					<span class="trick__price">$7.99</span>
+					<button class="button trick__button">
+						<i class="bx bx-cart-alt trick__icon"></i>
+					</button>
+				</div>
+				<div class="trick__content">
+					<img src="/static/images/trick-treat5-img.webp" alt="" class="trick__img">
+					<h3 class="trick__title">Pumpkin</h3>
+					<span class="trick__subtitle">Candy</span>
+					<span class="trick__price">$19.99</span>
+					<button class="button trick__button">
+						<i class="bx bx-cart-alt trick__icon"></i>
+					</button>
+				</div>
+				<div class="trick__content">
+					<img src="/static/images/trick-treat6-img.webp" alt="" class="trick__img">
+					<h3 class="trick__title">Ghost</h3>
+					<span class="trick__subtitle">Accessory</span>
+					<span class="trick__price">$17.99</span>
+					<button class="button trick__button">
+						<i class="bx bx-cart-alt trick__icon"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="section discount">
+			<div class="discount__container container grid">
+				<div class="discount__data">
+					<h2 class="discount__title">50% Discount <br> On New Products </h2>
+					<a href="#" class="book--now">
+						<img src="/static/images/svgviewer-output+(1)_3.svg" alt="" />
+					</a>
+				</div>
+				<img src="/static/images/discount-img.webp" alt="" class="discount__img">
+			</div>
+		</section>
+		<section class="section new" id="new">
+			<h2 class="section__title">New Arrivals</h2>
+			<div class="new__container container">
+				<div class="swiper new-swiper">
+					<div class="swiper-wrapper swiper-wrapper-mid">
+						<div class="new__content swiper-slide">
+							<div class="new__tag">
+								<img src="/static/images/svgviewer-output+(6)_1.svg" alt="" />
+							</div>
+							<img src="/static/images/new1-img.webp" alt="" class="new__img">
+							<h3 class="new__title">Haunted House</h3>
+							<span class="new__subtitle">Accessory</span>
+							<div class="new__prices">
+								<span class="new__price">$14.99</span>
+								<span class="new__discount">$29.99</span>
+							</div>
+							<button class="button new__button">
+								<i class="bx bx-cart-alt new__icon"></i>
+							</button>
+						</div>
+						<div class="new__content swiper-slide">
+							<div class="new__tag">
+								<img src="/static/images/svgviewer-output+(6)_1.svg" alt="" />
+							</div>
+							<img src="/static/images/new2-img.webp" alt="" class="new__img">
+							<h3 class="new__title">Halloween Candle</h3>
+							<span class="new__subtitle">Accessory</span>
+							<div class="new__prices">
+								<span class="new__price">$11.99</span>
+								<span class="new__discount">$21.99</span>
+							</div>
+							<button class="button new__button">
+								<i class="bx bx-cart-alt new__icon"></i>
+							</button>
+						</div>
+						<div class="new__content swiper-slide">
+							<div class="new__tag">
+								<img src="/static/images/svgviewer-output+(6)_1.svg" alt="" />
+							</div>
+							<img src="/static/images/new3-img.webp" alt="" class="new__img">
+							<h3 class="new__title">Witch Hat</h3>
+							<span class="new__subtitle">Accessory</span>
+							<div class="new__prices">
+								<span class="new__price">$4.99</span>
+								<span class="new__discount">$9.99</span>
+							</div>
+							<button class="button new__button">
+								<i class="bx bx-cart-alt new__icon"></i>
+							</button>
+						</div>
+						<div class="new__content swiper-slide">
+							<div class="new__tag">
+								<img src="/static/images/svgviewer-output+(6)_1.svg" alt="" />
+							</div>
+							<img src="/static/images/new4-img.webp" alt="" class="new__img">
+							<h3 class="new__title">Rip</h3>
+							<span class="new__subtitle">Accessory</span>
+							<div class="new__prices">
+								<span class="new__price">$24.99</span>
+								<span class="new__discount">$44.99</span>
+							</div>
+							<button class="button new__button">
+								<i class="bx bx-cart-alt new__icon"></i>
+							</button>
+						</div>
+						<div class="new__content swiper-slide">
+							<div class="new__tag">
+								<img src="/static/images/svgviewer-output+(6)_1.svg" alt="" />
+							</div>
+							<img src="/static/images/new5-img.webp" alt="" class="new__img">
+							<h3 class="new__title">Terrifying Crystal Ball</h3>
+							<span class="new__subtitle">Accessory</span>
+							<div class="new__prices">
+								<span class="new__price">$5.99</span>
+								<span class="new__discount">$12.99</span>
+							</div>
+							<button class="button new__button">
+								<i class="bx bx-cart-alt new__icon"></i>
+							</button>
+						</div>
+						<div class="new__content swiper-slide">
+							<div class="new__tag">
+								<img src="/static/images/svgviewer-output+(6)_1.svg" alt="" />
+							</div>
+							<img src="/static/images/new6-img.webp" alt="" class="new__img">
+							<h3 class="new__title">Witch Broom</h3>
+							<span class="new__subtitle">Accessory</span>
+							<div class="new__prices">
+								<span class="new__price">$7.99</span>
+								<span class="new__discount">$14.99</span>
+							</div>
+							<button class="button new__button">
+								<i class="bx bx-cart-alt new__icon"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section newsletter">
+			<div class="newsletter__container container">
+				<h2 class="section__title">Our Newsletter</h2>
+				<p class="newsletter__description"> Promotion new products and sales. Directly to your inbox </p>
+				<form action="" class="newsletter__form">
+					<input type="text" id="email" placeholder="Enter your email" class="newsletter__input">
+					<a href="javascript:void();" id="signup" class="book--now">
+						<img src="/static/images/svgviewer-output+(1)_3.svg" alt="" />
+					</a>
+				</form>
+			</div>
+		</section>
+	</main>
+	<a href="#" class="scrollup" id="scroll-up" style="color: white;">↑</a>
+</body>
+<script src="/static/js/swiper-bundle.min.js"></script>
+<script src="/static/js/scrollreveal.min.js"></script>
+<script src="/static/js/socket.io.min.js"></script>
+<script>
+	const navMenu = document.getElementById("nav-menu"),
+		navToggle = document.getElementById("nav-toggle"),
+		navClose = document.getElementById("nav-close");
+
+	if (navToggle) {
+		navToggle.addEventListener("click", () => {
+			navMenu.classList.add("show-menu");
+		});
+	}
+
+	if (navClose) {
+		navClose.addEventListener("click", () => {
+			navMenu.classList.remove("show-menu");
+		});
+	}
+
+	const navLink = document.querySelectorAll(".nav__link");
+
+	function linkAction() {
+		const navMenu = document.getElementById("nav-menu");
+		navMenu.classList.remove("show-menu");
+	}
+	navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+	let homeSwiper = new Swiper(".home-swiper", {
+		spaceBetween: 30,
+		loop: "true",
+
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true
+		}
+	});
+
+	let root = document.documentElement;
+
+	homeSwiper.on("transitionEnd", function (e) {
+		if (this.activeIndex == 1) {
+			root.style.setProperty(
+				"--body-color",
+				"linear-gradient(to right, #2E0916, #200A2B)"
+			);
+			root.style.setProperty("--sub", "#ff5b79");
+			root.style.setProperty("--title-color", "#ffffff");
+			root.style.setProperty(
+				"--container-color",
+				"linear-gradient(136deg, #2E0916, #200A2B)"
+			);
+		}
+		if (this.activeIndex == 2) {
+			root.style.setProperty(
+				"--body-color",
+				"linear-gradient(to right, #E8CAFB, #6A4FB6)"
+			);
+			root.style.setProperty("--sub", "#303056");
+			root.style.setProperty("--title-color", "#303056");
+			root.style.setProperty(
+				"--container-color",
+				"linear-gradient(136deg, #E8CAFB, #6A4FB6)"
+			);
+		}
+		if (this.activeIndex == 3) {
+			root.style.setProperty(
+				"--body-color",
+				"linear-gradient(to right, #5B874B, #0C3720)"
+			);
+			root.style.setProperty("--sub", "#ffffff");
+			root.style.setProperty("--title-color", "#ffffff");
+			root.style.setProperty(
+				"--container-color",
+				"linear-gradient(136deg, #5B874B, #0C3720)"
+			);
+		}
+	});
+
+	function scrollHeader() {
+		const header = document.getElementById("header");
+		if (this.scrollY >= 50) header.classList.add("scroll-header");
+		else header.classList.remove("scroll-header");
+	}
+	window.addEventListener("scroll", scrollHeader);
+
+	let newSwiper = new Swiper(".new-swiper", {
+		centeredSlides: true,
+		slidesPerView: "auto",
+		loop: "true",
+		spaceBetween: 16
+	});
+
+	const sections = document.querySelectorAll("section[id]");
+
+	function scrollActive() {
+		const scrollY = window.pageYOffset;
+
+		sections.forEach((current) => {
+			const sectionHeight = current.offsetHeight,
+				sectionTop = current.offsetTop - 58,
+				sectionId = current.getAttribute("id");
+
+			if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+				document
+					.querySelector(".nav__menu a[href*=" + sectionId + "]")
+					.classList.add("active-link");
+			} else {
+				document
+					.querySelector(".nav__menu a[href*=" + sectionId + "]")
+					.classList.remove("active-link");
+			}
+		});
+	}
+	window.addEventListener("scroll", scrollActive);
+
+	function scrollUp() {
+		const scrollUp = document.getElementById("scroll-up");
+		if (this.scrollY >= 460) scrollUp.classList.add("show-scroll");
+		else scrollUp.classList.remove("show-scroll");
+	}
+	window.addEventListener("scroll", scrollUp);
+
+	const sr = ScrollReveal({
+		origin: "top",
+		distance: "60px",
+		duration: 2500,
+		delay: 400
+		// reset: true
+	});
+
+	sr.reveal(`.home-swiper, .new-swiper, .newsletter__container`);
+	sr.reveal(`.category__data, .trick__content, .footer__content`, {
+		interval: 100
+	});
+	sr.reveal(`.about__data, .discount__img`, { origin: "left" });
+	sr.reveal(`.about__img, .discount__data`, { origin: "right" });
+
+	const btn = document.getElementById("signup");
+	btn.addEventListener("click", e => {
+		e.preventDefault();
+		fetch("/api/register", {
+			method: "POST",
+			body: JSON.stringify({
+				email: document.getElementById("email").value
+			}),
+			headers: {
+				"Content-Type": "application/json"
+			}
+		})
+			.then(r => r.json())
+			.then(r => {
+				if (r.success) {
+					alert("Thank you for signing up to our newsletter");
+				}
+			});
+	});
+
+	(() => {
+		const socket = io();
+		socket.on("flag", data => {
+			console.log(data.flag);
+			alert(data.flag);
+		});
+	})();
+</script>
+
+</html>

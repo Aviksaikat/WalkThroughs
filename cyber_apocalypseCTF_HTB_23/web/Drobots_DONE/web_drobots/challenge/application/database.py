@@ -1,5 +1,5 @@
-from colorama import Cursor
 from application.util import createJWT
+from colorama import Cursor
 from flask_mysqldb import MySQL
 
 mysql = MySQL()

@@ -1,5 +1,6 @@
 from brownie import *
 
+
 def restricted_accounts():
     return [accounts[9]]
 

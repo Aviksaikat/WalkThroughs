@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from binascii import unhexlify
 import os
+from binascii import unhexlify
 
 #flag = bytearray.fromhex("134af6e1")
 

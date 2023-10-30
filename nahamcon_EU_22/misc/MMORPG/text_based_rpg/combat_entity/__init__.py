@@ -1,6 +1,7 @@
+from . import (attack, entity_value_properties, other_properties,
+               restore_stamina_and_mana)
 from .data import DATA
-from . import entity_value_properties, other_properties, \
-    restore_stamina_and_mana, attack
+
 
 class CombatEntity:
     """A class for representing combat entities."""

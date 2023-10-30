@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 #TODO: Too slow add threading 
 
-import requests
-from time import time
-from sys import argv
 import string
+from sys import argv
+from time import time
+
+import requests
 
 try:
 	url = f"http://{argv[1]}/"

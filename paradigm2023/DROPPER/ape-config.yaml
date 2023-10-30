@@ -1,0 +1,34 @@
+name: DROPPER
+plugins:
+  - name: solidity
+  - name: alchemy
+  - name: foundry
+  - name: infura
+  - name: etherscan
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+    gas_limit: auto
+    transaction_acceptance_timeout: 180
+    default_transaction_type: 0
+  mainnet:
+    default_provider: alchemy
+    transaction_acceptance_timeout: 180
+foundry:
+  host: http://dropper.challenges.paradigm.xyz:8545/4bd6a43f-8aaa-43a0-bbba-948505c6f69c/main
+  fork:
+    ethereum:
+      mainnet_fork:
+        upstream_provider: alchemy
+dependencies:
+  - name: OpenZeppelin
+    github: OpenZeppelin/openzeppelin-contracts
+    version: 5.0.0
+solidity:
+  #version: 0.8.13
+  import_remapping:
+    - "@openzeppelin/contracts=OpenZeppelin/5.0.0"
+test:
+  mnemonic: test test test test test test test test test test test junk
+  number_of_accounts: 10

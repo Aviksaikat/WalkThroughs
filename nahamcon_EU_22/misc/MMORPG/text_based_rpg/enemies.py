@@ -1,7 +1,8 @@
 """This modules contains the code representing the enemies in the game."""
 
-from .combat_entity import CombatEntity
 from . import attack
+from .combat_entity import CombatEntity
+
 
 def bear():
     return CombatEntity(

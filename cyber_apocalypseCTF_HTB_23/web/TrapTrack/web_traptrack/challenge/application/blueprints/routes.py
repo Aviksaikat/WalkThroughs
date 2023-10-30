@@ -1,8 +1,10 @@
 import json
-from application.database import db, User, TrapTracks
-from flask import Blueprint, Response, jsonify, redirect, render_template, request
+
+from application.cache import create_job_queue, get_job_list, get_job_queue
+from application.database import TrapTracks, User, db
+from flask import (Blueprint, Response, jsonify, redirect, render_template,
+                   request)
 from flask_login import login_required, login_user, logout_user
-from application.cache import get_job_list, create_job_queue, get_job_queue
 
 web = Blueprint('web', __name__)
 api = Blueprint('api', __name__)

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-from pwn import * 
-import json
 import codecs
+import json
+
 from Crypto.Util.number import long_to_bytes
+from pwn import *
 
 r = remote("socket.cryptohack.org", 13377, level = "debug")
 

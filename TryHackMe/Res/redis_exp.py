@@ -6,8 +6,8 @@
 import os
 import os.path
 from sys import argv
-from termcolor import colored
 
+from termcolor import colored
 
 script, ip_address, username = argv
 

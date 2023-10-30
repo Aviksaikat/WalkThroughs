@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+
 # import this
 
 if sys.version_info.major == 2:

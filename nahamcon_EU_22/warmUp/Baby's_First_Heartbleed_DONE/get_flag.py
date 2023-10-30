@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from pwn import *
-from sys import argv
 from re import findall
+from sys import argv
+
+from pwn import *
 
 context.log_level = "critical"
 
