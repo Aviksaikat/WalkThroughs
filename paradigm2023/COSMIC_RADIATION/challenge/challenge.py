@@ -1,18 +1,15 @@
 from typing import List
-from web3 import Web3
+
 from anvil_server.database import UserData
-from anvil_server.socket import (
-    CreateInstanceRequest,
-    CreateInstanceResponse,
-    UnixClient,
-    UpdateMetadataRequest,
-)
+from anvil_server.socket import (CreateInstanceRequest, CreateInstanceResponse,
+                                 UnixClient, UpdateMetadataRequest)
 from eth_launchers.koth_launcher import KothChallengeLauncher
 from eth_launchers.launcher import ETH_RPC_URL
 from eth_launchers.score_submitter import ScoreSubmitter, get_score_submitter
 from eth_launchers.team_provider import TeamProvider, get_team_provider
 from eth_launchers.utils import anvil_setBalance, anvil_setCode
 from foundry.anvil import LaunchAnvilInstanceArgs
+from web3 import Web3
 
 
 class Challenge(KothChallengeLauncher):

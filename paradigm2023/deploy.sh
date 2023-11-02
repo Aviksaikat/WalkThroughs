@@ -5,7 +5,7 @@ PORT=8547
 ANVIL_RPC_URL="http://127.0.0.1:$PORT"
 
 # make it background
-anvil --fork-url $WEB3_INFURA_RPC --auto-impersonate --port $PORT & #--derivation-path "m/44'/60'/0'/"
+anvil --fork-url $WEB3_INFURA_RPC --auto-impersonate --port $PORT #--derivation-path "m/44'/60'/0'/"
 
 sleep 5
 

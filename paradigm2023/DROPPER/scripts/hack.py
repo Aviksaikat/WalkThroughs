@@ -10,6 +10,7 @@ challenge contract: 0xc427D0A35B73452e5aFB6f736cde742C796D15da
 
 ADDRESS = "0xc427D0A35B73452e5aFB6f736cde742C796D15da"
 
+
 def main():
     attacker = accounts.load("dropper")
     attacker.set_autosign(True, passphrase="a")

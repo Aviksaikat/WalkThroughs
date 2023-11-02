@@ -10,5 +10,6 @@ def deploy(unlocked_password=False):
 
     return challenge, attacker
 
+
 def main():
     deploy("a")

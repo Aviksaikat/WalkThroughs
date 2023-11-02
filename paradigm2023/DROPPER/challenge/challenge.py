@@ -1,11 +1,7 @@
 from anvil_server.database import UserData
-from anvil_server.socket import (
-    CreateInstanceRequest,
-    CreateInstanceResponse,
-    GetInstanceRequest,
-    UnixClient,
-    UpdateMetadataRequest,
-)
+from anvil_server.socket import (CreateInstanceRequest, CreateInstanceResponse,
+                                 GetInstanceRequest, UnixClient,
+                                 UpdateMetadataRequest)
 from eth_abi import abi
 from eth_launchers.koth_launcher import KothChallengeLauncher
 from eth_launchers.launcher import ETH_RPC_URL

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-from Crypto.Util.number import *
-import random
-import os
 import hashlib
+import os
+import random
+
+from Crypto.Util.number import *
 
 FLAG = os.getenv("FLAG", "PCTF{flag}").encode("utf8")
 FLAG = bytes_to_long(FLAG[5:-1])

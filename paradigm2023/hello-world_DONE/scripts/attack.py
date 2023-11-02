@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 from ape import Contract, accounts, convert, networks, project
-from submit import submit
-
 from scripts.deploy import deploy
+from submit import submit
 
 """
 rpc endpoints:

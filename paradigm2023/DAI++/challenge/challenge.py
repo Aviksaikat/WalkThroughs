@@ -1,11 +1,8 @@
-from anvil_server.socket import (
-    CreateInstanceRequest,
-    CreateInstanceResponse,
-    UnixClient,
-)
+from anvil_server.socket import (CreateInstanceRequest, CreateInstanceResponse,
+                                 UnixClient)
+from eth_launchers.launcher import ETH_RPC_URL
 from eth_launchers.pwn_launcher import PwnChallengeLauncher
 from eth_launchers.team_provider import get_team_provider
-from eth_launchers.launcher import ETH_RPC_URL
 from foundry.anvil import LaunchAnvilInstanceArgs
 
 

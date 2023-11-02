@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from brownie import Setup, Unknown
-
 from scripts.helpful_scripts import get_account
 
 

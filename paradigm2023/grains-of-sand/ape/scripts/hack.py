@@ -7,6 +7,7 @@ private key:        0x598032838876c5c60a57db234d67e0ba1e1358bfc150f7714beb90b7ca
 challenge contract: 0x4c6d77a4107E86d97D9d7e8A816300A3cF240Cd5
 """
 
+
 def main():
     attacker = accounts[2]
 

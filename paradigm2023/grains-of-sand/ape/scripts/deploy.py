@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from ape import project
-
 from scripts.helper_functions import get_account
 
 

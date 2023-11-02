@@ -2,7 +2,6 @@
 #from brownie import ShootingArea, Setup, web3
 from brownie import *
 from colorama import Fore
-
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
 

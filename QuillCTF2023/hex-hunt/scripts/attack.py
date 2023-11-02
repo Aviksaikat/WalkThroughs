@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from ape import Contract, accounts, convert, networks, project
 from ape.exceptions import VirtualMachineError
-
 from scripts.deploy import deploy
 from scripts.helper_functions import get_account
 

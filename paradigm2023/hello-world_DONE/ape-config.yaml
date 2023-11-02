@@ -16,7 +16,8 @@ ethereum:
     default_provider: alchemy
     transaction_acceptance_timeout: 180
 foundry:
-  host: http://hello-world.challenges.paradigm.xyz:8545/2d52ae89-efa6-47b8-a8da-30084c3be215/main
+  #host: http://hello-world.challenges.paradigm.xyz:8545/2d52ae89-efa6-47b8-a8da-30084c3be215/main
+  host: http://127.0.0.1:8545
   fork:
     ethereum:
       mainnet_fork:
@@ -24,3 +25,4 @@ foundry:
 test:
   mnemonic: test test test test test test test test test test test junk
   number_of_accounts: 10
+  hd_path: "m/44'/60'/0'/0/{}"

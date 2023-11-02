@@ -38,7 +38,6 @@ def attack():
 
     print(f"Attacker balance: {attacker.balance // 10 ** 18}")
     print(f"Split balance: {split.balance // 10 ** 18}")
-    
 
     split.distribute(
         0,
@@ -55,6 +54,7 @@ def attack():
     split.withdraw(tokens, amounts, sender=attacker)
 
     print(challenge.isSolved())
+
 
 def main():
     attack()
