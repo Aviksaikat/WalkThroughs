@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "hack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hello-world_DONE/contracts/Hack.sol": "Hack"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hello-world_DONE/contracts/Hack.sol": {
+			"keccak256": "0x94016e69e175359b810805c961a10ff13e6a1b8f52eb297841724c00a89026f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://58fe9eced3ff1ef3685236e1a9cc93cc6dd015e3b1de9e8477dace6518f87ba6",
+				"dweb:/ipfs/QmNaEkmMtdYqKSTVA3YN2uf7M8F67R5CXMq1M79hEhJk1t"
+			]
+		}
+	},
+	"version": 1
+}

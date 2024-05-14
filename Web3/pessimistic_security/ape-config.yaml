@@ -1,0 +1,17 @@
+name: tasks
+plugins:
+  - name: solidity
+  - name: foundry
+  - name: alchemy
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+foundry:
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: alchemy
+test:
+  mnemonic: test test test test test test test test test test test junk
+  number_of_accounts: 10

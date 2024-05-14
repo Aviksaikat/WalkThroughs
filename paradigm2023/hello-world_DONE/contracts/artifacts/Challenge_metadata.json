@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "STARTING_BALANCE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TARGET",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSolved",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hello-world_DONE/contracts/Challenge.sol": "Challenge"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hello-world_DONE/contracts/Challenge.sol": {
+			"keccak256": "0x9de51f01789033195b9c324e0622dbe87093451c8fc7f1fd7b65f9674ff17542",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://a9c9ba4e2fabb06e3bd83bdfd28c06e968f6cfe95cf5696059fae55ffd56c1b3",
+				"dweb:/ipfs/QmbZaXp9QBQPPirwe2AfvwLCeswYFch6nd2zWM4DtGSG7d"
+			]
+		}
+	},
+	"version": 1
+}

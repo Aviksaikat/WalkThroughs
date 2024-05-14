@@ -3,6 +3,7 @@
 import os
 import subprocess
 import time
+import sys
 from pathlib import Path
 
 challenge_dir = Path(sys.argv[1])
@@ -27,7 +28,7 @@ anvil_process = subprocess.Popen(
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
     start_new_session=True,
-    preexec_fn=os.setpgrp,  # This creates a new process group to keep it running in the background
+    # spreexec_fn=os.setpgrp,  # This creates a new process group to keep it running in the background
 )
 
 # Sleep for 5 seconds
